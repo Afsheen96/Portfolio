@@ -30,3 +30,18 @@
     padding-left: 60%;
     padding-top: 2%;
   }
+  .headline-container {
+    height: 60vh;
+    width: 100vw;
+  }
+  article {
+    display: flex;
+    min-height: 113vh;
+    flex-direction: column;
+    background-color: white;
+    border-bottom-left-radius: 15%;
+    background-image: url("./resources/images/header-shapes\ mobilebackground-Main.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 99% -23%;
+  }
