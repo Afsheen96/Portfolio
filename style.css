@@ -14,3 +14,14 @@
       margin: 0;
     }
   }
+  html {
+    background: #e5e5e5;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: white;
+    width: 100vw;
+  }
