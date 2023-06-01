@@ -2,3 +2,14 @@
   font-family: Poppins;
   src: url("./resources/font/Poppins-Regular.ttf");
 }
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url("./resources/font/Poppins-Bold.ttf");
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      font-family: Poppins, sans-serif;
+      font-style: normal;
+      margin: 0;
+    }
