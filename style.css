@@ -25,3 +25,8 @@
     background: white;
     width: 100vw;
   }
+  .menu {
+    float: right;
+    padding-left: 60%;
+    padding-top: 2%;
+  }
