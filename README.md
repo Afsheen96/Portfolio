@@ -23,10 +23,10 @@
 
 
 
-# 📖 Mobile Portfolio! <a name="about-project"></a>
+# 📖 Portfolio! <a name="about-project"></a>
 
-> This is my first responsive Mobile portfolio project with Microverse using Github professional flow with the objective of start practicing the professional way to work with CSS and HTML in responsive design, using the basic structure, data query, flexbox and all following a template in Figma.
-**Mobile Portfolio** 
+> This is my first responsive portfolio project with Microverse using Github professional flow with the objective of start practicing the professional way to work with CSS and HTML in responsive design, using the basic structure, data query, flexbox and all following a template in Figma.
+**Portfolio** 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -78,7 +78,7 @@ Clone this repository to your desired folder:
 
 Example commands:
 
-git clone https://github.com/afsheen96/Mobile-Portfolio.git
+git clone https://github.com/afsheen96/Portfolio.git
 
 
 **3. Install**
