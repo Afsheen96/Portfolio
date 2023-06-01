@@ -45,3 +45,33 @@
     background-size: 100%;
     background-position: 99% -23%;
   }
+  .item2 {
+    padding-top: 5vh;
+  }
+  .item3 {
+    height: 40vh;
+    border-bottom-left-radius: 20%;
+  }
+
+  .title {
+    font-family: Poppins-Bold, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+    color: #172b4d;
+    padding-left: 24px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .presentation {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    margin-right: 24px;
+    margin-top: 0;
+    padding-left: 24px;
+  }
