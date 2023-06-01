@@ -78,7 +78,7 @@ Clone this repository to your desired folder:
 
 Example commands:
 
-git clone https://github.com/afsheen96/Hello-Microverse.git
+git clone https://github.com/afsheen96/Mobile-Portfolio.git
 
 
 **3. Install**
@@ -166,4 +166,4 @@ make this project.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Afsheen96/Hello-Microverse/blob/feature-branch/MIT.md) licensed.
+This project is [MIT](https://github.com/Afsheen96/Mobile-Portfolio/blob/Mobile-setup/LICENSE) licensed.
