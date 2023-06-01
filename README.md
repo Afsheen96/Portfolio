@@ -23,10 +23,10 @@
 
 
 
-# 📖 HELLO MICROVERSE! <a name="about-project"></a>
+# 📖 Mobile Portfolio! <a name="about-project"></a>
 
-> This is my first project with Microverse using Github professional flow
-**Hello Microverse** 
+> This is my first responsive Mobile portfolio project with Microverse using Github professional flow with the objective of start practicing the professional way to work with CSS and HTML in responsive design, using the basic structure, data query, flexbox and all following a template in Figma.
+**Mobile Portfolio** 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,7 +46,7 @@
 
 - Add the linter for the project to fix the errors and clean the codeok_hand
 - User-friendly Interface: Simple and intuitive interface for a seamless user experience.rocket
-- Style the text using the CSS 100
+- Responsive for different devices
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://afsheen96.github.io/Hello-Microverse)
+- [Live Demo Link](https://afsheen96.github.io/Mobile-Portfolio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
