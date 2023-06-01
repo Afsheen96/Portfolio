@@ -49,11 +49,11 @@ article {
   background-image: url("./resources/images/header-shapes\ mobilebackground-Main.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 99% -23%;
+  background-position: 99% 20%;
 }
 
 .item1 {
-  padding-top: 5vh;
+  padding-top: 10vh;
 }
 
 .item2 {
