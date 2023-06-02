@@ -174,5 +174,24 @@ article {
     padding: 10px 0;
     color: #344563;
   }
+  .btn {
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #396df2;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid #396df2;
+    transition: color 0.5s ease-in-out, background 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    color: #fff;
+    background: #396df2;
+  }
+
+  
   
     
