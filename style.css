@@ -240,4 +240,8 @@ article {
     background-repeat: space;
     background-repeat: no-repeat;
   }
-  
+.action {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
