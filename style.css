@@ -243,5 +243,40 @@ article {
 .action {
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
 }
+.about-framework {
+    margin-top: 2%;
+  }
+  .about_ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid #dfe1e6;
+  }
+  
+  .sub_title {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .down_arrow_icon {
+    width: 10%;
+    height: 10%;
+    overflow: hidden;
+  }
+  
+  .arrow_icon {
+    width: 10%;
+    height: 14%;
+    overflow: hidden;
+  }
+  
+  
+  
