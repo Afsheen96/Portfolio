@@ -110,7 +110,7 @@ article {
     margin: 100% 0;
     display: grid;
     row-gap: 25px;
-    padding: 10px;
+    padding: 5%;
     justify-items: center;
 }
 .work-card {
@@ -128,4 +128,51 @@ article {
     justify-self: center;
     overflow: hidden;
   }
+  .work_preview img {
+    transition: transform 0.2s ease-in-out;
+    max-width: 100%;
+  }
+  
+  .work_preview:hover .project-img {
+    transform: scale(1.4);
+  }
+  .work_detail {
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .work_title {
+    margin: 10px 0;
+    color: #172b4d;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+  
+  .work_info {
+    display: flex;
+    overflow: hidden;
+    color: #7a869a;
+    padding-left: 1%;
+  }
+  .info_item {
+    margin-right: 15px;
+    list-style-position: inside;
+    margin-left: 1px;
+  }
+  .info_item:first-child {
+    font-weight: bold;
+    list-style: none;
+    color: #344563;
+  }
+  
+  .info_item:last-child {
+    margin-right: 0;
+  }
+  .work_details_content {
+    margin: 10px 0;
+    padding: 10px 0;
+    color: #344563;
+  }
+  
     
