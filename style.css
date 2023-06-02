@@ -17,7 +17,7 @@
 }
 
 html {
-  background: #e5e5e5;
+  background: #ebebff;
 }
 
 header {
@@ -107,5 +107,25 @@ article {
   margin-left: 26px;
 }
 .work-section {
-    margin-top: 40%;
+    margin: 100% 0;
+    display: grid;
+    row-gap: 25px;
+    padding: 10px;
+    justify-items: center;
 }
+.work-card {
+    background: #fff;
+    border-radius: 10px;
+    min-height: 3em;
+    border: 1px solid #c6c6c6;
+    padding: 20px 15px;
+    display: grid;
+}
+.work_preview {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-self: center;
+    overflow: hidden;
+  }
+    
