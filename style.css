@@ -109,9 +109,9 @@ article {
   margin-left: 26px;
 }
 .work-section {
-    margin: 100% 0;
+    margin: 30% 0;
     display: grid;
-    row-gap: 25px;
+    row-gap: 100px;
     padding: 5%;
     justify-items: center;
 }
@@ -211,5 +211,11 @@ article {
     font-size: 14px;
     line-height: 16px;
   }
-  
+  .about {
+    display: grid;
+    row-gap: 10px;
+    padding: 0 15px;
+    background-color: #fff;
+    border-top-right-radius: 70px;
+  }
     
