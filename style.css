@@ -158,32 +158,25 @@ article {
   line-height: 44px;
 }
 
-/* .work_info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  overflow: hidden;
-  color: #7a869a;
-  padding-left: 1%;
-  padding-right: 5px;
-} */
 .dot {
-    margin-top: 7px;
-    padding-left: 10px;
-    padding-right: 5px;
-    width: 10px;
-    height: 10px;
-  }
-  .color {
-    color: #000 !important;
-  }
-  .span-grid {
-    display: flex;
-    justify-content: left;
-    list-style: none;
-    padding-left: 5px;
-    margin-bottom: 10px;
-  }
+  margin-top: 7px;
+  padding-left: 10px;
+  padding-right: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.color {
+  color: #000 !important;
+}
+
+.span-grid {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
 
 .work_details_content {
   margin: 10px 0;
@@ -208,9 +201,10 @@ article {
   color: #fff;
   background: #396df2;
 }
+
 .btn:active {
-    color:#fff;
-    background: #2230D2;
+  color: #fff;
+  background: #2230d2;
 }
 
 .work_tech {
@@ -260,8 +254,9 @@ article {
   background-repeat: space;
   background-repeat: no-repeat;
 }
+
 .about-me {
-    height: 40%;
+  height: 40%;
   border-bottom-left-radius: 20%;
 }
 
@@ -273,7 +268,7 @@ article {
 }
 
 .about-framework {
-  margin-top: 2%x;
+  margin-top: 2%;
 }
 
 .about_ul {
