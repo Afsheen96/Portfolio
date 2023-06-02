@@ -277,6 +277,21 @@ article {
     height: 14%;
     overflow: hidden;
   }
+  .ul_item {
+    padding: 10px;
+    color: #253858;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    background: #f7f7f9;
+    margin: 10px;
+    border-radius: 8px;
+  }
   
+  .ul_item img {
+    width: 40px;
+    margin-right: 20px;
+  }
   
   
