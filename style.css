@@ -215,7 +215,7 @@ html {
     padding-left: 1%;
   }
 
-  .work_tech>li {
+  .work_tech > li {
     padding: 8px;
     list-style: none;
     color: #6070ff;
@@ -342,7 +342,7 @@ html {
   }
 
   .co {
-    font-family: "Poppins";
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: bolder;
     font-size: 40px;
@@ -350,12 +350,12 @@ html {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     margin-top: 25%;
   }
 
   .contact-text {
-    font-family: "Poppins";
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -366,31 +366,33 @@ html {
   }
 
   .user {
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
     width: 327px;
     height: 48px;
-     font-family: "Poppins";
+    font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 17px;
     font-style: normal;
-     line-height: 20px;  
+    line-height: 20px;
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
     padding-left: 16px;
   }
-input::placeholder {
-  color: #172B4D;
-}
+
+  input::placeholder {
+    color: #172b4d;
+  }
+
   .textarea {
     width: 327px;
     height: 145px;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
-    font-family: "Poppins";
+    font-family: Poppins, sans-serif;
     font-size: 15px;
     line-height: 24px;
     padding-left: 16px;
@@ -402,7 +404,7 @@ input::placeholder {
     margin-right: 200px;
     color: #6070ff;
     border-radius: 5px;
-    font-family: 'Poppins';
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
