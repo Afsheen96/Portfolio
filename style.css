@@ -7,6 +7,9 @@
   font-family: Poppins-Bold;
   src: url("./resources/font/Poppins-Bold.ttf");
 }
+html {
+  background: #f7f7f9;
+}
 
 @media only screen and (max-width: 600px) {
   body {
@@ -14,11 +17,6 @@
     font-style: normal;
     margin: 0;
   }
-}
-
-html {
-  background: #f7f7f9;
-}
 
 header {
   display: flex;
@@ -269,6 +267,7 @@ article {
 
 .about-framework {
   margin-top: 2%;
+  height:650px;
 }
 
 .about_ul {
@@ -315,4 +314,27 @@ article {
 .ul_item img {
   width: 40px;
   margin-right: 20px;
+}
+.form-section {
+  background-color: white;
+  width:50px;
+
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 70px;
+  background: #6070FF;
+  background-image: url(resources/images/contact\ form\ shapes-mobile@2x.png);
+  padding-top: 55px;
+  padding-left: 25px;
+  margin-bottom: 0;
+  min-height: 100vh;
+  background-size: 60%;
+  background-position: right 65px;
+  background-repeat: no-repeat;
+  width: 375px;
+  
+}
 }
