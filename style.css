@@ -318,7 +318,6 @@ article {
 .form-section {
   background-color: white;
   width:50px;
-
 }
 .form {
   display: flex;
@@ -331,8 +330,8 @@ article {
   padding-left: 25px;
   margin-bottom: 0;
   min-height: 100vh;
-  background-size: 60%;
-  background-position: right 65px;
+  background-size: 65%;
+  background-position: right 30px;
   background-repeat: no-repeat;
   width: 375px;
   
