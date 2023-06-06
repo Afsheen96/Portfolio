@@ -7,6 +7,7 @@
   font-family: Poppins-Bold;
   src: url("./resources/font/Poppins-Bold.ttf");
 }
+
 html {
   background: #f7f7f9;
 }
@@ -17,6 +18,7 @@ html {
     font-style: normal;
     margin: 0;
   }
+
   header {
     display: flex;
     align-items: center;
@@ -213,7 +215,7 @@ html {
     padding-left: 1%;
   }
 
-  .work_tech > li {
+  .work_tech>li {
     padding: 8px;
     list-style: none;
     color: #6070ff;
@@ -316,26 +318,29 @@ html {
     width: 40px;
     margin-right: 20px;
   }
+
   .form-section {
     background-color: white;
     width: 50px;
   }
+
   .form {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top-left-radius: 70px;
     background: #6070ff;
-    background-image: url(resources/images/contact\ form\ shapes-mobile@2x.png);
+    background-image: url(resources/images/contact\ form\ shapes-mobile.svg);
     padding-top: 40px;
     margin-bottom: 0;
     min-height: 110vh;
-    background-size: 60%;
-    background-position: right 55px;
+    background-size: 65%;
+    background-position: right 30px;
     background-repeat: no-repeat;
     width: 375px;
     height: 778px;
   }
+
   .co {
     font-family: "Poppins";
     font-style: normal;
@@ -348,6 +353,7 @@ html {
     color: #ffffff;
     margin-top: 25%;
   }
+
   .contact-text {
     font-family: "Poppins";
     font-style: normal;
@@ -358,26 +364,29 @@ html {
     color: #ebebff;
     margin-bottom: 60px;
   }
+
   .user {
     background: #ffffff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
     width: 327px;
     height: 48px;
-    font-family: "Poppins";
-    font-weight: 400;
+     font-family: "Poppins";
+    font-weight: 700;
     font-size: 17px;
-    line-height: 20px;
+    font-style: normal;
+     line-height: 20px;  
     display: flex;
     justify-content: center;
-    color: #172b4d;
     margin-bottom: 15px;
     padding-left: 16px;
   }
-
-  #textarea {
+input::placeholder {
+  color: #172B4D;
+}
+  .textarea {
     width: 327px;
-    height: 170px;
+    height: 145px;
     background: #ffffff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -386,5 +395,21 @@ html {
     line-height: 24px;
     padding-left: 16px;
     padding-top: 15px;
+  }
+
+  .get-touch {
+    margin-top: 15px;
+    margin-right: 200px;
+    color: #6070ff;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    border: 1px solid #cfd8dc;
+    background-color: #fff;
+    width: 142px;
+    height: 48px;
   }
 }
