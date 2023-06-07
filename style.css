@@ -22,12 +22,8 @@ html {
   header {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     flex-direction: row;
     background: white;
-    width: 100vw;
-    margin-right: 5%;
-    padding-left: 3%;
   }
 
   a {
