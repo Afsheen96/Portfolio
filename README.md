@@ -65,7 +65,7 @@
 
 To get a local copy up and running, follow these steps.
 
-**1.  Prerequisites**
+### Prerequisites
 
 In order to run this project you need:
 
@@ -73,7 +73,7 @@ In order to run this project you need:
 - Github
 - git
 
-**2. Setup**
+### Setup
 
 Clone this repository to your desired folder:
 
@@ -82,12 +82,12 @@ Example commands:
 git clone https://github.com/afsheen96/Portfolio.git
 
 
-**3. Install**
+### Install
 
 - please first install the node package files
    - npm install
 
-**4. Usage**
+### Usage
  
  - In order to use this project you create branch to add more feature.
   - But in order to run the project use below commands. 
@@ -97,7 +97,7 @@ git clone https://github.com/afsheen96/Portfolio.git
     
  
 
-**5. Run Linters**
+### Run Linters
  
 I have added linters or tests in order to avoid typos and ensure good practice in this project.So while using this repository if you need to check your work no matters have worked on html, css and js you can use below commands
 - In order to run the linter test on `index.html` or any html file. use below command
@@ -107,7 +107,7 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 
  ` npx stylelint "**/*.{css,scss}"`
 
-**6. Deployment**
+### Deployment
  
  You can deploy your project using `github` free source.
  
