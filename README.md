@@ -9,7 +9,7 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#Setup)
+  - [Setup](#setup)
   - [Prerequisites](#Prerequisites)
   - [Install](#Install)
   - [Usage](#Usage)
@@ -119,6 +119,9 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 👤 **Afsheen96**
 
 - GitHub: [@githubhandle](https://github.com/Afsheen96)
+
+👤 **CrackedYoda**
+
 - GitHub: [@githubhandle](https://github.com/CrackedYoda)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
