@@ -9,10 +9,10 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
+  - [Setup](#Setup)
+  - [Prerequisites](#Prerequisites)
+  - [Install](#Install)
+  - [Usage](#Usage)
   - [Deployment](#Deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -119,6 +119,7 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 👤 **Afsheen96**
 
 - GitHub: [@githubhandle](https://github.com/Afsheen96)
+- GitHub: [@githubhandle](https://github.com/CrackedYoda)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,4 +167,4 @@ make this project.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Afsheen96/Mobile-Portfolio/blob/Mobile-setup/LICENSE) licensed.
+This project is [MIT](https://github.com/Afsheen96/Mobile-Portfolio/blob/Contact-form/LICENSE) licensed.
