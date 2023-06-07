@@ -383,18 +383,14 @@ html {
     width: 327px;
     height: 48px;
     font-family: Poppins, sans-serif;
-    font-weight: 700;
-    font-size: 17px;
+    font-weight: 200;
+    font-size: 15px; 
     font-style: normal;
-    line-height: 20px;
+    line-height: 30px;
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
     padding-left: 16px;
-  }
-
-  input::placeholder {
-    color: #172b4d;
   }
 
   .textarea {
@@ -405,9 +401,9 @@ html {
     border-radius: 8px;
     font-family: Poppins, sans-serif;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 30px;
     padding-left: 16px;
-    padding-top: 0px;
+    padding-top: 1px;
   }
 
   .get-touch {
