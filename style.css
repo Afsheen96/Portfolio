@@ -12,7 +12,7 @@ html {
   background: #f7f7f9;
 }
 
-@media only screen and (min-width: 375px) {
+@media  (min-width: 375px) {
   body {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -432,14 +432,13 @@ html {
     border: 1px solid #5e6c84;
   }
 }
-@media only screen and (min-width:768px) {
+@media  (min-width:768px) {
   html {
     background: #e5e5e5;
   }
 
   .body {
     margin: 0;
-    width: 10%;
   }
   .title {
     font-family: Poppins-Bold, sans-serif;
@@ -475,6 +474,7 @@ html {
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
+    padding-bottom: 2%;
   }
 
   .header-menu li {
@@ -484,5 +484,60 @@ html {
     font-size: 15px;
     padding-left: 40px;
   }
+  .headline-container {
+    display: flex;
+    flex-direction: column;
+    height: 916px;
+    width: 100%;
+    background-image: url("./resources/images/desk\ bg.png");
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-bottom-left-radius: 15%;
 
+  
+  }
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+   
+}
+.item1 {
+  padding-top: 30vh;
+}
+.item2 {
+  min-height: 30vh;
+  border-bottom-left-radius: 20%;
+}
+.presentation {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 10vw;
+  padding-right: 22vw;
+  animation-name: appear;
+  animation-duration: 4s;
+}
+.connection {
+  font-family: Poppins, sans-serif;
+  padding-left: 10%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-decoration: none;
+}
+.span {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding-left: 7%;
+  margin-bottom: 0;
+}
+
+.social-media {
+  margin-left: 26px;
+}
 }
