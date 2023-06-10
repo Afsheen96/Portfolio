@@ -514,6 +514,16 @@ html {
     padding-top: 70px;
     margin-bottom: 20px;
   }
+  @keyframes appear {
+    0% {
+      color: white;
+    }
+
+    100% {
+      color: black;
+    }
+  }
+
   .presentation {
     font-weight: 400;
     font-size: 16px;
@@ -576,6 +586,15 @@ html {
 
   .work_preview:hover .project-img {
     transform: scale(1.4);
+  }
+  @keyframes imag-appear {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 
   .work_detail {
