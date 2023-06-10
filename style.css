@@ -701,7 +701,6 @@ html {
   .desktop-version {
     width: 55%;
   }
-
   .about {
     display: flex;
     flex-direction: row;
@@ -746,12 +745,11 @@ html {
 
   .about-framework {
     margin-top: 2%;
-    height: 650px;
   }
 
   .about_ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 10px;
     list-style: none;
     border-bottom: 1px solid #dfe1e6;
@@ -790,6 +788,7 @@ html {
     padding: 10px;
     color: #253858;
     display: flex;
+    flex-direction: column;
     align-items: center;
     font-size: 15px;
     font-weight: bold;
