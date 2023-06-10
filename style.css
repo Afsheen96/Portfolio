@@ -574,7 +574,14 @@ html {
     display: grid;
     padding: 0 3%;
   }
-
+.project-img {
+  padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    min-width: 20%;
+    min-height: 20%;
+    animation-duration: 4s;
+}
   .work-card {
     background: #fff;
     border-radius: 10px;
