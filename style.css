@@ -452,6 +452,7 @@ html {
     float: right;
     padding-top: 2%;
     margin-right: 3%;
+    padding-left: unset;
   }
 
   .header {
