@@ -547,7 +547,7 @@ html {
     font-size: 16px;
     line-height: 24px;
     margin-left: 0;
-    margin-right: 24px;
+    margin-right: 20%;
     margin-top: 0;
     padding-left: 100px;
     color: #344563;
@@ -566,15 +566,10 @@ html {
     display: flex;
     justify-content: left;
     list-style: none;
-    padding-left: 5%;
+    padding-left: 8%;
     padding-right: 10vw;
     margin-bottom: 0;
   }
-
-  .social-media {
-    margin-left: 50px;
-  }
-
   .work-section {
     display: grid;
     padding: 0 3%;
@@ -597,6 +592,7 @@ html {
     justify-self: center;
     padding-left: 3%;
     overflow: hidden;
+    background-image: ;
   }
 
   .work_preview:hover .project-img {
@@ -661,6 +657,7 @@ html {
     padding: 10px 20px;
     background: #fff;
     border-radius: 10px;
+    margin-left: 7%;
     display: inline-block;
     border: 1px solid #396df2;
     transition: color 0.5s ease-in-out, background 0.2s ease-in-out;
