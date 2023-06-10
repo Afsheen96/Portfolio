@@ -29,9 +29,11 @@ html {
   a {
     text-decoration: none;
   }
-.header-menu {
-  display: none;
-}
+
+  .header-menu {
+    display: none;
+  }
+
   .menu {
     float: right;
     padding-left: 60%;
@@ -570,18 +572,21 @@ html {
     padding-right: 10vw;
     margin-bottom: 0;
   }
+
   .work-section {
     display: grid;
     padding: 0 3%;
   }
-.project-img {
-  padding-left: 16px;
+
+  .project-img {
+    padding-left: 16px;
     padding-right: 16px;
     padding-top: 16px;
     min-width: 20%;
     min-height: 20%;
     animation-duration: 4s;
-}
+  }
+
   .work-card {
     background: #fff;
     border-radius: 10px;
@@ -701,6 +706,7 @@ html {
   .desktop-version {
     width: 55%;
   }
+
   .about {
     display: flex;
     flex-direction: row;
