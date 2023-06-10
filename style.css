@@ -12,7 +12,7 @@ html {
   background: #f7f7f9;
 }
 
-@media  (min-width: 375px) and (max-width:600px) {
+@media (min-width: 375px) and (max-width: 600px) {
   body {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -25,9 +25,11 @@ html {
     flex-direction: row;
     background: white;
   }
-.header-menu {
-  display: none;
-}
+
+  .header-menu {
+    display: none;
+  }
+
   a {
     text-decoration: none;
   }
@@ -37,6 +39,7 @@ html {
     padding-left: 30%;
     padding-right: 1%;
   }
+
   nav img {
     padding-left: 300%;
   }
@@ -432,31 +435,46 @@ html {
     border: 1px solid #5e6c84;
   }
 }
-@media  (min-width:768px) {
+
+@media (min-width: 768px) {
   body {
     font-family: Poppins, sans-serif;
     font-style: normal;
     margin: 0;
   }
+
   header {
     display: flex;
     align-items: center;
     flex-direction: row;
     background: white;
   }
+
   a {
     text-decoration: none;
   }
+
   .menu {
     float: right;
     padding-top: 2%;
     margin-right: 3%;
   }
+
   .header {
     display: flex;
     background: white;
     width: 100%;
     justify-content: space-between;
+  }
+
+  .work_preview img {
+    transition: transform 0.2s ease-in-out;
+    max-width: 100%;
+  }
+
+  .ul_item img {
+    width: 40px;
+    margin-right: 20px;
   }
 
   .header nav img {
@@ -479,10 +497,12 @@ html {
     font-size: 15px;
     padding-left: 40px;
   }
+
   .headline-container {
     height: 846px;
     width: 100%;
   }
+
   article {
     display: flex;
     min-height: 113vh;
@@ -494,6 +514,7 @@ html {
     background-size: 100%;
     background-position: 99% 25%;
   }
+
   .item1 {
     padding-top: 10vh;
   }
@@ -502,6 +523,7 @@ html {
     height: 40vh;
     border-bottom-left-radius: 20%;
   }
+
   .title {
     font-family: Poppins-Bold, sans-serif;
     font-weight: 700;
@@ -514,6 +536,7 @@ html {
     padding-top: 70px;
     margin-bottom: 20px;
   }
+
   @keyframes appear {
     0% {
       color: white;
@@ -534,6 +557,7 @@ html {
     padding-left: 100px;
     color: #344563;
   }
+
   .connection {
     padding-left: 100px;
     font-weight: 600;
@@ -555,10 +579,12 @@ html {
   .social-media {
     margin-left: 50px;
   }
+
   .work-section {
     display: grid;
     padding: 0 3%;
   }
+
   .work-card {
     background: #fff;
     border-radius: 10px;
@@ -570,7 +596,6 @@ html {
   .work_preview {
     flex-direction: column;
     align-self: center;
-    flex-direction:row;
     height: 500px;
     width: 50%;
     padding-top: 35%;
@@ -579,14 +604,10 @@ html {
     overflow: hidden;
   }
 
-  .work_preview img {
-    transition: transform 0.2s ease-in-out;
-    max-width: 100%;
-  }
-
   .work_preview:hover .project-img {
     transform: scale(1.4);
   }
+
   @keyframes imag-appear {
     0% {
       opacity: 0;
@@ -600,7 +621,6 @@ html {
   .work_detail {
     flex-direction: column;
     padding: 10px;
-    flex-direction: column;
   }
 
   .work_title {
@@ -678,9 +698,11 @@ html {
     font-size: 14px;
     line-height: 16px;
   }
+
   .desktop-version {
-    width: 55%
+    width: 55%;
   }
+
   .about {
     display: flex;
     flex-direction: row;
@@ -690,6 +712,7 @@ html {
     border-top-right-radius: 70px;
     margin-top: 0%;
   }
+
   .headline_title {
     font-size: 40px;
     margin-top: 60px;
@@ -699,6 +722,7 @@ html {
     line-height: 52px;
     padding-left: 4%;
   }
+
   .headline {
     padding: 25px;
     display: flex;
@@ -708,10 +732,12 @@ html {
     background-repeat: space;
     background-repeat: no-repeat;
   }
+
   .about-me {
     height: 40%;
     border-bottom-left-radius: 20%;
   }
+
   .action {
     margin-left: 4%;
     padding: 0;
@@ -753,6 +779,7 @@ html {
     overflow: hidden;
     padding-left: 150px;
   }
+
   .desk-arrow {
     width: 10%;
     height: 14%;
@@ -772,15 +799,11 @@ html {
     border-radius: 8px;
   }
 
-  .ul_item img {
-    width: 40px;
-    margin-right: 20px;
-  }
-
   .form-section {
     background-color: white;
     width: 100%;
   }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -795,6 +818,7 @@ html {
     background-position: center 170px;
     background-repeat: no-repeat;
   }
+
   .co {
     font-family: Poppins, sans-serif;
     font-style: normal;
