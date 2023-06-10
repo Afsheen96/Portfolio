@@ -598,8 +598,8 @@ html {
     padding-top: 35%;
     justify-self: center;
     padding-left: 3%;
+    padding-bottom: 300px;
     overflow: hidden;
-    background-image: ;
   }
 
   .work_preview:hover .project-img {
