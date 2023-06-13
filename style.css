@@ -368,7 +368,7 @@ button[disabled] {
   line-height: 52px;
 }
 
-/* .contact-me-form-paragraph {
+.contact-me-form-paragraph {
   text-align: center;
   margin-top: 0.75em;
   font-family: "Poppins", sans-serif;
@@ -377,7 +377,7 @@ button[disabled] {
   font-size: 20px;
   line-height: 28px;
   color: #ebebff;
-} */
+}
 
 .contact-me-form {
   display: flex;
