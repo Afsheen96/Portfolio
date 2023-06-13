@@ -121,9 +121,13 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 
 - GitHub: [@githubhandle](https://github.com/Afsheen96)
 
-👤 **CrackedYoda**
+👤 **bhushan354**
 
-- GitHub: [@githubhandle](https://github.com/CrackedYoda)
+- GitHub: [@githubhandle](https://github.com/bhushan354)
+
+  👤 **MozamelJawad**
+
+- GitHub: [@githubhandle](https://github.com/MozamelJawad)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
