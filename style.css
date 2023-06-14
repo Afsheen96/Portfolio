@@ -128,8 +128,6 @@ i {
   font-size: 1.25rem;
   padding-right: 1em;
 }
-
-/* Works Section Styling Starts Here */
 .works {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -259,10 +257,6 @@ button[disabled] {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
 }
-
-/* Works Section Styling Ends Here */
-
-/* About Section Starts Here */
 .about {
   background-color: #fff;
   border-radius: 0 6em 0 0;
@@ -341,10 +335,6 @@ button[disabled] {
   line-height: 20px;
   color: #253858;
 }
-
-/* About Section Ends Here */
-
-/* Contact Me starts here */
 .contact-me-form-container {
   display: flex;
   justify-content: center;
@@ -408,5 +398,3 @@ textarea:focus {
 .contact-me-form-button {
   align-self: flex-start;
 }
-
-/* Contact me ends here */
