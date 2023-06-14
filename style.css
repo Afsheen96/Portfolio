@@ -280,9 +280,13 @@ button {
   font-size: 1.05em;
   font-weight: 500;
   letter-spacing: 0.03em;
-  width: 126px;
+  width: auto;
   margin: 1em 0;
   cursor: pointer;
+}
+
+.btn-width {
+  width: 126px;
 }
 
 button:hover {
