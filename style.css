@@ -483,6 +483,25 @@ textarea:focus {
   .headline-sm-suport {
     margin: 0 60px;
   }
+  .works-card > img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .works-card:nth-child(even) > img {
+    order: 2;
+  }
+
+  .works-card:nth-child(even) > .works-card-main {
+    order: 1;
+  }
+
+  .works-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5em;
+    padding: 1em;
+  }
  }
   
  
