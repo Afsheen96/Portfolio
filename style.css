@@ -95,7 +95,7 @@ header {
 
 .headline-paragraph {
   margin: 10px 0;
-  font-family: 'Poppins'sans-serif;
+  font-family: 'Poppins' , sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -538,7 +538,23 @@ textarea:focus {
   .about-skills-container{
     width: 50%;
   }
+  .contact-me-form-container {
+    background-color: #6070ff;
+    background-image: url(./assets/contact\ form\ background\ shapes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    align-content: center;
+    padding: 10% 25%;
+    margin-top: 0;
+  }
 
+  .contact-me-form-text-input {
+    border-radius: 0;
+  }
+  .contact-me-form-button {
+    align-self: center;
+}
  }
   
  
