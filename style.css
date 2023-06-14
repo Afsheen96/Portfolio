@@ -51,6 +51,21 @@ header {
   text-decoration: none;
   color: inherit;
   left: 76px;
+  animation: color-change 1s ease-in-out;
+}
+
+@keyframes color-change {
+  0% {
+    color: burlywood;
+  }
+
+  50% {
+    color: #1662e7;
+  }
+
+  100% {
+    color: rgb(250, 13, 13);
+  }
 }
 
 .headline-main {
@@ -93,6 +108,23 @@ header {
   line-height: 52px;
   align-items: center;
   color: #172b4d;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.headline-heading:hover {
+  color: #6070FF;
 }
 
 .headline-paragraph {
@@ -147,6 +179,19 @@ i {
 
 .works-card > img {
   width: 100%;
+  animation-name: zoom-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
 
 .works-card-heading-large {
