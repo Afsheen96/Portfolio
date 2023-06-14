@@ -42,7 +42,9 @@ header {
   align-items: center;
   padding: 25px;
 }
-
+.nav-links {
+  display: none;
+}
 .logo > a {
   text-decoration: none;
   color: inherit;
@@ -398,3 +400,16 @@ textarea:focus {
 .contact-me-form-button {
   align-self: flex-start;
 }
+ /* Desktop version of site */
+ @media screen and (min-width:768px){
+  .logo > a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6070ff;
+    margin: 0 0 0 100px;
+    font-size: 18px;
+  }
+ }
+  
+ 
