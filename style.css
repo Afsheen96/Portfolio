@@ -42,9 +42,11 @@ header {
   align-items: center;
   padding: 25px;
 }
+
 .nav-links {
   display: none;
 }
+
 .logo > a {
   text-decoration: none;
   color: inherit;
@@ -78,7 +80,7 @@ header {
 }
 
 .about-headline {
-  width:100%;
+  width: 100%;
 }
 
 .headline-heading {
@@ -95,7 +97,7 @@ header {
 
 .headline-paragraph {
   margin: 10px 0;
-  font-family: 'Poppins' , sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -124,6 +126,7 @@ i {
   font-size: 1.25rem;
   padding-right: 1em;
 }
+
 .works {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -253,6 +256,7 @@ button[disabled] {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
 }
+
 .about {
   background-color: #fff;
   border-radius: 0 6em 0 0;
@@ -331,6 +335,7 @@ button[disabled] {
   font-size: 15px;
   padding-top: 4%;
 }
+
 .contact-me-form-container {
   display: flex;
   justify-content: center;
@@ -394,9 +399,10 @@ textarea:focus {
 .contact-me-form-button {
   align-self: flex-start;
 }
- /* Desktop version of site */
- @media screen and (min-width:768px){
-  .logo > a{
+
+/* Desktop version of site */
+@media screen and (min-width: 768px) {
+  .logo > a {
     display: flex;
     align-items: center;
     text-align: center;
@@ -404,6 +410,7 @@ textarea:focus {
     margin: 0 0 0 100px;
     font-size: 18px;
   }
+
   .headline-main {
     border-radius: 0 0 0 4em;
     background-color: #fff;
@@ -413,6 +420,7 @@ textarea:focus {
     background-repeat: no-repeat;
     height: 100vh;
   }
+
   .headline {
     margin: 10px 0;
     display: flex;
@@ -427,6 +435,7 @@ textarea:focus {
   .hamburger {
     display: none;
   }
+
   .nav-links {
     position: absolute;
     top: 8px;
@@ -446,7 +455,7 @@ textarea:focus {
   }
 
   .social-icons {
-   margin-block: 10px;
+    margin-block: 10px;
   }
 
   header {
@@ -478,13 +487,14 @@ textarea:focus {
     column-gap: 2.5em;
     padding: 1em;
   }
+
   .headline-skill-container {
     display: flex;
     flex-direction: row;
     height: 590px;
   }
 
-  .about-headline{
+  .about-headline {
     margin: 10px 0;
     display: flex;
     flex-direction: column;
@@ -525,7 +535,7 @@ textarea:focus {
     align-items: flex-start;
   }
 
-  .about-skill-body-img{
+  .about-skill-body-img {
     width: fit-content;
   }
 
@@ -535,9 +545,10 @@ textarea:focus {
     margin-top: 190px;
   }
 
-  .about-skills-container{
+  .about-skills-container {
     width: 50%;
   }
+
   .contact-me-form-container {
     background-color: #6070ff;
     background-image: url(./assets/contact\ form\ background\ shapes.png);
@@ -552,9 +563,8 @@ textarea:focus {
   .contact-me-form-text-input {
     border-radius: 0;
   }
+
   .contact-me-form-button {
     align-self: center;
+  }
 }
- }
-  
- 
