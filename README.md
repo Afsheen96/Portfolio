@@ -167,4 +167,4 @@ make this project.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Afsheen96/Mobile-Portfolio/blob/Desktop-version/LICENSE) licensed.
+This project is [MIT](https://github.com/Afsheen96/Mobile-Portfolio/blob/main/LICENSE) licensed.
