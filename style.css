@@ -57,14 +57,14 @@ ul {
   height: 16px;
   margin-right: 10px;
 }
-/* .close-icon {
+.close-icon {
   color: #fff;
   position: absolute;
   cursor: pointer;
   width: 25px;
   height: 25px;
   top: 40px;
-} */
+}
 nav ul {
   display: none;
 }
@@ -92,7 +92,7 @@ nav ul {
 .heading {
   margin: 10px 0;
   display: flex;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 43px;
@@ -120,7 +120,7 @@ nav ul {
 
 .headline-paragraph {
   margin: 10px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
