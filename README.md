@@ -117,10 +117,14 @@ I have added linters or tests in order to avoid typos and ensure good practice i
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Afsheen96**
+👤 **Afsheen**
 
 - GitHub: [@githubhandle](https://github.com/Afsheen96)
 
+👤 **NoelLincoln**
+
+- GitHub: [@githubhandle](https://github.com/NoelLincoln)
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
