@@ -57,7 +57,14 @@ ul {
   height: 16px;
   margin-right: 10px;
 }
-
+/* .close-icon {
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  top: 40px;
+} */
 nav ul {
   display: none;
 }
