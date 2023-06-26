@@ -57,15 +57,42 @@ ul {
   height: 16px;
   margin-right: 10px;
 }
-.close-icon {
-  color: #fff;
+
+.mobile-menu {
+  background: #6070ff;
   position: absolute;
-  cursor: pointer;
-  width: 25px;
-  height: 25px;
-  top: 40px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 36px;
+  opacity: 100%;
 }
-nav ul {
+
+.mobile-menu .close-icon {
+  color: #fff;
+  float: right;
+  display: flex;
+  height: 16px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.mobile-link {
+  margin-left: 24px;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.mobile-link > a {
+  color: #fff;
+}
+
+.mobile-menu > li {
+  margin-top: 30px;
+}
+
+.menu-link {
   display: none;
 }
 
@@ -99,19 +126,6 @@ nav ul {
   line-height: 52px;
   align-items: center;
   color: #172b4d;
-  animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .heading:hover {
@@ -385,6 +399,10 @@ textarea:focus {
   }
 
   .menu {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
