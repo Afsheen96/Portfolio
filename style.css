@@ -58,7 +58,42 @@ ul {
   margin-right: 10px;
 }
 
-nav ul {
+.mobile-menu {
+  background: #6070ff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 36px;
+  display: none;
+  opacity: 0.9;
+}
+
+.mobile-menu .close-icon {
+  color: #fff;
+  float: right;
+  display: flex;
+  height: 16px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.mobile-link {
+  margin-left: 24px;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.mobile-link > a {
+  color: #fff;
+}
+
+.mobile-menu > li {
+  margin-top: 35px;
+}
+
+.menu-link {
   display: none;
 }
 
@@ -85,26 +120,13 @@ nav ul {
 .heading {
   margin: 10px 0;
   display: flex;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 43px;
+  font-weight: 600;
+  font-size: 41px;
   line-height: 52px;
   align-items: center;
   color: #172b4d;
-  animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .heading:hover {
@@ -113,7 +135,7 @@ nav ul {
 
 .headline-paragraph {
   margin: 10px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -378,6 +400,10 @@ textarea:focus {
   }
 
   .menu {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 

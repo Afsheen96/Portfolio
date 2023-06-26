@@ -14,8 +14,14 @@
   <header class="header">
     <h2 class="logo"><a href="#">Afsheen</a></h2>
     <nav>
+      <ul class="mobile-menu" id="mobile-menu">
+        <i class="fa-solid fa-xmark close-icon" onclick="closemenu()"></i>
+        <li  class="mobile-link" onclick="closemenu()"><a  href="#portfolio">Portfolio</a></li>
+        <li class="mobile-link" onclick="closemenu()"><a  href="#about">About</a></li>
+        <li class="mobile-link" onclick="closemenu()"><a  href="#form">Contact</a></li>
+      </ul>
       <div class="menu">
-        <img src="resources/menuicon.png" alt="menu icon">
+        <img src="resources/menuicon.png" alt="menu icon" onclick="openmenu()">
       </div>
       <ul class="menu-link">
         <li><a class="nav-link" href="#">Portfolio</a></li>
@@ -54,7 +60,7 @@
     </section>
   </section>
   <!-- work-section starts from here -->
-  <section class="work-section">
+  <section class="work-section" id="portfolio">
     <ul>
       <li class="project-card">
         <img src="resources/project1.png" alt="project snapshoot">
@@ -147,7 +153,7 @@
     </ul>
   </section>
   <!-- About section starts from here -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="about-container">
       <div class="sub-container">
         <h2 class="heading">About Myself</h2>
@@ -218,7 +224,7 @@
       </ul>
     </div>
   </section>
-  <section class="form-container">
+  <section class="form-container" id="form">
     <h1 class="form-heading">Contact me</h1>
     <p class="form-paragraph">
       If you have an application you are interested in developing, a feature
@@ -235,6 +241,7 @@
       </button>
     </form>
   </section>
+  <script src="index.js"></script>
 </body>
 
 </html>
