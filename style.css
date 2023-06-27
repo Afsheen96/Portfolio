@@ -67,6 +67,7 @@ ul {
   height: 100vh;
   padding-top: 36px;
   opacity: 100%;
+  display: none;
 }
 
 .mobile-menu .close-icon {
