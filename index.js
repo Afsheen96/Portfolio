@@ -1,10 +1,9 @@
-const popup = document.getElementById('mobile-menu');
-function openmenu() {
-  popup.style.display = 'block';
+const element = document.getElementById('mobile-menu');
+function menu() {
+  if (element.style.display === 'block') {
+    element.style.display = 'none';
+  } else {
+    element.style.display = 'block';
+  }
 }
-
-function closemenu() {
-  popup.style.display = 'none';
-}
-popup.addEventListener('click', openmenu);
-popup.addEventListener('click', closemenu);
+element.addEventListener('click', menu);
