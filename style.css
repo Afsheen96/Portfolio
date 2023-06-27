@@ -66,8 +66,8 @@ ul {
   width: 100%;
   height: 100vh;
   padding-top: 36px;
-  opacity: 100%;
   display: none;
+  opacity: 0.9;
 }
 
 .mobile-menu .close-icon {
@@ -90,7 +90,7 @@ ul {
 }
 
 .mobile-menu > li {
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .menu-link {
@@ -122,8 +122,8 @@ ul {
   display: flex;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 43px;
+  font-weight: 600;
+  font-size: 41px;
   line-height: 52px;
   align-items: center;
   color: #172b4d;
