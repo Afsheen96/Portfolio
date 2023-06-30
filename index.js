@@ -22,12 +22,12 @@ element.addEventListener('click', menu);
     industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
     printer took a galley of type and scrambled it 1960s with the relea`,
     featured: ['CANOPY', 'Back End Dev', 2023],
-    // featureddesk: ['CANOPY', 'Back End Dev', 2023],
-    // image: './First-image.jpg',
-    // imageDesktop: './images/desktop/projectone.svg',
-    // technologies: ['html', 'css', 'javaScript'],
-    // technologiesdesk: ['html', 'css', 'javaScript', 'Ruby on rails;'],
-    // live_version: 'https://afsheen96.github.io/Portfolio',
-    // source_link: 'https://github.com/Afsheen96/Portfolio',
+    featureddesk: ['CANOPY', 'Back End Dev', 2023],
+    image: './First-image.jpg',
+    imageDesktop: './images/desktop/projectone.svg',
+    technologies: ['html', 'css', 'javaScript'],
+    technologiesdesk: ['html', 'css', 'javaScript', 'Ruby on rails;'],
+    live_version: 'https://afsheen96.github.io/Portfolio',
+    source_link: 'https://github.com/Afsheen96/Portfolio',
   }
  ]
