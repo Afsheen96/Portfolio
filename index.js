@@ -180,3 +180,20 @@ window.addEventListener('load', () => {
     });
   });
 });
+// form validation section
+function validateEmail() {
+  const emailInput = document.getElementById('email').value;
+  const lowerCaseEmail = emailInput.toLowerCase();
+
+  // if (emailInput !== lowerCaseEmail) {
+  //   document.getElementById('errormsg').innerHTML = '*Email must be in lowercase!';
+  //   return false;
+  // }
+  // document.getElementById('errormsg').innerHTML = '';
+  // return true;
+}
+
+const submitform = document.getElementById('submit');
+submitform.addEventListener('click', () => {
+  validateEmail();
+});
