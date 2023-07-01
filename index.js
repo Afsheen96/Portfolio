@@ -182,11 +182,11 @@ window.addEventListener('load', () => {
 });
 // local storage section 
 const storageData = document.querySelectorAll('.form-input');
-// const localStoreValue = {
-//   name: '',
-//   email: '',
-//   message: '',
-// };
+const localStoreValue = {
+  name: '',
+  email: '',
+  message: '',
+};
 // storageData.forEach((input) => {
 //   input.addEventListener('input', () => {
 //     localStoreValue[input.name] = input.value;
