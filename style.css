@@ -86,11 +86,11 @@ ul {
   font-size: 32px;
 }
 
-.mobile-link>a {
+.mobile-link > a {
   color: #fff;
 }
 
-.mobile-menu>li {
+.mobile-menu > li {
   margin-top: 35px;
 }
 
@@ -154,14 +154,35 @@ ul {
   display: flex;
 }
 
-.social-icons>a,
+.social-icons > a,
 i {
   color: #505f79;
   font-size: 1.25rem;
   padding-right: 1em;
 }
 
-.social-icons>li:hover {
+.proj li {
+  color: #7a869a;
+  margin-right: 12px;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.language li {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6070ff;
+  display: flex;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  margin-right: 8px;
+  letter-spacing: 0.1em;
+}
+
+.social-icons > li:hover {
   transform: scale(1.5);
   transition: 0.5s;
 }
@@ -228,7 +249,7 @@ i {
   line-height: 24px;
 }
 
-.skill-container>hr {
+.skill-container > hr {
   height: 2px;
   background: #dfe1e6;
   border: none;
@@ -284,7 +305,7 @@ i {
   align-self: flex-start;
 }
 
-.contact-form>input:focus,
+.contact-form > input:focus,
 textarea:focus {
   outline: none !important;
   border: 1px solid #f7f7f9;
@@ -372,14 +393,6 @@ h3 {
   border-radius: 50%;
 }
 
-.proj li {
-  color: #7a869a;
-  margin-right: 12px;
-  margin-top: 20px;
-  font-size: 13px;
-  line-height: 16px;
-}
-
 .proj a {
   font-weight: 600;
   font-size: 13px;
@@ -399,19 +412,6 @@ h3 {
   display: grid;
   grid-template-columns: auto auto auto;
   margin-top: 12px;
-}
-
-.language li {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: #6070ff;
-  display: flex;
-  padding: 4px 12px;
-  background: #ebebff;
-  border-radius: 8px;
-  margin-right: 8px;
-  letter-spacing: 0.1em;
 }
 
 .button {
@@ -517,7 +517,7 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
-  .logo>a {
+  .logo > a {
     margin-left: 50px;
     font-size: 18px;
   }
@@ -562,7 +562,6 @@ h3 {
   .social-icons {
     margin-block: 10px;
   }
-
 
   .about-container {
     display: flex;
@@ -631,6 +630,7 @@ h3 {
   }
 
   /* popup section */
+
   /* ------------------------------projects------- */
   .blur-bg {
     display: flex;
@@ -736,5 +736,4 @@ h3 {
   .popup-buttons {
     width: 142px;
   }
-
 }
