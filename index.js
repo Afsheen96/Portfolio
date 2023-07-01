@@ -72,7 +72,7 @@ function popUpWindow(project) {
         </ul>
       </div>
       <img src="./resources/${project.image}" alt="Work-sample" class="popupImage"/>
-      <div class="two-part">
+      <div>
         <div class="left-popup">
           <p class="pro mobile-popup-info">
             ${project.descriptionShort}
