@@ -187,14 +187,14 @@ const localStoreValue = {
   email: '',
   message: '',
 };
-// storageData.forEach((input) => {
-//   input.addEventListener('input', () => {
-//     localStoreValue[input.name] = input.value;
-//     localStoreValue[input.email] = input.value;
-//     localStoreValue[input.message] = input.value;
-//     localStorage.setItem('information', JSON.stringify(localStoreValue));
-//   });
-// });
+storageData.forEach((input) => {
+  input.addEventListener('input', () => {
+    localStoreValue[input.name] = input.value;
+    localStoreValue[input.email] = input.value;
+    localStoreValue[input.message] = input.value;
+    localStorage.setItem('information', JSON.stringify(localStoreValue));
+  });
+});
 const informationStored = JSON.parse(localStorage.getItem('information'));
 if (informationStored) {
   storageData.forEach((element) => {
