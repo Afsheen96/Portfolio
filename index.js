@@ -180,7 +180,7 @@ window.addEventListener('load', () => {
     });
   });
 });
-// local storage section 
+// local storage section
 const storageData = document.querySelectorAll('.form-input');
 const localStoreValue = {
   name: '',
