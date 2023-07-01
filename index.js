@@ -7,7 +7,7 @@ function menu() {
   }
 }
 element.addEventListener('click', menu);
- 
+
 // project pop-up section
 const projectContainer = document.querySelector('#popupWindow');
 
