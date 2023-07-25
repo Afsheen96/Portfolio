@@ -28,6 +28,14 @@ ul {
   padding: 10px;
 }
 
+.header-nav {
+  min-height: 61px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+}
+
 .logo {
   margin-left: 12px;
   width: 100px;
