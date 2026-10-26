@@ -3,268 +3,312 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Afsheen Kiran | Frontend Developer &amp; AI-Assisted Web Designer</title>
-  <meta name="description" content="Afsheen Kiran is a frontend developer and AI-assisted web designer who builds fast, responsive and beautiful websites and web apps. See projects like Fomi Studio, Fomi Flow and HighTechZone.">
+  <meta name="description" content="Afsheen Kiran is a frontend developer and AI-assisted web designer who builds fast, responsive and beautiful websites and web apps. See HighTechZone, Learning AI Lecture Hub, Fomi Studio and Fomi Flow.">
   <meta name="author" content="Afsheen Kiran">
   <meta name="theme-color" content="#6070ff">
   <link rel="canonical" href="https://afsheen96.github.io/Portfolio/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Afsheen Kiran Portfolio">
   <meta property="og:title" content="Afsheen Kiran | Frontend Developer &amp; AI-Assisted Web Designer">
-  <meta property="og:description" content="Fast, responsive and beautiful websites and web apps. Look through my work and get in touch.">
+  <meta property="og:description" content="Afsheen Kiran is a frontend developer and AI-assisted web designer who builds fast, responsive and beautiful websites and web apps. See HighTechZone, Learning AI Lecture Hub, Fomi Studio and Fomi Flow.">
   <meta property="og:url" content="https://afsheen96.github.io/Portfolio/">
-  <meta property="og:image" content="https://afsheen96.github.io/Portfolio/resources/fomi-studio.jpg">
+  <meta property="og:image" content="https://afsheen96.github.io/Portfolio/resources/shots/hightechzone-desktop.webp">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/8c1870b6fa.js" crossorigin="anonymous" defer></script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Afsheen Kiran",
-      "jobTitle": "Frontend Developer & AI-Assisted Web Designer",
-      "url": "https://afsheen96.github.io/Portfolio/",
-      "sameAs": ["https://www.linkedin.com/in/afsheenkiran/", "https://github.com/Afsheen96"]
-    }
-  </script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Afsheen Kiran", "jobTitle": "Frontend Developer & AI-Assisted Web Designer", "url": "https://afsheen96.github.io/Portfolio/", "sameAs": ["https://www.linkedin.com/in/afsheenkiran/", "https://github.com/Afsheen96"]}</script>
 </head>
-
-<body>
+<body data-page="home">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="scroll-progress" aria-hidden="true"></div>
-  <div id="popupWindow" class="project_window"></div>
+  <div class="page-veil" aria-hidden="true"></div>
 
   <div class="header-nav" id="header-nav">
     <header class="header">
-      <h2 class="logo"><a href="#top">Afsheen</a></h2>
+      <p class="logo"><a href="" aria-label="Afsheen, home">Afsheen</a></p>
       <nav aria-label="Main">
         <ul class="mobile-menu" id="mobile-menu">
           <li class="mobile-close"><button type="button" class="close-icon" id="menu-close" aria-label="Close menu"><span></span><span></span></button></li>
-          <li class="mobile-link"><a href="#portfolio">Portfolio</a></li>
-          <li class="mobile-link"><a href="#about">About</a></li>
-          <li class="mobile-link"><a href="#form">Contact</a></li>
+          <li class="mobile-link"><a class="mobile-nav active" href="" aria-current="page">Home</a></li>
+          <li class="mobile-link"><a class="mobile-nav" href="about/">About</a></li>
+          <li class="mobile-link"><a class="mobile-nav" href="skills/">Skills</a></li>
+          <li class="mobile-link"><a class="mobile-nav" href="projects/">Projects</a></li>
+          <li class="mobile-link"><a class="mobile-nav" href="contact/">Contact</a></li>
+          <li class="mobile-link"><a class="mobile-nav mobile-hire" href="hire-me/">Hire me</a></li>
         </ul>
         <button type="button" class="menu" id="menu-open" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
           <img src="resources/menuicon.png" alt="" width="18" height="12">
         </button>
         <ul class="menu-link">
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#form">Contact</a></li>
-          <li><a class="nav-cta" href="#form">Hire me</a></li>
+          <li><a class="nav-link active" href="" aria-current="page">Home</a></li>
+          <li><a class="nav-link" href="about/">About</a></li>
+          <li><a class="nav-link" href="skills/">Skills</a></li>
+          <li><a class="nav-link" href="projects/">Projects</a></li>
+          <li><a class="nav-link" href="contact/">Contact</a></li>
+          <li><a class="nav-cta magnetic" href="hire-me/">Hire me</a></li>
         </ul>
       </nav>
     </header>
   </div>
 
   <main id="main">
-    <section class="main-container" id="top">
+    <section class="main-container hero" id="top">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+      <div class="hero-spotlight" aria-hidden="true"></div>
       <div class="hero-shapes" aria-hidden="true">
-        <span class="shape shape-dot"></span>
-        <span class="shape shape-bar"></span>
-        <span class="shape shape-glow"></span>
+        <span class="shape shape-dot" data-depth="30"></span>
+        <span class="shape shape-bar" data-depth="18"></span>
+        <span class="shape shape-ring2" data-depth="40"></span>
+        <span class="shape shape-plus" data-depth="24"></span>
       </div>
       <section class="headline">
-        <p class="availability reveal"><span class="pulse"></span>Available for freelance projects</p>
+        <p class="availability hero-in d-0"><span class="pulse"></span>Available for freelance projects</p>
         <h1 class="heading hero-heading">
           <span class="line"><span>I'm Afsheen.</span></span>
           <span class="line"><span>Glad to see <span class="gradient-text">you!</span></span></span>
         </h1>
-        <p class="hero-roles reveal" aria-live="polite">
+        <p class="hero-roles hero-in d-3" aria-live="polite">
           I design &amp; build <span class="typed" id="typed">modern websites</span><span class="caret" aria-hidden="true"></span>
         </p>
-        <p class="headline-paragraph reveal">
+        <p class="headline-paragraph hero-in d-4">
           I'm a software developer! I can help you build a product, feature or
           website. Look through some of my work and experience! If you like what
           you see and have a project you need coded, don't hesitate to contact
           me.
         </p>
-        <div class="hero-actions reveal">
-          <a class="btn btn-primary magnetic" href="#portfolio">View my work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
-          <a class="btn btn-ghost magnetic" href="#form">Let's talk</a>
+        <div class="hero-actions hero-in d-5">
+          <a class="btn btn-primary btn-shine magnetic" href="projects/">View my work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost magnetic" href="hire-me/">Hire me</a>
         </div>
-        <h4 class="mini-headline reveal">LET'S CONNECT</h4>
-        <ul class="social-icons reveal">
-          <li>
-            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/afsheenkiran/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Medium"><i class="fa-solid fa-m"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/Afsheen96" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          </li>
-          <li>
-            <a href="#" aria-label="AngelList"><i class="fa-brands fa-angellist"></i></a>
-          </li>
-        </ul>
+        <div class="hero-connect hero-in d-6">
+          <h2 class="mini-headline">LET'S CONNECT</h2>
+          <ul class="social-pro"><li><a class="social-btn" data-social="email" aria-label="Gmail" data-label="Gmail"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M1.6 21h3.8v-9.2L0 7.7v11.7C0 20.3.7 21 1.6 21z"/><path fill="#34A853" d="M18.6 21h3.8c.9 0 1.6-.7 1.6-1.6V7.7l-5.4 4.1z"/><path fill="#FBBC04" d="M18.6 4.6v7.2L24 7.7V5.5c0-2-2.3-3.2-3.9-2z"/><path fill="#EA4335" d="M5.4 11.8V4.6L12 9.5l6.6-4.9v7.2L12 16.7z"/><path fill="#C5221F" d="M0 5.5v2.2l5.4 4.1V4.6L3.9 3.5C2.3 2.3 0 3.5 0 5.5z"/></svg></a></li><li><a class="social-btn" data-social="linkedin" aria-label="LinkedIn" data-label="LinkedIn"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0A66C2" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li><li><a class="social-btn" data-social="github" aria-label="GitHub" data-label="GitHub"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#181717" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg></a></li></ul>
+        </div>
       </section>
       <a class="scroll-cue" href="#services" aria-label="Scroll down"><span></span></a>
     </section>
 
-    <!-- services strip -->
     <section class="services" id="services" aria-label="What I can do for you">
       <article class="service reveal">
-        <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" /><path d="M3 8h18M8 21h8" /></svg></span>
-        <h3>Website Design</h3>
+        <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></span>
+        <h2>Website Design</h2>
         <p>Clean, modern layouts that look great and make your brand easy to trust.</p>
       </article>
       <article class="service reveal">
-        <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" /></svg></span>
-        <h3>Frontend Development</h3>
+        <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>
+        <h2>Frontend Development</h2>
         <p>Fast, accessible websites and web apps with HTML, CSS, JavaScript, React and Next.js.</p>
       </article>
       <article class="service reveal">
-        <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" /></svg></span>
-        <h3>Responsive &amp; AI-assisted</h3>
+        <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></svg></span>
+        <h2>Responsive &amp; AI-assisted</h2>
         <p>Every page works on phones, tablets and desktops, built faster with smart AI workflows.</p>
       </article>
     </section>
 
-    <!-- work-section starts from here -->
-    <section class="work-section" id="portfolio" aria-labelledby="work-title">
+    <section class="work-section" aria-labelledby="work-title">
       <div class="section-head reveal">
-        <p class="eyebrow">Portfolio</p>
+        <p class="eyebrow">Featured work</p>
         <h2 class="section-title" id="work-title">My Recent Works</h2>
-        <p class="section-sub">Real projects I designed and built. Open any case study to see the full story, features and a live link.</p>
+        <p class="section-sub">Real projects I designed and built. Every screenshot is taken from the live project.</p>
       </div>
-      <div id="projects" class="blur-bg">
-        <noscript>
-          <ul class="noscript-projects">
-            <li><a href="projects/fomi-studio/">Fomi Studio: AI Image Workspace</a></li>
-            <li><a href="projects/fomi-flow/">Fomi Flow: Version-based Workspace</a></li>
-            <li><a href="projects/hightechzone/">HighTechZone</a></li>
+      <div class="project-list">
+      <article class="project-card reveal is-featured" data-category="website">
+        <a class="pc-media" href="projects/hightechzone/" aria-label="Open the HighTechZone case study" tabindex="-1">
+          <span class="pc-glow" aria-hidden="true"></span>
+          <div class="browser-frame pc-desktop">
+            <div class="browser-bar"><span></span><span></span><span></span><em>afsheen96.github.io/HighTechZone</em></div>
+            <div class="frame-shot"><img src="resources/shots/hightechzone-desktop.webp" alt="Screenshot of the HighTechZone website on desktop" width="1440" height="900" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="phone-frame pc-phone"><span class="phone-notch"></span><img src="resources/shots/hightechzone-mobile.webp" alt="Screenshot of HighTechZone on a phone" width="585" height="1266" loading="lazy" decoding="async"></div>
+          <span class="pc-hint" aria-hidden="true">View case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <div class="pc-body">
+          <div class="pc-top">
+            <span class="pc-num">01</span>
+            <span class="pc-type">Website</span>
+            <span class="feature-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg> Featured project</span>
+          </div>
+          <h3 class="pc-title"><a href="projects/hightechzone/">HighTechZone</a></h3>
+          <ul class="proj">
+            <li><strong>Personal</strong></li>
+            <li><div class="dot"></div></li>
+            <li>Founder, Designer &amp; Developer</li>
+            <li><div class="dot"></div></li>
+            <li>2026</li>
           </ul>
-        </noscript>
+          <p class="pro">My own technology learning website: AI tool guides, tech tips, digital-skills tutorials and interactive tools, with a bold animated dark design.</p>
+          <ul class="language"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>SEO</li></ul>
+          <div class="work-actions">
+            <a class="btn btn-primary btn-shine magnetic" href="projects/hightechzone/">View Project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost magnetic" href="https://afsheen96.github.io/HighTechZone/" target="_blank" rel="noopener">Live Preview <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+            <button type="button" class="icon-link quick-view" data-project="hightechzone" aria-label="Quick view of HighTechZone" title="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="website">
+        <a class="pc-media" href="projects/learning-ai-lecture-hub/" aria-label="Open the Learning AI Lecture Hub case study" tabindex="-1">
+          <span class="pc-glow" aria-hidden="true"></span>
+          <div class="browser-frame pc-desktop">
+            <div class="browser-bar"><span></span><span></span><span></span><em>afsheen96.github.io/lecture-library</em></div>
+            <div class="frame-shot"><img src="resources/shots/lecture-hub-desktop.webp" alt="Screenshot of the Learning AI Lecture Hub website on desktop" width="1440" height="900" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="phone-frame pc-phone"><span class="phone-notch"></span><img src="resources/shots/lecture-hub-mobile.webp" alt="Screenshot of Learning AI Lecture Hub on a phone" width="585" height="1266" loading="lazy" decoding="async"></div>
+          <span class="pc-hint" aria-hidden="true">View case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <div class="pc-body">
+          <div class="pc-top">
+            <span class="pc-num">02</span>
+            <span class="pc-type">Learning Platform</span>
+            
+          </div>
+          <h3 class="pc-title"><a href="projects/learning-ai-lecture-hub/">Learning AI Lecture Hub</a></h3>
+          <ul class="proj">
+            <li><strong>Personal (student project)</strong></li>
+            <li><div class="dot"></div></li>
+            <li>Designer &amp; Developer</li>
+            <li><div class="dot"></div></li>
+            <li>2026</li>
+          </ul>
+          <p class="pro">A searchable lecture library that puts the Learn Freelancing AI lectures in one place, with instant search, category filters and one-click &quot;Watch Lecture&quot; links.</p>
+          <ul class="language"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>JSON</li></ul>
+          <div class="work-actions">
+            <a class="btn btn-primary btn-shine magnetic" href="projects/learning-ai-lecture-hub/">View Project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost magnetic" href="https://afsheen96.github.io/lecture-library/" target="_blank" rel="noopener">Live Preview <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+            <button type="button" class="icon-link quick-view" data-project="learning-ai-lecture-hub" aria-label="Quick view of Learning AI Lecture Hub" title="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="webapp">
+        <a class="pc-media" href="projects/fomi-studio/" aria-label="Open the Fomi Studio: AI Image Workspace case study" tabindex="-1">
+          <span class="pc-glow" aria-hidden="true"></span>
+          <div class="browser-frame pc-desktop">
+            <div class="browser-bar"><span></span><span></span><span></span><em>fomi-studio-weld.vercel.app</em></div>
+            <div class="frame-shot"><img src="resources/shots/fomi-studio-desktop.webp" alt="Screenshot of the Fomi Studio: AI Image Workspace website on desktop" width="1440" height="900" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="phone-frame pc-phone"><span class="phone-notch"></span><img src="resources/shots/fomi-studio-mobile.webp" alt="Screenshot of Fomi Studio: AI Image Workspace on a phone" width="585" height="1266" loading="lazy" decoding="async"></div>
+          <span class="pc-hint" aria-hidden="true">View case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <div class="pc-body">
+          <div class="pc-top">
+            <span class="pc-num">03</span>
+            <span class="pc-type">Web App</span>
+            
+          </div>
+          <h3 class="pc-title"><a href="projects/fomi-studio/">Fomi Studio: AI Image Workspace</a></h3>
+          <ul class="proj">
+            <li><strong>FOMI</strong></li>
+            <li><div class="dot"></div></li>
+            <li>Frontend Developer</li>
+            <li><div class="dot"></div></li>
+            <li>2026</li>
+          </ul>
+          <p class="pro">A responsive AI image-generation workspace built with Next.js from a design mockup, with a working generator, gallery, image viewer and phone, tablet and desktop layouts.</p>
+          <ul class="language"><li>Next.js</li><li>React</li><li>CSS Modules</li><li>JavaScript</li></ul>
+          <div class="work-actions">
+            <a class="btn btn-primary btn-shine magnetic" href="projects/fomi-studio/">View Project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost magnetic" href="https://fomi-studio-weld.vercel.app" target="_blank" rel="noopener">Live Preview <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+            <button type="button" class="icon-link quick-view" data-project="fomi-studio" aria-label="Quick view of Fomi Studio: AI Image Workspace" title="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="webapp">
+        <a class="pc-media" href="projects/fomi-flow/" aria-label="Open the Fomi Flow: Version-based Workspace case study" tabindex="-1">
+          <span class="pc-glow" aria-hidden="true"></span>
+          <div class="browser-frame pc-desktop">
+            <div class="browser-bar"><span></span><span></span><span></span><em>fomi-studio-weld.vercel.app/flow</em></div>
+            <div class="frame-shot"><img src="resources/shots/fomi-flow-desktop.webp" alt="Screenshot of the Fomi Flow: Version-based Workspace website on desktop" width="1440" height="900" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="phone-frame pc-phone"><span class="phone-notch"></span><img src="resources/shots/fomi-flow-mobile.webp" alt="Screenshot of Fomi Flow: Version-based Workspace on a phone" width="585" height="1266" loading="lazy" decoding="async"></div>
+          <span class="pc-hint" aria-hidden="true">View case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <div class="pc-body">
+          <div class="pc-top">
+            <span class="pc-num">04</span>
+            <span class="pc-type">Product Redesign</span>
+            
+          </div>
+          <h3 class="pc-title"><a href="projects/fomi-flow/">Fomi Flow: Version-based Workspace</a></h3>
+          <ul class="proj">
+            <li><strong>FOMI</strong></li>
+            <li><div class="dot"></div></li>
+            <li>Product &amp; UI</li>
+            <li><div class="dot"></div></li>
+            <li>2026</li>
+          </ul>
+          <p class="pro">My own redesign of an AI image workspace: every image is a version you can compare, branch and restore, with an automatic &quot;what changed&quot; summary.</p>
+          <ul class="language"><li>Next.js</li><li>React</li><li>UX Design</li><li>JavaScript</li></ul>
+          <div class="work-actions">
+            <a class="btn btn-primary btn-shine magnetic" href="projects/fomi-flow/">View Project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost magnetic" href="https://fomi-studio-weld.vercel.app/flow" target="_blank" rel="noopener">Live Preview <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+            <button type="button" class="icon-link quick-view" data-project="fomi-flow" aria-label="Quick view of Fomi Flow: Version-based Workspace" title="Quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+          </div>
+        </div>
+      </article>
       </div>
+      <div class="center-link reveal"><a class="btn btn-ghost magnetic" href="projects/">See all projects <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     </section>
 
-    <!-- About section starts from here -->
-    <section class="about" id="about">
-      <div class="about-container">
-        <div class="sub-container reveal">
+    <section class="about-teaser">
+      <div class="wrap teaser-grid">
+        <div class="reveal">
           <p class="eyebrow">About</p>
-          <h2 class="heading">About Myself</h2>
-          <p class="headline-paragraph">
-            Hello I’m a software developer! I can help you build a product,
-            feature or website. Look through some of my work and experience!
-            If you like what you see and have a project you need coded,
-            don’t hesitate to contact me.
-          </p>
-          <h4 class="mini-headline">LET'S CONNECT</h4>
-          <ul class="social-icons">
-            <li>
-              <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/afsheenkiran/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Medium"><i class="fa-solid fa-m"></i></a>
-            </li>
-            <li>
-              <a href="https://github.com/Afsheen96" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            </li>
-            <li>
-              <a href="#" aria-label="AngelList"><i class="fa-brands fa-angellist"></i></a>
-            </li>
-          </ul>
-          <button type="button" class="magnetic">Get my resume</button>
+          <h2 class="section-title left">Hello, I'm Afsheen</h2>
+          <p class="headline-paragraph">I'm a software developer who loves turning ideas into fast, beautiful websites. I combine solid HTML, CSS, JavaScript, React and Next.js skills with smart AI-assisted workflows to deliver polished work quickly.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary magnetic" href="about/">More about me <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost magnetic" href="skills/">My skills</a>
+          </div>
         </div>
-        <ul class="skill-section reveal">
-          <li class="about-skills accordion open">
-            <button type="button" class="languages accordion-toggle" aria-expanded="true">
-              <strong>Languages</strong>
-              <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
-            </button>
-            <div class="accordion-panel">
-              <ul class="skill-container">
-                <li class="skills">
-                  <img src="resources/jslogo.png" alt="javascript logo" width="50" height="50">
-                  <span class="skill-name">JavaScript</span>
-                </li>
-                <li class="skills">
-                  <img src="resources/htmllogo.png" alt="HTML logo" width="50" height="51">
-                  <span class="skill-name">HTML</span>
-                </li>
-                <li class="skills">
-                  <img src="resources/csslogo.png" alt="CSS logo" width="50" height="51">
-                  <span class="skill-name">CSS</span>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="about-skills accordion">
-            <button type="button" class="skill-heading accordion-toggle" aria-expanded="false">
-              <span class="about-subheading">Frameworks</span>
-              <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
-            </button>
-            <div class="accordion-panel">
-              <ul class="tag-list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>CSS Modules</li>
-              </ul>
-            </div>
-          </li>
-          <li class="about-skills accordion">
-            <button type="button" class="skill-heading accordion-toggle" aria-expanded="false">
-              <span class="about-subheading">Skills</span>
-              <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
-            </button>
-            <div class="accordion-panel">
-              <ul class="tag-list">
-                <li>Responsive Design</li>
-                <li>UI / UX Design</li>
-                <li>Git &amp; GitHub</li>
-                <li>GitHub Pages</li>
-                <li>Vercel</li>
-                <li>AI-assisted workflows</li>
-              </ul>
-            </div>
-          </li>
+        <ul class="teaser-stats reveal">
+          <li><strong>4</strong><span>live projects in this portfolio</span></li>
+          <li><strong>2</strong><span>hosting platforms: GitHub Pages &amp; Vercel</span></li>
+          <li><strong>100%</strong><span>responsive on phone, tablet &amp; desktop</span></li>
         </ul>
       </div>
     </section>
 
-    <section class="form-container" id="form">
-      <h2 class="form-heading reveal">Contact me</h2>
-      <p class="form-paragraph reveal">
-        If you have an application you are interested in developing, a feature
-        that you need built or a project that needs coding. I'd love to help
-        with it
-      </p>
-      <form action="https://formspree.io/f/xpzebdqb" method="post" class="contact-form reveal" id="contactform">
-        <label class="sr-only" for="name">Your name</label>
-        <input type="text" name="name" id="name" maxlength="30" placeholder="Enter your name here" required class="form-input">
-        <label class="sr-only" for="email">Your email</label>
-        <input type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your Email here" required
-          class="form-input" id="email">
-        <p id="errormsg" class="error-msg" role="alert"></p>
-        <label class="sr-only" for="message">Your message</label>
-        <textarea cols="30" rows="6" placeholder="Write your message here" maxlength="500" required class="form-input"
-          name="message" id="message"></textarea>
-        <button class="form-button magnetic" type="submit" id="submit">
-          Get In Touch
-        </button>
-      </form>
+    <section class="cta-band">
+      <div class="cta-inner reveal">
+        <span class="cta-orb" aria-hidden="true"></span>
+        <h2>Have a project in mind?</h2>
+        <p>Let's turn your idea into a fast, beautiful website that your clients will love.</p>
+        <div class="hero-actions center">
+          <a class="btn cta-light btn-shine magnetic" href="hire-me/">Hire me for a project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn cta-outline magnetic" href="contact/">Just say hello</a>
+        </div>
+      </div>
     </section>
   </main>
+  <script type="application/json" id="projects-data">[{"slug": "hightechzone", "name": "HighTechZone", "client": "Personal", "role": "Founder, Designer & Developer", "year": "2026", "text": "HighTechZone is my own website, \"Your Gateway to Smarter Technology\". It brings AI tool guides, practical tech tips, digital-skills tutorials and free resources together in one place. I designed and built it myself with plain HTML, CSS and JavaScript: a bold dark theme with warm gradients, an animated hero, dropdown navigation, a search dialog, FAQ sections, articles and interactive tools such as an AI Prompt Builder, a Password Strength Checker and a Budget Tracker template.", "tech": ["HTML5", "CSS3", "JavaScript", "SEO", "GitHub Pages", "Git"], "image": "resources/shots/hightechzone-desktop.webp", "live": "https://afsheen96.github.io/HighTechZone/", "source": "https://github.com/Afsheen96", "sourceLabel": "GitHub profile", "page": "projects/hightechzone/"}, {"slug": "learning-ai-lecture-hub", "name": "Learning AI Lecture Hub", "client": "Personal (student project)", "role": "Designer & Developer", "year": "2026", "text": "Learning AI Lecture Hub (published as \"Learn Freelancing AI — Lecture Library\") is an independent, student-made page that collects the links to Sir Hisham Sarwar's Learn Freelancing AI lectures, so learners can find any lecture in seconds. Learners can search by lecture name, number or topic, filter by category (AI & Automation, Freelancing, Web & App Development, Digital Marketing) and open the original video with one click. The page clearly states that it is not an official website and that the videos stay on Facebook.", "tech": ["HTML5", "CSS3", "JavaScript", "JSON", "Node.js build script", "GitHub Actions", "GitHub Pages"], "image": "resources/shots/lecture-hub-desktop.webp", "live": "https://afsheen96.github.io/lecture-library/", "source": "https://github.com/Afsheen96/lecture-library", "sourceLabel": "Source code", "page": "projects/learning-ai-lecture-hub/"}, {"slug": "fomi-studio", "name": "Fomi Studio: AI Image Workspace", "client": "FOMI", "role": "Frontend Developer", "year": "2026", "text": "I built this for FOMI's frontend assessment: their Image Generator mockup turned into a real, working Next.js app. It includes a model picker, reference uploads, a prompt box with keyboard shortcuts, a mocked API that \"generates\" images and videos, loading placeholders in the right shape, a masonry gallery, a full-size viewer with keyboard navigation, and a guided tutorial that highlights the real controls.", "tech": ["Next.js", "React", "CSS Modules", "JavaScript", "Vercel", "GitHub"], "image": "resources/shots/fomi-studio-desktop.webp", "live": "https://fomi-studio-weld.vercel.app", "source": "https://github.com/Afsheen96/fomi-studio", "sourceLabel": "Source code", "page": "projects/fomi-studio/"}, {"slug": "fomi-flow", "name": "Fomi Flow: Version-based Workspace", "client": "FOMI", "role": "Product & UI", "year": "2026", "text": "Most AI image tools show results as an endless feed, so good results get lost. In Fomi Flow every generation is a version inside a project. A version strip shows the history (with branches like \"from v2\"), a compare slider puts two versions side by side, and a \"What changed\" panel lists the prompt words added or removed and any settings change.", "tech": ["Next.js", "React", "UX Design", "JavaScript", "CSS Modules", "Vercel"], "image": "resources/shots/fomi-flow-desktop.webp", "live": "https://fomi-studio-weld.vercel.app/flow", "source": "https://github.com/Afsheen96/fomi-studio", "sourceLabel": "Source code", "page": "projects/fomi-flow/"}]</script>
+  <div id="popupWindow" class="project_window"></div>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year">2026</span> Afsheen Kiran. Designed &amp; built with care.</p>
-    <a href="#top" class="back-top">Back to top <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" /></svg></a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo footer-logo" href="">Afsheen</a>
+        <p>Frontend developer &amp; AI-assisted web designer building fast, beautiful and responsive websites.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links"><li><a href="">Home</a></li><li><a href="about/">About</a></li><li><a href="skills/">Skills</a></li><li><a href="projects/">Projects</a></li><li><a href="contact/">Contact</a></li><li><a href="hire-me/">Hire me</a></li></ul>
+      </nav>
+      <ul class="social-pro social-small"><li><a class="social-btn" data-social="email" aria-label="Gmail" data-label="Gmail"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M1.6 21h3.8v-9.2L0 7.7v11.7C0 20.3.7 21 1.6 21z"/><path fill="#34A853" d="M18.6 21h3.8c.9 0 1.6-.7 1.6-1.6V7.7l-5.4 4.1z"/><path fill="#FBBC04" d="M18.6 4.6v7.2L24 7.7V5.5c0-2-2.3-3.2-3.9-2z"/><path fill="#EA4335" d="M5.4 11.8V4.6L12 9.5l6.6-4.9v7.2L12 16.7z"/><path fill="#C5221F" d="M0 5.5v2.2l5.4 4.1V4.6L3.9 3.5C2.3 2.3 0 3.5 0 5.5z"/></svg></a></li><li><a class="social-btn" data-social="linkedin" aria-label="LinkedIn" data-label="LinkedIn"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0A66C2" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li><li><a class="social-btn" data-social="github" aria-label="GitHub" data-label="GitHub"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#181717" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg></a></li></ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> Afsheen Kiran. Designed &amp; built with care.</p>
+      <a href="#main" class="back-top">Back to top <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" /></svg></a>
+    </div>
   </footer>
 
+  <script src="config.js"></script>
   <script src="site.js"></script>
+  <script src="hero.js"></script>
   <script src="index.js"></script>
 </body>
 

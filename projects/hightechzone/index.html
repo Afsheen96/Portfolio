@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HighTechZone | Afsheen Kiran Portfolio</title>
-  <meta name="description" content="My own website about AI tools, practical tech guides and digital skills, designed and built from scratch.">
+  <title>HighTechZone | Case Study by Afsheen Kiran</title>
+  <meta name="description" content="A multi-page technology learning website with AI tool guides, tech tips, digital-skills tutorials, free resources and interactive tools.">
   <meta name="author" content="Afsheen Kiran">
   <meta name="theme-color" content="#6070ff">
   <link rel="canonical" href="https://afsheen96.github.io/Portfolio/projects/hightechzone/">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="HighTechZone | Afsheen Kiran">
-  <meta property="og:description" content="My own website about AI tools, practical tech guides and digital skills, designed and built from scratch.">
+  <meta property="og:site_name" content="Afsheen Kiran Portfolio">
+  <meta property="og:title" content="HighTechZone | Case Study by Afsheen Kiran">
+  <meta property="og:description" content="A multi-page technology learning website with AI tool guides, tech tips, digital-skills tutorials, free resources and interactive tools.">
   <meta property="og:url" content="https://afsheen96.github.io/Portfolio/projects/hightechzone/">
   <meta property="og:image" content="https://afsheen96.github.io/Portfolio/resources/hightechzone.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -20,32 +21,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="../../style.css">
-  <link rel="stylesheet" href="../project.css">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "HighTechZone", "description": "My own website about AI tools, practical tech guides and digital skills, designed and built from scratch.", "url": "https://afsheen96.github.io/Portfolio/projects/hightechzone/", "image": "https://afsheen96.github.io/Portfolio/resources/hightechzone.jpg", "dateCreated": "2026", "creator": {"@type": "Person", "name": "Afsheen Kiran", "url": "https://afsheen96.github.io/Portfolio/"}}</script>
+  <link rel="stylesheet" href="../../projects/project.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "HighTechZone", "description": "A multi-page technology learning website with AI tool guides, tech tips, digital-skills tutorials, free resources and interactive tools.", "url": "https://afsheen96.github.io/Portfolio/projects/hightechzone/", "image": "https://afsheen96.github.io/Portfolio/resources/shots/hightechzone-desktop.webp", "dateCreated": "2026", "creator": {"@type": "Person", "name": "Afsheen Kiran", "url": "https://afsheen96.github.io/Portfolio/"}}</script>
 </head>
-
-<body class="project-page">
+<body data-page="projects">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="page-veil" aria-hidden="true"></div>
 
   <div class="header-nav" id="header-nav">
     <header class="header">
-      <h2 class="logo"><a href="../../">Afsheen</a></h2>
+      <p class="logo"><a href="../../" aria-label="Afsheen, home">Afsheen</a></p>
       <nav aria-label="Main">
         <ul class="mobile-menu" id="mobile-menu">
           <li class="mobile-close"><button type="button" class="close-icon" id="menu-close" aria-label="Close menu"><span></span><span></span></button></li>
-          <li class="mobile-link"><a href="../../#portfolio">Portfolio</a></li>
-          <li class="mobile-link"><a href="../../#about">About</a></li>
-          <li class="mobile-link"><a href="../../#form">Contact</a></li>
+          <li class="mobile-link"><a class="mobile-nav" href="../../">Home</a></li>
+          <li class="mobile-link"><a class="mobile-nav" href="../../about/">About</a></li>
+          <li class="mobile-link"><a class="mobile-nav" href="../../skills/">Skills</a></li>
+          <li class="mobile-link"><a class="mobile-nav active" href="../../projects/" aria-current="page">Projects</a></li>
+          <li class="mobile-link"><a class="mobile-nav" href="../../contact/">Contact</a></li>
+          <li class="mobile-link"><a class="mobile-nav mobile-hire" href="../../hire-me/">Hire me</a></li>
         </ul>
         <button type="button" class="menu" id="menu-open" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
           <img src="../../resources/menuicon.png" alt="" width="18" height="12">
         </button>
         <ul class="menu-link">
-          <li><a class="nav-link active" href="../../#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="../../#about">About</a></li>
-          <li><a class="nav-link" href="../../#form">Contact</a></li>
-          <li><a class="nav-cta" href="../../#form">Hire me</a></li>
+          <li><a class="nav-link" href="../../">Home</a></li>
+          <li><a class="nav-link" href="../../about/">About</a></li>
+          <li><a class="nav-link" href="../../skills/">Skills</a></li>
+          <li><a class="nav-link active" href="../../projects/" aria-current="page">Projects</a></li>
+          <li><a class="nav-link" href="../../contact/">Contact</a></li>
+          <li><a class="nav-cta magnetic" href="../../hire-me/">Hire me</a></li>
         </ul>
       </nav>
     </header>
@@ -53,110 +59,105 @@
 
   <main id="main">
     <section class="case-hero">
-      <span class="case-blob" aria-hidden="true"></span>
+      <div class="page-hero-bg" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="case-wrap">
         <nav class="breadcrumb reveal" aria-label="Breadcrumb">
-          <a href="../../">Home</a><span>/</span><a href="../../#portfolio">Projects</a><span>/</span><span aria-current="page">HighTechZone</span>
+          <a href="../../">Home</a><span>/</span><a href="../../projects/">Projects</a><span>/</span><span aria-current="page">HighTechZone</span>
         </nav>
-        <p class="eyebrow reveal">Case study &middot; Website</p>
+        <p class="eyebrow reveal">Project 01 &middot; Website</p>
         <h1 class="case-title reveal">HighTechZone</h1>
-        <p class="case-tagline reveal">My own website about AI tools, practical tech guides and digital skills, designed and built from scratch.</p>
+        <p class="case-tagline reveal">A multi-page technology learning website with AI tool guides, tech tips, digital-skills tutorials, free resources and interactive tools.</p>
         <ul class="case-meta reveal">
           <li><span>Client</span><strong>Personal</strong></li>
-          <li><span>Role</span><strong>Web Designer &amp; Developer</strong></li>
+          <li><span>Role</span><strong>Founder, Designer &amp; Developer</strong></li>
           <li><span>Year</span><strong>2026</strong></li>
           <li><span>Type</span><strong>Website</strong></li>
         </ul>
         <div class="case-actions reveal">
-          <a class="btn btn-primary magnetic" href="https://afsheen96.github.io/HighTechZone/" target="_blank" rel="noopener">Visit live website <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
-          <a class="btn btn-ghost magnetic" href="https://github.com/Afsheen96" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg> Source code</a>
+          <a class="btn btn-primary btn-shine magnetic" href="https://afsheen96.github.io/HighTechZone/" target="_blank" rel="noopener">Visit live website <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+          <a class="btn btn-ghost magnetic" href="https://github.com/Afsheen96" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg> GitHub profile</a>
         </div>
       </div>
       <div class="case-wrap">
-        <figure class="hero-shot reveal">
-          <div class="browser-frame">
-            <div class="browser-bar"><span></span><span></span><span></span><em>afsheen96.github.io/HighTechZone/</em></div>
-            <img src="../../resources/hightechzone.jpg" alt="Screenshot of HighTechZone" width="1088" height="896">
+        <div class="hero-devices reveal">
+          <div class="browser-frame hd-desktop">
+            <div class="browser-bar"><span></span><span></span><span></span><em>afsheen96.github.io/HighTechZone</em></div>
+            <div class="frame-shot"><img src="../../resources/shots/hightechzone-desktop.webp" alt="Screenshot of HighTechZone on desktop" width="1440" height="900" fetchpriority="high"></div>
           </div>
-        </figure>
+          <div class="phone-frame hd-phone"><span class="phone-notch"></span><img src="../../resources/shots/hightechzone-mobile.webp" alt="Screenshot of HighTechZone on a phone" width="585" height="1266" loading="lazy" decoding="async"></div>
+        </div>
       </div>
     </section>
 
     <section class="case-section">
       <div class="case-wrap case-grid">
-        <div class="reveal">
-          <p class="eyebrow">Overview</p>
-          <h2 class="case-h2">Project overview</h2>
-        </div>
-        <div class="case-text reveal">
-          <p>HighTechZone is my personal website where I share AI tools, practical tech guides and digital-skills content.</p>
-          <p>I designed and built it myself: a bold dark theme, an animated hero section, clear navigation (AI Tools, Guides, Projects, Services) and a layout that works on phones, tablets and desktops. It is published for free on GitHub Pages.</p>
-        </div>
+        <div class="reveal"><p class="eyebrow">Overview</p><h2 class="case-h2">Project overview</h2></div>
+        <div class="case-text reveal"><p>HighTechZone is my own website, "Your Gateway to Smarter Technology". It brings AI tool guides, practical tech tips, digital-skills tutorials and free resources together in one place.</p><p>I designed and built it myself with plain HTML, CSS and JavaScript: a bold dark theme with warm gradients, an animated hero, dropdown navigation, a search dialog, FAQ sections, articles and interactive tools such as an AI Prompt Builder, a Password Strength Checker and a Budget Tracker template.</p></div>
       </div>
-      <div class="case-wrap stats">
-        <div class="stat reveal"><strong>100%</strong><span>designed &amp; built by me</span></div>
-        <div class="stat reveal"><strong>0</strong><span>hosting cost on GitHub Pages</span></div>
-        <div class="stat reveal"><strong>4</strong><span>main content areas</span></div>
-      </div>
+      <div class="case-wrap stats"><div class="stat reveal"><strong>Multi-page</strong><span>website with its own brand</span></div><div class="stat reveal"><strong>3</strong><span>interactive tools &amp; templates</span></div><div class="stat reveal"><strong>100%</strong><span>hand-coded, hosted free on GitHub Pages</span></div></div>
     </section>
 
     <section class="case-section alt">
       <div class="case-wrap two-cards">
-        <article class="story-card reveal">
-          <span class="story-num">01</span>
-          <h2>The challenge</h2>
-          <p>I wanted one home for everything I learn about AI and technology, one that looks modern, loads fast and costs nothing to host.</p>
-        </article>
-        <article class="story-card reveal">
-          <span class="story-num">02</span>
-          <h2>My approach</h2>
-          <p>I designed a bold dark brand with warm gradient accents, wrote clean HTML, CSS and JavaScript without heavy frameworks, and published it on GitHub Pages so it is free and always online.</p>
-        </article>
+        <article class="story-card reveal"><span class="story-num">01</span><h2>The challenge</h2><p>I wanted one home for everything I learn and teach about AI and technology: a site that looks premium, is easy to explore, works on every device and costs nothing to host.</p></article>
+        <article class="story-card reveal"><span class="story-num">02</span><h2>My approach</h2><p>I created a recognisable brand, split the content into clear sections (AI Tools, Guides, Projects, Services, About, Contact) and added useful interactive tools so visitors do more than read. Everything is hand-coded, SEO-ready and published on GitHub Pages.</p></article>
       </div>
     </section>
 
     <section class="case-section">
       <div class="case-wrap">
-        <div class="section-head reveal">
-          <p class="eyebrow">Features</p>
-          <h2 class="section-title">What it does</h2>
+        <div class="section-head reveal"><p class="eyebrow">Screens</p><h2 class="section-title">Website previews</h2>
+          <p class="section-sub">Real screenshots from the live project. Click any screen to enlarge it.</p></div>
+        <div class="gallery">
+          <figure class="gallery-item reveal">
+            <button type="button" class="zoomable" data-lightbox="../../resources/shots/hightechzone-desktop.webp" data-caption="Animated hero with orbiting topic cards" aria-label="Enlarge: Animated hero with orbiting topic cards">
+              <div class="browser-frame ">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="frame-shot"><img src="../../resources/shots/hightechzone-desktop.webp" alt="Animated hero with orbiting topic cards" width="1440" height="900" loading="lazy" decoding="async"></div>
+          </div>
+            </button>
+            <figcaption>Animated hero with orbiting topic cards</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" class="zoomable" data-lightbox="../../resources/shots/hightechzone-guides.webp" data-caption="&quot;Discover Your Next AI Advantage&quot; guide cards" aria-label="Enlarge: &quot;Discover Your Next AI Advantage&quot; guide cards">
+              <div class="browser-frame ">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="frame-shot"><img src="../../resources/shots/hightechzone-guides.webp" alt="&quot;Discover Your Next AI Advantage&quot; guide cards" width="1440" height="900" loading="lazy" decoding="async"></div>
+          </div>
+            </button>
+            <figcaption>&quot;Discover Your Next AI Advantage&quot; guide cards</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" class="zoomable" data-lightbox="../../resources/shots/hightechzone-tools.webp" data-caption="Interactive tools and downloadable templates" aria-label="Enlarge: Interactive tools and downloadable templates">
+              <div class="browser-frame ">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="frame-shot"><img src="../../resources/shots/hightechzone-tools.webp" alt="Interactive tools and downloadable templates" width="1440" height="900" loading="lazy" decoding="async"></div>
+          </div>
+            </button>
+            <figcaption>Interactive tools and downloadable templates</figcaption>
+          </figure>
         </div>
+      </div>
+    </section>
+
+    <section class="case-section alt">
+      <div class="case-wrap">
+        <div class="section-head reveal"><p class="eyebrow">Features</p><h2 class="section-title">What it does</h2></div>
         <ul class="features">
-          <li class="feature reveal">
-            <span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <h3>Bold dark design</h3>
-            <p>A modern dark theme with warm gradient highlights and strong typography.</p>
-          </li>
-          <li class="feature reveal">
-            <span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <h3>Animated hero</h3>
-            <p>A starry, animated hero section that makes a great first impression.</p>
-          </li>
-          <li class="feature reveal">
-            <span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <h3>Clear navigation</h3>
-            <p>AI Tools, Guides, Projects and Services are always one click away.</p>
-          </li>
-          <li class="feature reveal">
-            <span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <h3>Fully responsive</h3>
-            <p>Looks right on phones, tablets and desktops.</p>
-          </li>
-          <li class="feature reveal">
-            <span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <h3>Lightweight &amp; fast</h3>
-            <p>Plain HTML, CSS and JavaScript with no heavy frameworks.</p>
-          </li>
-          <li class="feature reveal">
-            <span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
-            <h3>Free hosting</h3>
-            <p>Published on GitHub Pages with version control through Git.</p>
-          </li>
+          <li class="feature reveal"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><h3>Animated hero</h3><p>A starry, glowing hero with orbiting topic cards that makes a strong first impression.</p></li>
+          <li class="feature reveal"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><h3>Clear multi-page structure</h3><p>AI Tools, Guides, Projects, Services, About and Contact, with dropdown navigation.</p></li>
+          <li class="feature reveal"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><h3>Search dialog</h3><p>Visitors can quickly search the site from any page.</p></li>
+          <li class="feature reveal"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><h3>Interactive tools</h3><p>AI Prompt Builder and Password Strength Checker that run right in the browser.</p></li>
+          <li class="feature reveal"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><h3>Free templates</h3><p>Downloadable resources like a monthly Budget Tracker spreadsheet.</p></li>
+          <li class="feature reveal"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><h3>Articles &amp; guides</h3><p>Step-by-step guides on AI writing, creative design and productivity.</p></li>
+          <li class="feature reveal"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><h3>FAQ sections</h3><p>Common questions answered in tidy, expandable sections.</p></li>
+          <li class="feature reveal"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><h3>SEO-ready</h3><p>Meta tags, Open Graph, structured data, sitemap and robots.txt.</p></li>
+          <li class="feature reveal"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><h3>Fully responsive</h3><p>Carefully designed for phones, tablets and desktops.</p></li>
         </ul>
       </div>
     </section>
 
-    <section class="case-section alt" id="preview">
+    <section class="case-section" id="preview">
       <div class="case-wrap">
         <div class="section-head reveal">
           <p class="eyebrow">Live preview</p>
@@ -174,9 +175,9 @@
           </div>
           <div class="preview-stage">
             <div class="preview-device">
-              <div class="browser-bar"><span></span><span></span><span></span><em>afsheen96.github.io/HighTechZone/</em></div>
+              <div class="browser-bar"><span></span><span></span><span></span><em>afsheen96.github.io/HighTechZone</em></div>
               <div class="preview-screen">
-                <img src="../../resources/hightechzone.jpg" alt="" class="preview-poster" loading="lazy" width="1088" height="896">
+                <img src="../../resources/shots/hightechzone-desktop.webp" alt="" class="preview-poster" loading="lazy" decoding="async" width="1440" height="900">
                 <button type="button" class="preview-load btn btn-primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg> Load live preview</button>
               </div>
             </div>
@@ -185,22 +186,10 @@
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-section alt">
       <div class="case-wrap case-grid">
-        <div class="reveal">
-          <p class="eyebrow">Tech stack</p>
-          <h2 class="case-h2">Built with</h2>
-        </div>
-        <div class="reveal">
-          <ul class="language tech-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive</li>
-            <li>GitHub Pages</li>
-            <li>Git</li>
-          </ul>
-        </div>
+        <div class="reveal"><p class="eyebrow">Tech stack</p><h2 class="case-h2">Built with</h2></div>
+        <div class="reveal"><ul class="language tech-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>SEO</li><li>GitHub Pages</li><li>Git</li></ul></div>
       </div>
     </section>
 
@@ -209,31 +198,42 @@
         <h2>Like what you see?</h2>
         <p>I can build a fast, beautiful and responsive website like this for your business too.</p>
         <div class="case-actions">
-          <a class="btn cta-light magnetic" href="../../#form">Start a project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn cta-light btn-shine magnetic" href="../../hire-me/">Start a project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn cta-outline magnetic" href="https://afsheen96.github.io/HighTechZone/" target="_blank" rel="noopener">Visit live website <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
         </div>
       </div>
     </section>
 
     <nav class="case-wrap project-nav" aria-label="More projects">
-      <a class="pn-link reveal" href="../fomi-flow/">
-        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Previous project</span>
-        <strong>Fomi Flow: Version-based Workspace</strong>
-      </a>
-      <a class="pn-link next reveal" href="../fomi-studio/">
-        <span>Next project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        <strong>Fomi Studio: AI Image Workspace</strong>
-      </a>
+      <a class="pn-link reveal" href="../../projects/fomi-flow/"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Previous project</span><strong>Fomi Flow: Version-based Workspace</strong></a>
+      <a class="pn-link next reveal" href="../../projects/learning-ai-lecture-hub/"><span>Next project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><strong>Learning AI Lecture Hub</strong></a>
     </nav>
   </main>
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+    <figure><img src="" alt=""><figcaption></figcaption></figure>
+  </div>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year">2026</span> Afsheen Kiran. Designed &amp; built with care.</p>
-    <a href="../../#portfolio" class="back-top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> All projects</a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo footer-logo" href="../../">Afsheen</a>
+        <p>Frontend developer &amp; AI-assisted web designer building fast, beautiful and responsive websites.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links"><li><a href="../../">Home</a></li><li><a href="../../about/">About</a></li><li><a href="../../skills/">Skills</a></li><li><a href="../../projects/">Projects</a></li><li><a href="../../contact/">Contact</a></li><li><a href="../../hire-me/">Hire me</a></li></ul>
+      </nav>
+      <ul class="social-pro social-small"><li><a class="social-btn" data-social="email" aria-label="Gmail" data-label="Gmail"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M1.6 21h3.8v-9.2L0 7.7v11.7C0 20.3.7 21 1.6 21z"/><path fill="#34A853" d="M18.6 21h3.8c.9 0 1.6-.7 1.6-1.6V7.7l-5.4 4.1z"/><path fill="#FBBC04" d="M18.6 4.6v7.2L24 7.7V5.5c0-2-2.3-3.2-3.9-2z"/><path fill="#EA4335" d="M5.4 11.8V4.6L12 9.5l6.6-4.9v7.2L12 16.7z"/><path fill="#C5221F" d="M0 5.5v2.2l5.4 4.1V4.6L3.9 3.5C2.3 2.3 0 3.5 0 5.5z"/></svg></a></li><li><a class="social-btn" data-social="linkedin" aria-label="LinkedIn" data-label="LinkedIn"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0A66C2" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li><li><a class="social-btn" data-social="github" aria-label="GitHub" data-label="GitHub"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#181717" d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3"/></svg></a></li></ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> Afsheen Kiran. Designed &amp; built with care.</p>
+      <a href="#main" class="back-top">Back to top <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" /></svg></a>
+    </div>
   </footer>
 
+  <script src="../../config.js"></script>
   <script src="../../site.js"></script>
-  <script src="../project.js"></script>
+  <script src="../../projects/project.js"></script>
 </body>
 
 </html>

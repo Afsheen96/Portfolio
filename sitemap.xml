@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://afsheen96.github.io/Portfolio/</loc><lastmod>2026-10-26</lastmod><priority>1.0</priority></url>
-  <url><loc>https://afsheen96.github.io/Portfolio/projects/fomi-studio/</loc><lastmod>2026-10-26</lastmod><priority>0.8</priority></url>
-  <url><loc>https://afsheen96.github.io/Portfolio/projects/fomi-flow/</loc><lastmod>2026-10-26</lastmod><priority>0.8</priority></url>
-  <url><loc>https://afsheen96.github.io/Portfolio/projects/hightechzone/</loc><lastmod>2026-10-26</lastmod><priority>0.8</priority></url>
+  <url><loc>https://afsheen96.github.io/Portfolio/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://afsheen96.github.io/Portfolio/about/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://afsheen96.github.io/Portfolio/skills/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://afsheen96.github.io/Portfolio/projects/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://afsheen96.github.io/Portfolio/contact/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://afsheen96.github.io/Portfolio/hire-me/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://afsheen96.github.io/Portfolio/projects/hightechzone/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://afsheen96.github.io/Portfolio/projects/learning-ai-lecture-hub/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://afsheen96.github.io/Portfolio/projects/fomi-studio/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://afsheen96.github.io/Portfolio/projects/fomi-flow/</loc><lastmod>2026-10-26</lastmod></url>
 </urlset>

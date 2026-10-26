@@ -34,3 +34,36 @@
     });
   });
 })();
+
+// Lightbox: click a screenshot to see it large.
+(() => {
+  const box = document.getElementById('lightbox');
+  if (!box) return;
+  const img = box.querySelector('img');
+  const caption = box.querySelector('figcaption');
+  const closeBtn = box.querySelector('.lightbox-close');
+  let lastFocused = null;
+
+  function close() {
+    box.classList.remove('open');
+    document.body.classList.remove('no-scroll');
+    setTimeout(() => { box.hidden = true; }, 250);
+    if (lastFocused) lastFocused.focus();
+  }
+
+  document.querySelectorAll('[data-lightbox]').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      lastFocused = trigger;
+      img.src = trigger.dataset.lightbox;
+      img.alt = trigger.dataset.caption || '';
+      caption.textContent = trigger.dataset.caption || '';
+      box.hidden = false;
+      document.body.classList.add('no-scroll');
+      requestAnimationFrame(() => box.classList.add('open'));
+      closeBtn.focus();
+    });
+  });
+  closeBtn.addEventListener('click', close);
+  box.addEventListener('click', (e) => { if (e.target === box) close(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !box.hidden) close(); });
+})();

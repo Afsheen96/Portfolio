@@ -48,13 +48,21 @@
 - Add the linter for the project to fix the errors and clean the codeok_hand
 - User-friendly Interface: Simple and intuitive interface for a seamless user experience.rocket
 - Responsive for different devices
-- Premium animations: hero text reveal, typing effect, scroll reveals, 3D tilt cards and magnetic buttons (all respect "reduce motion")
-- Redesigned Projects section with browser-style previews, quick-view popup and live links
-- A separate case-study page for every project, with overview, features, live website preview and tech stack:
+- Animated hero background: drifting particles that react to the mouse, soft moving light and parallax shapes (paused off-screen, off for "reduce motion")
+- Separate pages, each with its own URL: Home, About, Skills, Projects, Contact and Hire Me
+- Hire Me has a project inquiry form; Contact has a general message form (both delivered by Formspree)
+- A case-study page for every project with real screenshots, features, a live preview and links:
+  - [HighTechZone](https://afsheen96.github.io/Portfolio/projects/hightechzone/)
+  - [Learning AI Lecture Hub](https://afsheen96.github.io/Portfolio/projects/learning-ai-lecture-hub/)
   - [Fomi Studio](https://afsheen96.github.io/Portfolio/projects/fomi-studio/)
   - [Fomi Flow](https://afsheen96.github.io/Portfolio/projects/fomi-flow/)
-  - [HighTechZone](https://afsheen96.github.io/Portfolio/projects/hightechzone/)
 - SEO: meta descriptions, Open Graph tags, structured data, sitemap.xml and robots.txt
+
+### How to edit the site
+
+- **Social links (Gmail, LinkedIn, GitHub):** edit `config.js`. An empty value shows the icon as "coming soon".
+- **Pages, projects and text:** edit `tools/build.py`, then run `python3 tools/build.py` to regenerate the HTML pages.
+- **Project screenshots:** `resources/shots/` (real screenshots of each live project).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
