@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://afsheen96.github.io/Portfolio/sitemap.xml

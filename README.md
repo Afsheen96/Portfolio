@@ -48,6 +48,13 @@
 - Add the linter for the project to fix the errors and clean the codeok_hand
 - User-friendly Interface: Simple and intuitive interface for a seamless user experience.rocket
 - Responsive for different devices
+- Premium animations: hero text reveal, typing effect, scroll reveals, 3D tilt cards and magnetic buttons (all respect "reduce motion")
+- Redesigned Projects section with browser-style previews, quick-view popup and live links
+- A separate case-study page for every project, with overview, features, live website preview and tech stack:
+  - [Fomi Studio](https://afsheen96.github.io/Portfolio/projects/fomi-studio/)
+  - [Fomi Flow](https://afsheen96.github.io/Portfolio/projects/fomi-flow/)
+  - [HighTechZone](https://afsheen96.github.io/Portfolio/projects/hightechzone/)
+- SEO: meta descriptions, Open Graph tags, structured data, sitemap.xml and robots.txt
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

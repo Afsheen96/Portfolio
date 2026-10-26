@@ -1,13 +1,3 @@
-const element = document.getElementById('mobile-menu');
-function menu() {
-  if (element.style.display === 'block') {
-    element.style.display = 'none';
-  } else {
-    element.style.display = 'block';
-  }
-}
-element.addEventListener('click', menu);
-
 // project pop-up section
 const projectContainer = document.querySelector('#popupWindow');
 
@@ -19,6 +9,7 @@ const projectsData = [
     role: 'Frontend Developer',
     year: '2026',
     image: 'fomi-studio.jpg',
+    page: 'projects/fomi-studio/',
     technologies: ['Next.js', 'React', 'CSS Modules'],
     moreTechnologies: ['JavaScript', 'Vercel', 'GitHub'],
     projectDetail: 'A responsive AI image-generation workspace built from a design mockup for FOMI\'s frontend assessment, with a mocked API, loading states and phone/tablet layouts.',
@@ -34,6 +25,7 @@ const projectsData = [
     role: 'Product & UI',
     year: '2026',
     image: 'fomi-flow.jpg',
+    page: 'projects/fomi-flow/',
     technologies: ['Next.js', 'React', 'UX Design'],
     moreTechnologies: ['JavaScript', 'CSS Modules', 'Vercel'],
     projectDetail: 'My own redesign of an AI image workspace: every image is a version you can compare, branch and restore, with an automatic "what changed" summary.',
@@ -49,6 +41,7 @@ const projectsData = [
     role: 'Web Designer & Developer',
     year: '2026',
     image: 'hightechzone.jpg',
+    page: 'projects/hightechzone/',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     moreTechnologies: ['Responsive', 'GitHub Pages', 'Git'],
     projectDetail: 'My own website about AI tools, tech guides and digital skills, designed and built from scratch and published on GitHub Pages.',
@@ -61,25 +54,38 @@ const projectsData = [
 
 const listItems = (items) => items.map((item) => `<li>${item}</li>`).join('');
 
+const icons = {
+  arrow: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+  external: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>',
+  github: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>',
+  eye: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+  close: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+};
+
 // ------------popup modal------------------
 
 function popUpWindow(project) {
   const projectcontent = `
-  <div class= "popup-container">
-  <div class= "popup">
+  <div class="popup-container" data-close="true">
+  <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+  <div class="popup-top">
   <div>
-  <i class="fa-solid fa-xmark" id="popupClose"></i>
-  <h3>${project.name}</h3>
+  <h3 id="popupTitle">${project.name}</h3>
   <ul class="proj">
-  <li><a href="#">${project.client}</a></li>
+  <li><a href="${project.page}">${project.client}</a></li>
   <li><div class="dot"></div></li>
   <li>${project.role}</li>
   <li><div class="dot"></div></li>
   <li>${project.year}</li>
   </ul>
   </div>
-  <img src="./resources/${project.image}" alt="Screenshot of ${project.name}" class="popupImage"/>
-  <div>
+  <button type="button" class="popup-close" id="popupClose" aria-label="Close">${icons.close}</button>
+  </div>
+  <div class="browser-frame">
+  <div class="browser-bar"><span></span><span></span><span></span></div>
+  <img src="./resources/${project.image}" alt="Screenshot of ${project.name}" class="popupImage" width="1088" height="896"/>
+  </div>
+  <div class="popup-body">
   <div class="left-popup">
   <p class="pro mobile-popup-info">
   ${project.descriptionShort}
@@ -96,17 +102,11 @@ function popUpWindow(project) {
   ${listItems(project.moreTechnologies)}
   </ul>
   <div class="thin-line"></div>
-  <button class="button popup-buttons">
-  <div>
-  <a href="${project.liveLink}" class="popupLink" target="_blank" rel="noopener">Live Link</a> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+  <div class="popup-actions">
+  <a href="${project.liveLink}" class="btn btn-primary popupLink" target="_blank" rel="noopener">Live Link ${icons.external}</a>
+  <a href="${project.sourceLink}" class="btn btn-ghost popupLink" target="_blank" rel="noopener">Source Link ${icons.github}</a>
   </div>
-  </button>
-  <button class="button popup-buttons">
-  <div>
-  <a href="${project.sourceLink}" class="popupLink" target="_blank" rel="noopener">Source Link</a> <i class="fa-brands fa-square-github"></i>
-  </div>
-  </button>
-  </div>
+  <a href="${project.page}" class="text-link">Read the full case study ${icons.arrow}</a>
   </div>
   </div>
   </div>
@@ -120,14 +120,23 @@ function popUpWindow(project) {
 function projectWorkCards(projectsData = []) {
   let projectContent = '';
 
-  projectsData.forEach((project) => {
+  projectsData.forEach((project, index) => {
     projectContent += `
-    <div class= "works" id= "portfolio">
-    <img src="./resources/${project.image}" alt="Screenshot of ${project.name}" class="img-transition"/>
+    <article class="works reveal">
+    <a class="work-media tilt" href="${project.page}" aria-label="Open the ${project.name} case study">
+    <div class="browser-frame">
+    <div class="browser-bar"><span></span><span></span><span></span></div>
+    <div class="media-clip">
+    <img src="./resources/${project.image}" alt="Screenshot of ${project.name}" class="img-transition" loading="lazy" width="1088" height="896"/>
+    </div>
+    </div>
+    <span class="media-overlay"><span>View case study ${icons.arrow}</span></span>
+    </a>
     <div class="card-work work">
-    <h3>${project.name}</h3>
+    <span class="work-number">0${index + 1}</span>
+    <h3><a href="${project.page}">${project.name}</a></h3>
     <ul class="proj">
-    <li><a href="#">${project.client}</a></li>
+    <li><a href="${project.page}">${project.client}</a></li>
     <li><div class="dot"></div></li>
     <li>${project.role}</li>
     <li><div class="dot"></div></li>
@@ -139,9 +148,13 @@ function projectWorkCards(projectsData = []) {
     <ul class="language">
     ${listItems(project.technologies)}
     </ul>
-    <button class="button button-mg" project-id="${project.id}" id="see-project-button">See Project</button>
+    <div class="work-actions">
+    <a class="btn btn-primary magnetic" href="${project.page}">See Project ${icons.arrow}</a>
+    <button type="button" class="btn btn-ghost see-project-button" project-id="${project.id}">${icons.eye} Quick view</button>
+    <a class="icon-link" href="${project.liveLink}" target="_blank" rel="noopener" aria-label="Open ${project.name} live website">${icons.external}</a>
     </div>
     </div>
+    </article>
     `;
   });
 
@@ -150,27 +163,48 @@ function projectWorkCards(projectsData = []) {
 
 // -----------------------open and close popup-----------------------
 
+let lastFocused = null;
+
 function closeWindow() {
-  projectContainer.style.display = 'none';
+  projectContainer.classList.remove('is-open');
+  document.body.classList.remove('no-scroll');
+  setTimeout(() => {
+    if (!projectContainer.classList.contains('is-open')) {
+      projectContainer.style.display = 'none';
+      projectContainer.innerHTML = '';
+    }
+  }, 300);
+  if (lastFocused) lastFocused.focus();
 }
 
 function openWindow(project) {
+  lastFocused = document.activeElement;
   const windowTemplate = popUpWindow(project);
   projectContainer.innerHTML = windowTemplate;
   projectContainer.style.display = 'block';
+  document.body.classList.add('no-scroll');
+  requestAnimationFrame(() => projectContainer.classList.add('is-open'));
 
   const popUpCloseButton = document.querySelector('#popupClose');
 
   popUpCloseButton.addEventListener('click', closeWindow);
+  popUpCloseButton.focus();
+  projectContainer.querySelector('.popup-container').addEventListener('click', (event) => {
+    if (event.target.dataset.close) closeWindow();
+  });
 }
 
-window.addEventListener('load', () => {
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && projectContainer.classList.contains('is-open')) closeWindow();
+});
+
+function renderProjects() {
   const portfolioSection = document.querySelector('#projects');
   projectContainer.style.display = 'none';
 
   portfolioSection.innerHTML = projectWorkCards(projectsData);
 
-  const proButtons = document.querySelectorAll('#see-project-button');
+  const proButtons = document.querySelectorAll('.see-project-button');
 
   Array.from(proButtons).forEach((element) => {
     element.addEventListener('click', () => {
@@ -180,7 +214,12 @@ window.addEventListener('load', () => {
       openWindow(projectObj);
     });
   });
-});
+
+  if (window.site) window.site.refresh();
+}
+
+renderProjects();
+
 // form validation section
 function validateEmail() {
   const emailInput = document.getElementById('email').value;
@@ -193,6 +232,11 @@ function validateEmail() {
   document.getElementById('errormsg').innerHTML = '';
   return true;
 }
+
+const contactForm = document.getElementById('contactform');
+contactForm.addEventListener('submit', (event) => {
+  if (!validateEmail()) event.preventDefault();
+});
 
 const submitform = document.getElementById('submit');
 submitform.addEventListener('click', () => {
@@ -209,14 +253,13 @@ const localStoreValue = {
 storageData.forEach((input) => {
   input.addEventListener('input', () => {
     localStoreValue[input.name] = input.value;
-    localStoreValue[input.email] = input.value;
-    localStoreValue[input.message] = input.value;
     localStorage.setItem('information', JSON.stringify(localStoreValue));
   });
 });
 const informationStored = JSON.parse(localStorage.getItem('information'));
 if (informationStored) {
+  Object.assign(localStoreValue, informationStored);
   storageData.forEach((element) => {
-    element.value = informationStored[element.name];
+    element.value = informationStored[element.name] || '';
   });
 }

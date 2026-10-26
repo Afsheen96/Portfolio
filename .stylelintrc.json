@@ -3,6 +3,8 @@
     "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
     "rules": {
       "at-rule-no-unknown": null,
+      "no-descending-specificity": null,
+      "unit-no-unknown": [true, { "ignoreUnits": ["svh"] }],
       "scss/at-rule-no-unknown": [
         true,
         {
