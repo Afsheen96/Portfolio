@@ -167,7 +167,7 @@
   // ---------- typing effect ----------
   const typed = document.getElementById('typed');
   if (typed && !reduceMotion) {
-    const words = ['modern websites', 'responsive web apps', 'landing pages that convert', 'AI-powered interfaces'];
+    const words = ['modern websites', 'responsive web apps', 'landing pages that convert', 'engaging user interfaces'];
     let w = 0;
     let c = words[0].length;
     let deleting = true;

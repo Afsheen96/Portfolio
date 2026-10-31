@@ -261,7 +261,7 @@ def footer(root, scripts=()):
     <div class="footer-top">
       <div class="footer-brand">
         <a class="logo footer-logo" href="{root}">Afsheen</a>
-        <p>Frontend developer &amp; AI-assisted web designer building fast, beautiful and responsive websites.</p>
+        <p>Front-end web developer &amp; web designer building visually appealing, responsive and user-friendly websites.</p>
       </div>
       <nav aria-label="Footer">
         <ul class="footer-links">{links}</ul>
@@ -391,10 +391,10 @@ def home():
     root = ''
     cards = ''.join(project_card(p, i, root, big=(i == 0)) for i, p in enumerate(PROJECTS))
     ld = {"@context": "https://schema.org", "@type": "Person", "name": "Afsheen Kiran",
-          "jobTitle": "Frontend Developer & AI-Assisted Web Designer", "url": BASE,
+          "jobTitle": "Front-End Web Developer & Web Designer", "url": BASE,
           "sameAs": ["https://www.linkedin.com/in/afsheenkiran/", "https://github.com/Afsheen96"]}
-    return head(root, '', 'Afsheen Kiran | Frontend Developer &amp; AI-Assisted Web Designer',
-                'Afsheen Kiran is a frontend developer and AI-assisted web designer who builds fast, responsive and beautiful websites and web apps. See HighTechZone, Learning AI Lecture Hub, Fomi Studio and Fomi Flow.',
+    return head(root, '', 'Afsheen Kiran | Front-End Web Developer &amp; Web Designer',
+                'Afsheen Kiran is a front-end web developer and web designer who turns ideas into visually appealing, responsive and user-friendly websites. See HighTechZone, Learning AI Lecture Hub, Fomi Studio and Fomi Flow.',
                 ld=ld) + header(root, 'home') + f'''
   <main id="main">
     <section class="main-container hero" id="top">
@@ -417,10 +417,11 @@ def home():
           I design &amp; build <span class="typed" id="typed">modern websites</span><span class="caret" aria-hidden="true"></span>
         </p>
         <p class="headline-paragraph hero-in d-4">
-          I'm an AI-assisted web developer passionate about turning ideas into
-          modern, engaging, and user-friendly websites. I help individuals,
-          startups, and businesses build responsive digital experiences that
-          strengthen their online presence and bring their ideas to life.
+          I'm a Front-End Web Developer and Web Designer who turns ideas into
+          visually appealing, responsive, and user-friendly websites. I combine
+          creative design with modern web technologies to build engaging digital
+          experiences that help businesses and individuals establish a strong
+          online presence.
         </p>
         <div class="hero-actions hero-in d-5">
           <a class="btn btn-primary btn-shine magnetic" href="projects/">View my work {ICON['arrow']}</a>
@@ -446,9 +447,9 @@ def home():
         <p>Fast, accessible websites and web apps with HTML, CSS, JavaScript, React and Next.js.</p>
       </article>
       <article class="service reveal">
-        <span class="service-icon">{ICON['spark']}</span>
-        <h2>Responsive &amp; AI-assisted</h2>
-        <p>Every page works on phones, tablets and desktops, built faster with smart AI workflows.</p>
+        <span class="service-icon">{ICON['phone']}</span>
+        <h2>Responsive Design</h2>
+        <p>Every page looks great and works smoothly on phones, tablets and desktops.</p>
       </article>
     </section>
 
@@ -468,7 +469,7 @@ def home():
         <div class="reveal">
           <p class="eyebrow">About</p>
           <h2 class="section-title left">Hello, I'm Afsheen</h2>
-          <p class="headline-paragraph">With an MSc in Information Technology and a strong interest in AI, I build websites with HTML, CSS, JavaScript, React and Next.js, using AI-assisted tools to work faster while keeping every detail in my own hands.</p>
+          <p class="headline-paragraph">With an MSc in Information Technology, I design and build websites with HTML, CSS, JavaScript, React and Next.js, focusing on clean design and a smooth experience on every device.</p>
           <div class="hero-actions">
             <a class="btn btn-primary magnetic" href="about/">More about me {ICON['arrow']}</a>
             <a class="btn btn-ghost magnetic" href="skills/">My skills</a>
@@ -497,7 +498,7 @@ def about():
     step_html = ''.join(f'''
           <li class="step reveal"><span class="step-icon">{ic}</span><span class="step-num">0{i + 1}</span><h3>{t}</h3><p>{d}</p></li>''' for i, (t, d, ic) in enumerate(steps))
     return head(root, 'about/', 'About Afsheen Kiran | Frontend Developer &amp; Web Designer',
-                'Learn about Afsheen Kiran, a frontend developer and AI-assisted web designer who builds fast, responsive websites, and how she works with clients.') + header(root, 'about') + f'''
+                'Learn about Afsheen Kiran, a front-end web developer and web designer who builds visually appealing, responsive websites, and how she works with clients.') + header(root, 'about') + f'''
   <main id="main">
 {page_hero('About', 'About <span class="gradient-text">Myself</span>', 'The person behind the projects, and how I like to work.')}
     <section class="about about-page">
@@ -505,8 +506,8 @@ def about():
         <div class="sub-container reveal">
           <h2 class="heading">Hello, I'm Afsheen</h2>
           <p class="headline-paragraph">I'm Afsheen Kiran, a web developer with an MSc in Information Technology. My studies gave me a solid understanding of how software and the web work, and I now use that foundation to design and build websites of my own.</p>
-          <p class="headline-paragraph">I'm especially interested in artificial intelligence and modern web technologies. I create websites with AI-assisted development tools: they help me plan, write and refine code faster, while I make the design decisions and test that everything works. My Learning AI Lecture Hub, for example, was built and is updated this way.</p>
-          <p class="headline-paragraph">I focus on responsive design, clear user experience and clean, modern interfaces, so every page is easy to use on phones, tablets and desktops. I love learning new things, building creative projects and using technology to solve real problems, like turning scattered lecture links into one searchable library.</p>
+          <p class="headline-paragraph">I'm especially interested in modern web technologies and in how technology can make everyday tasks easier. I enjoy turning ideas into real projects: my Learning AI Lecture Hub, for example, brings scattered lecture links together into one organised, searchable library.</p>
+          <p class="headline-paragraph">I focus on responsive design, clear user experience and clean, modern interfaces, so every page is easy to use on phones, tablets and desktops. I love learning new things, building creative projects and using technology to solve real-world problems.</p>
           <h2 class="mini-headline">LET'S CONNECT</h2>
           {social(root)}
           <div class="hero-actions">
@@ -516,7 +517,7 @@ def about():
         </div>
         <div class="about-cards reveal">
           <article class="value-card"><span class="service-icon">{ICON['globe']}</span><h3>Built for real visitors</h3><p>Every site I make is responsive, accessible and quick to load on any device.</p></article>
-          <article class="value-card"><span class="service-icon">{ICON['spark']}</span><h3>AI-assisted, human-crafted</h3><p>AI helps me move fast; I make every design and code decision with care.</p></article>
+          <article class="value-card"><span class="service-icon">{ICON['spark']}</span><h3>Design meets code</h3><p>I combine creative design with clean, modern code for interfaces people enjoy using.</p></article>
           <article class="value-card"><span class="service-icon">{ICON['book']}</span><h3>Easy to own</h3><p>I explain things plainly and leave simple guides so you can update your site yourself.</p></article>
           <article class="value-card"><span class="service-icon">{ICON['search']}</span><h3>Ready to be found</h3><p>SEO basics like meta tags, sitemaps and structured data come built in.</p></article>
         </div>
@@ -552,7 +553,6 @@ def skills():
         ('Design &amp; UX', ICON['spark'], ['Responsive design', 'UI / UX design', 'Product redesign', 'Accessibility', 'Animations &amp; micro-interactions'], ['HighTechZone', 'Fomi Flow']),
         ('SEO &amp; performance', ICON['search'], ['Meta &amp; Open Graph tags', 'Structured data', 'Sitemaps &amp; robots.txt', 'Lazy loading', 'Image optimisation'], ['HighTechZone', 'Learning AI Lecture Hub']),
         ('Tools &amp; deployment', ICON['rocket'], ['Git &amp; GitHub', 'GitHub Pages', 'GitHub Actions', 'Vercel', 'Node.js scripts', 'JSON data'], ['Learning AI Lecture Hub', 'Fomi Studio']),
-        ('AI-assisted workflow', ICON['chat'], ['AI pair-programming', 'Prompt writing', 'AI tool research', 'Rapid prototyping'], ['HighTechZone', 'Learning AI Lecture Hub']),
     ]
     g_html = ''.join(f'''
         <article class="skill-group reveal">
@@ -561,7 +561,7 @@ def skills():
           {used_in(u)}
         </article>''' for t, ic, items, u in groups)
     return head(root, 'skills/', 'Skills &amp; Expertise | Afsheen Kiran',
-                'Skills and expertise of Afsheen Kiran: JavaScript, HTML, CSS, React, Next.js, responsive design, SEO, GitHub Pages, Vercel and AI-assisted workflows.') + header(root, 'skills') + f'''
+                'Skills and expertise of Afsheen Kiran: JavaScript, HTML, CSS, React, Next.js, responsive design, SEO, GitHub Pages, and Vercel.') + header(root, 'skills') + f'''
   <main id="main">
 {page_hero('Skills', 'Skills &amp; <span class="gradient-text">Expertise</span>', 'The languages, frameworks and tools I use to design and build websites, with links to the real projects where I used them.')}
     <section class="skills-page">
@@ -664,7 +664,7 @@ def hire():
     services = [
         (ICON['layout'], 'Website design', 'Modern, on-brand layouts for businesses, personal brands and portfolios.'),
         (ICON['code'], 'Frontend development', 'Hand-coded HTML, CSS and JavaScript, or React and Next.js for web apps.'),
-        (ICON['spark'], 'AI-assisted development', 'Faster delivery with AI tools, while I check every design and line of code.'),
+        (ICON['phone'], 'Responsive design', 'Layouts that look and work great on phones, tablets and desktops.'),
         (ICON['refresh'], 'Website redesign', 'Give an existing site a premium, modern look while keeping your identity.'),
         (ICON['rocket'], 'Landing pages', 'Focused pages that explain your offer clearly and invite visitors to act.'),
         (ICON['search'], 'SEO-ready setup', 'Meta tags, Open Graph, sitemaps and fast pages so you can be found.'),
@@ -675,14 +675,14 @@ def hire():
         ('Built to be found', 'My sites include SEO essentials such as structured data, sitemaps and clean HTML.', None),
         ('Free or low-cost hosting', 'I deploy on GitHub Pages or Vercel and can set up automatic publishing.', None),
         ('You stay in control', 'Plain explanations and simple guides so you can update content yourself.', None),
-        ('Fast with AI', 'AI-assisted workflows let me explore ideas and deliver quickly without cutting corners.', None),
+        ('Creative design, clean code', 'I pair creative, on-brand design with clean, modern code, so your site looks great and works well.', None),
     ]
     s_html = ''.join(f'<li class="hire-service reveal"><span class="service-icon">{ic}</span><h3>{t}</h3><p>{d}</p></li>' for ic, t, d in services)
     r_html = ''.join(f'''<li class="reason reveal"><span class="reason-check">{ICON['check']}</span><div><h3>{t}</h3><p>{d}{f' <a href="{root}{l}">See projects</a>' if l else ''}</p></div></li>''' for t, d, l in reasons)
     def opts(items):
         return ''.join(f'<option value="{E(v)}">{E(v)}</option>' for v in items)
     return head(root, 'hire-me/', 'Hire Me | Website Design &amp; Development by Afsheen Kiran',
-                'Hire Afsheen Kiran to design and build your website: web design, frontend development, AI-assisted development, redesigns and landing pages. Send a project inquiry.') + header(root, 'hire') + f'''
+                'Hire Afsheen Kiran to design and build your website: web design, front-end development, responsive design, redesigns and landing pages. Send a project inquiry.') + header(root, 'hire') + f'''
   <main id="main">
     <section class="hire-hero">
       <div class="page-hero-bg" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -708,7 +708,7 @@ def hire():
         <div class="section-head reveal">
           <p class="eyebrow">Services</p>
           <h2 class="section-title">How I can help</h2>
-          <p class="section-sub">Web design and AI-assisted website development, from a single landing page to a multi-page website or web app.</p>
+          <p class="section-sub">Web design and front-end development, from a single landing page to a multi-page website or web app.</p>
         </div>
         <ul class="hire-service-grid">{s_html}</ul>
       </div>
