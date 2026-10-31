@@ -2545,27 +2545,82 @@ a.social-btn[href]:hover .brand-icon {
 }
 
 .teaser-stats li {
-  padding: 22px 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px 22px;
+  overflow: hidden;
   border-radius: var(--radius);
+  border: 1px solid var(--border);
   background: var(--bg);
-  transition: transform 0.4s var(--ease), box-shadow 0.4s, background 0.4s;
+  transition: transform 0.4s var(--ease), box-shadow 0.4s, background 0.4s, border-color 0.4s;
+}
+
+.teaser-stats li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s var(--ease);
 }
 
 .teaser-stats li:hover {
-  transform: translateX(6px);
+  transform: translateY(-4px);
+  border-color: transparent;
   background: var(--white);
   box-shadow: var(--shadow-md);
 }
 
-.teaser-stats strong {
-  display: block;
-  font-size: 2rem;
-  line-height: 1.2;
-  color: var(--primary);
+.teaser-stats li:hover::after {
+  transform: scaleX(1);
 }
 
-.teaser-stats span {
+.ts-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background: var(--chip);
+  color: var(--primary);
+  font-size: 20px;
+  transition: background 0.4s, color 0.4s, transform 0.4s var(--ease);
+}
+
+.teaser-stats li:hover .ts-icon {
+  background: var(--primary);
+  color: var(--white);
+  transform: rotate(-8deg) scale(1.05);
+}
+
+.teaser-stats strong {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  background: linear-gradient(120deg, var(--primary-dark), var(--accent-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.teaser-stats span:not(.ts-icon) {
+  font-size: 15px;
+  line-height: 1.5;
   color: var(--text);
+}
+
+@media screen and (min-width: 480px) {
+  .teaser-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .cta-band {

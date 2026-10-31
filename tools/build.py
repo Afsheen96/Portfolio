@@ -482,10 +482,11 @@ def home():
             <a class="btn btn-ghost magnetic" href="skills/">My skills</a>
           </div>
         </div>
-        <ul class="teaser-stats reveal">
-          <li><strong>4</strong><span>live projects in this portfolio</span></li>
-          <li><strong>2</strong><span>hosting platforms: GitHub Pages &amp; Vercel</span></li>
-          <li><strong>100%</strong><span>responsive on phone, tablet &amp; desktop</span></li>
+        <ul class="teaser-stats reveal" aria-label="What you can expect">
+          <li><span class="ts-icon">{ICON['rocket']}</span><strong>7&ndash;14 Days</strong><span>Typical project delivery</span></li>
+          <li><span class="ts-icon">{ICON['chat']}</span><strong>Within 24 Hours</strong><span>Client response time</span></li>
+          <li><span class="ts-icon">{ICON['refresh']}</span><strong>2 Rounds</strong><span>Included revisions</span></li>
+          <li><span class="ts-icon">{ICON['phone']}</span><strong>100%</strong><span>Responsive focus: desktop, tablet &amp; mobile design</span></li>
         </ul>
       </div>
     </section>
