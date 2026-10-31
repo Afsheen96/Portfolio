@@ -209,6 +209,20 @@
     bindMagnetic();
   }
 
+  // ---------- Download CV ----------
+  // The button stays hidden until the CV PDF has been uploaded
+  // (resources/cv/Afsheen-Kiran-CV.pdf), so visitors never get a broken link.
+  document.querySelectorAll('[data-cv]').forEach((btn) => {
+    if (!window.fetch) return;
+    fetch(btn.href, { method: 'HEAD', cache: 'no-store' }).then((res) => {
+      const type = res.headers.get('content-type') || '';
+      if (res.ok && type.indexOf('pdf') !== -1) {
+        btn.hidden = false;
+        bindMagnetic();
+      }
+    }).catch(() => {});
+  });
+
   // page entrance
   window.requestAnimationFrame(() => root.classList.add('loaded'));
   refresh();

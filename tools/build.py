@@ -21,6 +21,10 @@ YEAR = '2026'
 E = html.escape
 
 # ---------------------------------------------------------------- icons
+# Upload the CV PDF to this path (exact name) and the hero "Download CV"
+# button appears automatically. Until the file exists the button stays hidden.
+CV_FILE = 'resources/cv/Afsheen-Kiran-CV.pdf'
+
 ICON = {
     'arrow': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
     'back': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>',
@@ -46,6 +50,7 @@ ICON = {
     'pin': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>',
     'briefcase': '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>',
     'chev': '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>',
+    'download': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>',
     'send': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg>',
 }
 
@@ -239,7 +244,7 @@ def header(root, active):
 
   <div class="header-nav" id="header-nav">
     <header class="header">
-      <p class="logo"><a href="{root}" aria-label="Afsheen, home">Afsheen</a></p>
+      <p class="logo"><a href="{root}" aria-label="Afsheen Kiran, home">Afsheen Kiran</a></p>
       <nav aria-label="Main">
         <ul class="mobile-menu" id="mobile-menu">
           <li class="mobile-close"><button type="button" class="close-icon" id="menu-close" aria-label="Close menu"><span></span><span></span></button></li>
@@ -266,7 +271,7 @@ def footer(root, scripts=()):
   <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-brand">
-        <a class="logo footer-logo" href="{root}">Afsheen</a>
+        <a class="logo footer-logo" href="{root}">Afsheen Kiran</a>
         <p>Front-end web developer &amp; web designer building visually appealing, responsive and user-friendly websites.</p>
       </div>
       <nav aria-label="Footer">
@@ -433,6 +438,7 @@ def home():
         <div class="hero-actions hero-in d-5">
           <a class="btn btn-primary btn-shine magnetic" href="projects/">View my work {ICON['arrow']}</a>
           <a class="btn btn-ghost magnetic" href="hire-me/">Hire me</a>
+          <a class="btn btn-ghost magnetic cv-btn" href="{CV_FILE}" download="Afsheen-Kiran-CV.pdf" data-cv hidden>{ICON['download']} Download CV</a>
         </div>
         <div class="hero-connect hero-in d-6">
           <h2 class="mini-headline">LET'S CONNECT</h2>

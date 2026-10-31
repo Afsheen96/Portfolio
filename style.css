@@ -3539,12 +3539,40 @@ a.contact-card[href]:hover .cc-arrow {
   }
 }
 
+/* Tablets: spread the decorative shapes towards the edges so they stay
+   clear of the intro text and buttons. */
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .main-container {
+    background-image: url(resources/Headerbg-top.png);
+    background-size: 100% auto;
+    background-position: center top 64px;
+  }
+
+  .hero-shapes .shape-dot,
+  .hero-shapes .shape-bar {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero-shapes .shape-dot,
   .hero-shapes .shape-bar,
   .hero-shapes .shape-ring2,
+  .hero-shapes .shape-plus,
   .page-hero-bg span:nth-child(3) {
     display: none;
+  }
+
+  /* Phones: only the small top-right cluster of the decorative shapes, kept
+     clear of the intro text and buttons. */
+  .main-container {
+    background-image: url(resources/header-shape-top.png);
+    background-size: 58% auto;
+    background-position: right 0 top 58px;
+  }
+
+  .hero-canvas {
+    opacity: 0.45;
   }
 
   .project-card.is-featured .pc-title {
@@ -3571,6 +3599,18 @@ a.contact-card[href]:hover .cc-arrow {
   .cta-orb {
     animation: none;
   }
+}
+
+.btn[hidden] {
+  display: none;
+}
+
+.cv-btn svg {
+  font-size: 18px;
+}
+
+.cv-btn:hover svg {
+  transform: translateY(2px);
 }
 
 /* ---------- hiring assessment badge ---------- */
