@@ -417,10 +417,10 @@ def home():
           I design &amp; build <span class="typed" id="typed">modern websites</span><span class="caret" aria-hidden="true"></span>
         </p>
         <p class="headline-paragraph hero-in d-4">
-          I'm a software developer! I can help you build a product, feature or
-          website. Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don't hesitate to contact
-          me.
+          I'm an AI-assisted web developer passionate about turning ideas into
+          modern, engaging, and user-friendly websites. I help individuals,
+          startups, and businesses build responsive digital experiences that
+          strengthen their online presence and bring their ideas to life.
         </p>
         <div class="hero-actions hero-in d-5">
           <a class="btn btn-primary btn-shine magnetic" href="projects/">View my work {ICON['arrow']}</a>
@@ -468,7 +468,7 @@ def home():
         <div class="reveal">
           <p class="eyebrow">About</p>
           <h2 class="section-title left">Hello, I'm Afsheen</h2>
-          <p class="headline-paragraph">I'm a software developer who loves turning ideas into fast, beautiful websites. I combine solid HTML, CSS, JavaScript, React and Next.js skills with smart AI-assisted workflows to deliver polished work quickly.</p>
+          <p class="headline-paragraph">With an MSc in Information Technology and a strong interest in AI, I build websites with HTML, CSS, JavaScript, React and Next.js, using AI-assisted tools to work faster while keeping every detail in my own hands.</p>
           <div class="hero-actions">
             <a class="btn btn-primary magnetic" href="about/">More about me {ICON['arrow']}</a>
             <a class="btn btn-ghost magnetic" href="skills/">My skills</a>
@@ -504,13 +504,9 @@ def about():
       <div class="about-container">
         <div class="sub-container reveal">
           <h2 class="heading">Hello, I'm Afsheen</h2>
-          <p class="headline-paragraph">
-            Hello I’m a software developer! I can help you build a product,
-            feature or website. Look through some of my work and experience!
-            If you like what you see and have a project you need coded,
-            don’t hesitate to contact me.
-          </p>
-          <p class="headline-paragraph">I enjoy the whole journey: shaping an idea, designing a clean interface and writing the code that makes it fast and easy to use. I use AI tools as a smart assistant, so I can explore ideas quickly and spend more time on the details clients notice.</p>
+          <p class="headline-paragraph">I'm Afsheen Kiran, a web developer with an MSc in Information Technology. My studies gave me a solid understanding of how software and the web work, and I now use that foundation to design and build websites of my own.</p>
+          <p class="headline-paragraph">I'm especially interested in artificial intelligence and modern web technologies. I create websites with AI-assisted development tools: they help me plan, write and refine code faster, while I make the design decisions and test that everything works. My Learning AI Lecture Hub, for example, was built and is updated this way.</p>
+          <p class="headline-paragraph">I focus on responsive design, clear user experience and clean, modern interfaces, so every page is easy to use on phones, tablets and desktops. I love learning new things, building creative projects and using technology to solve real problems, like turning scattered lecture links into one searchable library.</p>
           <h2 class="mini-headline">LET'S CONNECT</h2>
           {social(root)}
           <div class="hero-actions">
