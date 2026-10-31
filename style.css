@@ -114,19 +114,6 @@ svg {
   top: 12px;
 }
 
-/* ---------- scroll progress ---------- */
-.scroll-progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  z-index: 60;
-  background: linear-gradient(90deg, var(--primary), var(--accent-light), var(--accent));
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-}
-
 /* ---------- header ---------- */
 .header-nav {
   min-height: 61px;
@@ -2849,7 +2836,13 @@ a.social-btn[href]:hover .brand-icon {
 
 .contact-grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 32px;
+}
+
+.contact-card > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .side-title {
@@ -2860,6 +2853,7 @@ a.social-btn[href]:hover .brand-icon {
 
 .contact-cards {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 14px;
 }
 

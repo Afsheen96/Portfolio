@@ -239,7 +239,6 @@ def header(root, active):
     hire_cur = ' aria-current="page"' if active == 'hire' else ''
     return f'''<body data-page="{active}">
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="scroll-progress" aria-hidden="true"></div>
   <div class="page-veil" aria-hidden="true"></div>
 
   <div class="header-nav" id="header-nav">

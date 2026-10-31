@@ -31,18 +31,13 @@
     }
   });
 
-  // ---------- header + scroll progress ----------
+  // ---------- header ----------
   const headerNav = document.getElementById('header-nav');
-  const progress = document.querySelector('.scroll-progress');
   let ticking = false;
 
   function onScroll() {
     const y = window.scrollY;
     if (headerNav) headerNav.classList.toggle('scrolled', y > 20);
-    if (progress) {
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      progress.style.transform = `scaleX(${max > 0 ? y / max : 0})`;
-    }
     ticking = false;
   }
   window.addEventListener('scroll', () => {

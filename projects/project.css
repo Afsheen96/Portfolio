@@ -808,6 +808,7 @@
   position: relative;
   display: grid;
   gap: 18px;
+  grid-template-columns: minmax(0, 1fr);
   padding: 30px 24px;
   border-radius: 20px;
   background: var(--white);
