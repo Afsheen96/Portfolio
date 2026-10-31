@@ -44,6 +44,8 @@ ICON = {
     'handshake': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11l3-3 3 2 4-4 3 3-7 7a2 2 0 0 1-3 0l-1-1M3 10l4-4 3 2"/></svg>',
     'clock': '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
     'pin': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>',
+    'briefcase': '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>',
+    'chev': '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>',
     'send': '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg>',
 }
 
@@ -76,8 +78,9 @@ PROJECTS = [
                  ('hightechzone-tools.webp', 'Interactive tools and downloadable templates')],
         overview=['HighTechZone is my own website, "Your Gateway to Smarter Technology". It brings AI tool guides, practical tech tips, digital-skills tutorials and free resources together in one place.',
                   'I designed and built it myself with plain HTML, CSS and JavaScript: a bold dark theme with warm gradients, an animated hero, dropdown navigation, a search dialog, FAQ sections, articles and interactive tools such as an AI Prompt Builder, a Password Strength Checker and a Budget Tracker template.'],
-        challenge='I wanted one home for everything I learn and teach about AI and technology: a site that looks premium, is easy to explore, works on every device and costs nothing to host.',
-        approach='I created a recognisable brand, split the content into clear sections (AI Tools, Guides, Projects, Services, About, Contact) and added useful interactive tools so visitors do more than read. Everything is hand-coded, SEO-ready and published on GitHub Pages.',
+        problem=['People who want to learn about AI tools and digital skills usually find the information scattered across many websites, often full of jargon.', 'I wanted one premium-looking, easy-to-explore home for practical guides and tools: a site that works well on every device and costs nothing to host.'],
+        built=['I designed the HighTechZone brand and hand-coded a multi-page website with HTML, CSS and JavaScript: a bold dark theme, an animated hero, dropdown navigation for AI Tools, Guides, Projects, Services, About and Contact, a site search dialog, articles and FAQ sections.', 'I also built interactive tools that run in the browser, an AI Prompt Builder and a Password Strength Checker, plus a downloadable Budget Tracker template. SEO basics (meta tags, Open Graph, structured data, sitemap) are built in, and the site is published on GitHub Pages.'],
+        result=['HighTechZone is live and hosted for free. Visitors can browse guides, try the tools right in their browser and download templates on a phone, tablet or desktop.', 'It shows that I can create a brand and deliver a complete multi-page website, from design to deployment.'],
         features=[('Animated hero', 'A starry, glowing hero with orbiting topic cards that makes a strong first impression.'),
                   ('Clear multi-page structure', 'AI Tools, Guides, Projects, Services, About and Contact, with dropdown navigation.'),
                   ('Search dialog', 'Visitors can quickly search the site from any page.'),
@@ -105,8 +108,9 @@ PROJECTS = [
                  ('lecture-hub-faq.webp', 'About section and Frequently Asked Questions')],
         overview=['Learning AI Lecture Hub (published as "Learn Freelancing AI — Lecture Library") is an independent, student-made page that collects the links to Sir Hisham Sarwar\'s Learn Freelancing AI lectures, so learners can find any lecture in seconds.',
                   'Learners can search by lecture name, number or topic, filter by category (AI &amp; Automation, Freelancing, Web &amp; App Development, Digital Marketing) and open the original video with one click. The page clearly states that it is not an official website and that the videos stay on Facebook.'],
-        challenge='Lecture links were scattered across posts, so finding a specific lesson again (for example "the SEO one") took a lot of scrolling. Learners needed one simple, organised place.',
-        approach='I keep all lectures in a single lectures.json file. A small Node.js build script turns it into the page, so the lectures are real HTML that Google can read, and GitHub Actions rebuilds and publishes the site on every update. Adding a lecture is one line of data.',
+        problem=['The Learn Freelancing AI lecture links were spread across many Facebook posts. Finding one specific lesson again, for example "the SEO one", meant a lot of scrolling, especially on a phone.'],
+        built=['I made one organised page. All lectures live in a single lectures.json file, and a small Node.js build script turns them into real HTML that search engines can read.', 'I added instant search by name, number or topic, category filters, numbered lecture cards with "Watch Lecture" buttons, an FAQ and a clear privacy section. GitHub Actions rebuilds and publishes the site on every update, and the page states that it is an independent student project, not an official website.'],
+        result=['Learners can find any lecture in seconds and open the original video in one tap, on phone or desktop.', 'Adding a new lecture takes one line of data, and the site publishes itself automatically.'],
         features=[('Instant search', 'Search lectures by name, number or category; results update as you type.'),
                   ('Category filters', 'One-tap filters for AI &amp; Automation, Freelancing, Web &amp; App Development and Digital Marketing.'),
                   ('Numbered lecture cards', 'Each lecture shows its number, title, category tag and a "Watch Lecture" button.'),
@@ -123,17 +127,18 @@ PROJECTS = [
         short='AI image-generation workspace',
         tagline='A responsive AI image-generation workspace, turned from a design mockup into a real, working Next.js app.',
         card='A responsive AI image-generation workspace built with Next.js from a design mockup, with a working generator, gallery, image viewer and phone, tablet and desktop layouts.',
-        client='FOMI', role='Frontend Developer', year='2026', type='Web App',
+        client='Hiring Assessment', assessment=True, role='Frontend Developer', year='2026', type='Web App',
         category='webapp',
         live='https://fomi-studio-weld.vercel.app', source='https://github.com/Afsheen96/fomi-studio', source_label='Source code',
         tech=['Next.js', 'React', 'CSS Modules', 'JavaScript', 'Vercel', 'GitHub'],
         desktop='fomi-studio-desktop.webp', mobile='fomi-studio-mobile.webp', og='fomi-studio.jpg',
         gallery=[('fomi-studio-desktop.webp', 'Image Generator workspace with the guided tutorial'),
                  ('../fomi-studio.jpg', 'Prompt panel, references and creations gallery')],
-        overview=["I built this for FOMI's frontend assessment: their Image Generator mockup turned into a real, working Next.js app.",
+        overview=["I built this as part of a frontend hiring assessment: an AI Image Generator design mockup turned into a real, working Next.js app.",
                   'It includes a model picker, reference uploads, a prompt box with keyboard shortcuts, a mocked API that "generates" images and videos, loading placeholders in the right shape, a masonry gallery, a full-size viewer with keyboard navigation, and a guided tutorial that highlights the real controls.'],
-        challenge='A static design mockup does not show how a product behaves. The task was to make every part of it actually work: generating, waiting, browsing and viewing, on every screen size, without a real AI backend.',
-        approach='I rebuilt the interface as reusable React components, added a mocked API so generation feels real, and designed a separate layout for phone, tablet and desktop. On phones the generator becomes a bottom sheet so the gallery always stays in view.',
+        problem=['As part of a frontend hiring assessment, I was given a static design mockup of an AI Image Generator.', 'A mockup does not show how a product behaves. The task was to make every part of it actually work (generating, waiting, browsing and viewing) on every screen size, without a real AI backend.'],
+        built=['I rebuilt the interface in Next.js as reusable React components styled with CSS Modules: a model picker, reference uploads, a prompt box with keyboard shortcuts and a mocked API that "generates" images and videos with realistic waiting times.', 'Loading placeholders match the shape of the coming result, the gallery is a masonry grid and a full-size viewer supports keyboard navigation. A guided tutorial highlights the real controls. Phone, tablet and desktop each get their own layout (on phones the generator becomes a bottom sheet), and the app is deployed on Vercel.'],
+        result=['Anyone can test the complete flow through a live link, on any device.', 'The project shows how I turn a static design into a working, responsive and accessible front end.'],
         features=[('Model picker &amp; references', 'Choose a model and add style or character references, just like the original design.'),
                   ('Smart prompt box', 'Keyboard shortcuts: Ctrl + Enter to generate and / to focus the prompt.'),
                   ('Mocked generation API', 'Images and videos "generate" with realistic waiting times, so the full flow can be tested.'),
@@ -150,17 +155,18 @@ PROJECTS = [
         short='Version-based AI image workspace',
         tagline='My redesign of an AI image workspace where every image is a version you can compare, branch and restore.',
         card='My own redesign of an AI image workspace: every image is a version you can compare, branch and restore, with an automatic "what changed" summary.',
-        client='FOMI', role='Product &amp; UI', year='2026', type='Product Redesign',
+        client='Hiring Assessment', assessment=True, role='Product &amp; UI', year='2026', type='Product Redesign',
         category='webapp',
         live='https://fomi-studio-weld.vercel.app/flow', source='https://github.com/Afsheen96/fomi-studio', source_label='Source code',
         tech=['Next.js', 'React', 'UX Design', 'JavaScript', 'CSS Modules', 'Vercel'],
         desktop='fomi-flow-desktop.webp', mobile='fomi-flow-mobile.webp', og='fomi-flow.jpg',
         gallery=[('fomi-flow-desktop.webp', 'Project sidebar, version history and "What changed" panel'),
                  ('../fomi-flow.jpg', 'Compare slider showing v2 against v4')],
-        overview=['Most AI image tools show results as an endless feed, so good results get lost. In Fomi Flow every generation is a version inside a project.',
+        overview=['My own concept, created during the same frontend hiring assessment. Most AI image tools show results as an endless feed, so good results get lost. In Fomi Flow every generation is a version inside a project.',
                   'A version strip shows the history (with branches like "from v2"), a compare slider puts two versions side by side, and a "What changed" panel lists the prompt words added or removed and any settings change.'],
-        challenge='Professional creators iterate on one image many times. In a normal feed they lose track of which prompt made which result, and going back to an older idea means starting over.',
-        approach='I treated every image like a saved version in a design tool. The prompt bar starts filled with the selected version, so editing means changing a few words instead of rewriting everything, and each change is explained automatically.',
+        problem=['While working on the same hiring assessment, I noticed a UX problem in most AI image tools: results appear in an endless feed.', 'Creators who refine one image many times lose track of which prompt made which result, and going back to an older idea means starting over.'],
+        built=['I designed and built Fomi Flow as my own concept, where every generation is a numbered version inside a project. A version strip shows the history and branches (like "v4 from v2"), a compare slider puts two versions side by side, and a "What changed" panel lists the prompt words added or removed and any settings change.', 'The prompt bar starts filled with the selected version, and notes, copy-prompt and keyboard shortcuts make iterating faster. It is built with Next.js and works on phone, tablet and desktop.'],
+        result=['Creators can see how an image evolved, compare any two versions and continue from any point instead of starting over.', 'The project shows my UX thinking: spotting a real problem, then designing and building a clear solution.'],
         features=[('Versions, not a feed', 'Every generation is saved as a numbered version inside a project.'),
                   ('Branching history', 'A version strip shows where each image came from, e.g. "v4 from v2".'),
                   ('Compare slider', 'Drag a slider to see two versions side by side.'),
@@ -309,6 +315,9 @@ def project_card(p, i, root, big=False):
     host = p['live'].replace('https://', '').rstrip('/')
     cls = 'project-card reveal' + (' is-featured' if big else '')
     badge = f'<span class="feature-badge">{ICON["star"]} Featured project</span>' if p.get('featured') else ''
+    if p.get('assessment'):
+        badge += f'<span class="assess-badge">{ICON["briefcase"]} Hiring Assessment</span>'
+    client = '' if p.get('assessment') else f'<li><strong>{p["client"]}</strong></li>\n            <li><div class="dot"></div></li>\n            '
     tags = ''.join(f'<li>{E(t)}</li>' for t in p['tech'][:4])
     return f'''
       <article class="{cls}" data-category="{p['category']}">
@@ -326,9 +335,7 @@ def project_card(p, i, root, big=False):
           </div>
           <h3 class="pc-title"><a href="{root}projects/{p['slug']}/">{p['full']}</a></h3>
           <ul class="proj">
-            <li><strong>{p['client']}</strong></li>
-            <li><div class="dot"></div></li>
-            <li>{p['role']}</li>
+            {client}<li>{p['role']}</li>
             <li><div class="dot"></div></li>
             <li>{p['year']}</li>
           </ul>
@@ -661,13 +668,35 @@ def contact():
 
 def hire():
     root = '../'
-    services = [
-        (ICON['layout'], 'Website design', 'Modern, on-brand layouts for businesses, personal brands and portfolios.'),
-        (ICON['code'], 'Frontend development', 'Hand-coded HTML, CSS and JavaScript, or React and Next.js for web apps.'),
-        (ICON['phone'], 'Responsive design', 'Layouts that look and work great on phones, tablets and desktops.'),
-        (ICON['refresh'], 'Website redesign', 'Give an existing site a premium, modern look while keeping your identity.'),
-        (ICON['rocket'], 'Landing pages', 'Focused pages that explain your offer clearly and invite visitors to act.'),
-        (ICON['search'], 'SEO-ready setup', 'Meta tags, Open Graph, sitemaps and fast pages so you can be found.'),
+    packages = [
+        dict(icon=ICON['rocket'], name='Landing Page', price=79, radio='Landing page',
+             desc='A focused one-page website for your product, service or event.',
+             items=['Custom single-page website', 'Modern and attractive UI/UX design', 'Responsive mobile-friendly layout',
+                    'Front-end development', 'Clear call-to-action sections', 'Basic on-page SEO'],
+             time='5&ndash;7 days'),
+        dict(icon=ICON['globe'], name='Business Website', price=199, radio='New website', featured=True,
+             desc='A complete multi-page website for your business or personal brand.',
+             items=['Up to 5 website pages', 'Professional website design', 'Responsive front-end development',
+                    'Home, About, Services, Projects, and Contact pages', 'Contact form integration', 'Basic SEO setup',
+                    'Smooth animations and interactions'],
+             time='10&ndash;14 days'),
+        dict(icon=ICON['refresh'], name='Website Redesign', price=129, radio='Website redesign',
+             desc='A modern refresh for the website you already have.',
+             items=['Redesign of up to 3 existing pages', 'Modern UI/UX improvements', 'Responsive layout improvements',
+                    'Better visual consistency', 'Modern styling and interactions', 'Front-end performance improvements where applicable'],
+             time='7&ndash;10 days'),
+    ]
+    faqs = [
+        ('How many revisions are included?',
+         'Every package includes 2 rounds of revisions. Additional revisions or major changes to the agreed scope are discussed separately.'),
+        ('What is your payment process?',
+         'I work with 50% of the payment upfront to start the project and the remaining 50% before final delivery.'),
+        ('How long does a project take?',
+         'It depends on the package: about 5&ndash;7 days for a Landing Page, 10&ndash;14 days for a Business Website and 7&ndash;10 days for a Website Redesign. The exact timeline depends on the project&rsquo;s complexity and on receiving your content (text, images, logo) on time.'),
+        ('Can I request custom features?',
+         'Yes. Tell me what you need and we will discuss it together. Custom features are quoted separately before any work starts.'),
+        ('Do you provide website maintenance?',
+         'Yes. Ongoing maintenance and updates can be arranged as a separate service. We can agree on what you need after your website is live.'),
     ]
     reasons = [
         ('Proven, live work', 'HighTechZone, Learning AI Lecture Hub and two Next.js apps are live right now. You can click and test them.', 'projects/'),
@@ -677,12 +706,37 @@ def hire():
         ('You stay in control', 'Plain explanations and simple guides so you can update content yourself.', None),
         ('Creative design, clean code', 'I pair creative, on-brand design with clean, modern code, so your site looks great and works well.', None),
     ]
-    s_html = ''.join(f'<li class="hire-service reveal"><span class="service-icon">{ic}</span><h3>{t}</h3><p>{d}</p></li>' for ic, t, d in services)
+    def price_card(k):
+        feat = k.get('featured')
+        items = ''.join(f'<li>{ICON["check"]}<span>{t}</span></li>' for t in k['items'])
+        badge = f'<span class="price-badge">{ICON["star"]} Recommended</span>' if feat else ''
+        btn = 'btn-primary btn-shine' if feat else 'btn-ghost'
+        return f'''
+          <article class="price-card reveal{' is-featured' if feat else ''}">
+            {badge}
+            <span class="service-icon">{k['icon']}</span>
+            <h3>{k['name']}</h3>
+            <p class="price-desc">{k['desc']}</p>
+            <p class="price"><span class="price-from">Starting at</span><strong>${k['price']}</strong><span class="price-cur">USD</span></p>
+            <ul class="price-list">{items}</ul>
+            <p class="price-time">{ICON['clock']} Estimated delivery: <strong>{k['time']}</strong></p>
+            <a class="btn {btn} magnetic price-cta" href="#inquiry" data-package="{k['radio']}">Get Started {ICON['arrow']}</a>
+          </article>'''
+    p_html = ''.join(price_card(k) for k in packages)
+    f_html = ''.join(f'''
+          <div class="accordion faq-item reveal">
+            <h3><button type="button" class="accordion-toggle" aria-expanded="false" aria-controls="faq-{i}" id="faq-q-{i}"><span>{q}</span>{ICON['chev']}</button></h3>
+            <div class="accordion-panel" id="faq-{i}" role="region" aria-labelledby="faq-q-{i}"><div><p>{a}</p></div></div>
+          </div>''' for i, (q, a) in enumerate(faqs, 1))
+    ld = {"@context": "https://schema.org", "@type": "FAQPage",
+          "mainEntity": [{"@type": "Question", "name": q,
+                          "acceptedAnswer": {"@type": "Answer", "text": html.unescape(a)}} for q, a in faqs]}
     r_html = ''.join(f'''<li class="reason reveal"><span class="reason-check">{ICON['check']}</span><div><h3>{t}</h3><p>{d}{f' <a href="{root}{l}">See projects</a>' if l else ''}</p></div></li>''' for t, d, l in reasons)
     def opts(items):
         return ''.join(f'<option value="{E(v)}">{E(v)}</option>' for v in items)
     return head(root, 'hire-me/', 'Hire Me | Website Design &amp; Development by Afsheen Kiran',
-                'Hire Afsheen Kiran to design and build your website: web design, front-end development, responsive design, redesigns and landing pages. Send a project inquiry.') + header(root, 'hire') + f'''
+                'Hire Afsheen Kiran to design and build your website. Landing pages from $79, business websites from $199 and website redesigns from $129. Send a project inquiry.',
+                ld=ld) + header(root, 'hire') + f'''
   <main id="main">
     <section class="hire-hero">
       <div class="page-hero-bg" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -703,14 +757,25 @@ def hire():
       </div>
     </section>
 
-    <section class="hire-services">
+    <section class="hire-services pricing" id="pricing">
       <div class="wrap">
         <div class="section-head reveal">
-          <p class="eyebrow">Services</p>
-          <h2 class="section-title">How I can help</h2>
-          <p class="section-sub">Web design and front-end development, from a single landing page to a multi-page website or web app.</p>
+          <p class="eyebrow">Packages</p>
+          <h2 class="section-title">Services &amp; Pricing</h2>
+          <p class="section-sub">Simple packages for web design and front-end development. Pick the one that fits, or tell me about something custom.</p>
         </div>
-        <ul class="hire-service-grid">{s_html}</ul>
+        <div class="price-grid">{p_html}
+        </div>
+        <p class="price-note reveal">{ICON['spark']}<span>All prices are in USD and are <strong>starting prices</strong>. Final pricing depends on the project&rsquo;s scope and complexity. Domain, hosting, premium assets (such as paid fonts, themes or stock images) and additional functionality are charged separately where applicable.</span></p>
+
+        <div class="faq" id="faq">
+          <div class="section-head reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2 class="section-title">Frequently asked questions</h2>
+          </div>
+          <div class="faq-list">{f_html}
+          </div>
+        </div>
       </div>
     </section>
 
@@ -732,6 +797,7 @@ def hire():
         <form action="{FORM_ENDPOINT}" method="post" class="pro-form inquiry-form" id="hireform" data-ajax-form data-draft-key="hire-draft" novalidate>
           <input type="hidden" name="_subject" value="New PROJECT INQUIRY from your portfolio Hire Me page">
           <input type="hidden" name="form_type" value="Project inquiry (Hire Me)">
+          <input type="hidden" name="package" value="No package selected">
           <div class="field-row">
             <div class="field"><label for="h-name">Your name</label><input type="text" id="h-name" name="name" maxlength="60" autocomplete="name" required placeholder="Jane Smith"></div>
             <div class="field"><label for="h-email">Email address</label><input type="email" id="h-email" name="email" autocomplete="email" required placeholder="jane@company.com"></div>
@@ -773,15 +839,23 @@ def case_page(p, idx):
     feats = ''.join(f'''
           <li class="feature reveal"><span class="feature-icon">{ICON['check']}</span><h3>{t}</h3><p>{d}</p></li>''' for t, d in p['features'])
     tech = ''.join(f'<li>{E(t)}</li>' for t in p['tech'])
-    hl = ''.join(f'<div class="stat reveal"><strong>{a}</strong><span>{b}</span></div>' for a, b in p['highlights'])
-    ov = ''.join(f'<p>{t}</p>' for t in p['overview'])
+    hl = ''.join(f'<div class="stat"><strong>{a}</strong><span>{b}</span></div>' for a, b in p['highlights'])
+
+    def paras(key):
+        return ''.join(f'<p>{E(t)}</p>' for t in p[key])
+    # The first gallery shot illustrates "What I Built"; the rest stay in the gallery.
+    built_shot, built_cap = p['gallery'][1] if len(p['gallery']) > 1 else p['gallery'][0]
+    gallery = [g for g in p['gallery'] if g[0] != built_shot]
+    built_src = 'shots/' + built_shot if not built_shot.startswith('../') else built_shot[3:]
+    built_big = built_shot.startswith('../')
+    built_img = frame(root + 'resources/' + built_src, built_cap, host, w=(1088 if built_big else 1440), h=(896 if built_big else 900))
     gal = ''.join(f'''
           <figure class="gallery-item reveal">
             <button type="button" class="zoomable" data-lightbox="{root}resources/{'shots/' + g if not g.startswith('../') else g[3:]}" data-caption="{E(c, quote=True)}" aria-label="Enlarge: {E(c, quote=True)}">
               {frame(root + 'resources/' + ('shots/' + g if not g.startswith('../') else g[3:]), c, w=(1088 if g.startswith('../') else 1440), h=(896 if g.startswith('../') else 900))}
             </button>
             <figcaption>{E(c)}</figcaption>
-          </figure>''' for g, c in p['gallery'])
+          </figure>''' for g, c in gallery)
     full = ''
     if p.get('full_page'):
         full = f'''
@@ -808,11 +882,11 @@ def case_page(p, idx):
         <nav class="breadcrumb reveal" aria-label="Breadcrumb">
           <a href="{root}">Home</a><span>/</span><a href="{root}projects/">Projects</a><span>/</span><span aria-current="page">{p['name']}</span>
         </nav>
-        <p class="eyebrow reveal">Project {idx + 1:02d} &middot; {p['type']}</p>
+        <p class="eyebrow reveal">Project {idx + 1:02d} &middot; {p['type']}{f' <span class="assess-badge">{ICON["briefcase"]} Hiring Assessment</span>' if p.get('assessment') else ''}</p>
         <h1 class="case-title reveal">{p['full']}</h1>
         <p class="case-tagline reveal">{E(p['tagline'])}</p>
         <ul class="case-meta reveal">
-          <li><span>Client</span><strong>{p['client']}</strong></li>
+          <li><span>{'Context' if p.get('assessment') else 'Client'}</span><strong>{p['client']}</strong></li>
           <li><span>Role</span><strong>{p['role']}</strong></li>
           <li><span>Year</span><strong>{p['year']}</strong></li>
           <li><span>Type</span><strong>{p['type']}</strong></li>
@@ -830,31 +904,51 @@ def case_page(p, idx):
       </div>
     </section>
 
-    <section class="case-section">
-      <div class="case-wrap case-grid">
-        <div class="reveal"><p class="eyebrow">Overview</p><h2 class="case-h2">Project overview</h2></div>
-        <div class="case-text reveal">{ov}</div>
+    <section class="case-section case-study" aria-labelledby="cs-title">
+      <div class="case-wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Case study</p>
+          <h2 class="section-title" id="cs-title">From problem to result</h2>
+          <ol class="cs-path" aria-hidden="true"><li>Problem</li><li>What I Built</li><li>Result</li></ol>
+        </div>
+        <div class="cs-flow">
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">A</span><h3>Problem</h3></header>
+            <div class="cs-body">{paras('problem')}</div>
+          </article>
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">B</span><h3>What I Built</h3></header>
+            <div class="cs-body">
+              {paras('built')}
+              <p class="cs-label">Tech stack</p>
+              <ul class="language tech-list">{tech}</ul>
+              <figure class="cs-shot">
+                <button type="button" class="zoomable" data-lightbox="{root}resources/{built_src}" data-caption="{E(built_cap, quote=True)}" aria-label="Enlarge: {E(built_cap, quote=True)}">{built_img}</button>
+                <figcaption>{E(built_cap)}</figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">C</span><h3>Result</h3></header>
+            <div class="cs-body">
+              {paras('result')}
+              <div class="stats cs-stats">{hl}</div>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="case-wrap stats">{hl}</div>
     </section>
 
     <section class="case-section alt">
-      <div class="case-wrap two-cards">
-        <article class="story-card reveal"><span class="story-num">01</span><h2>The challenge</h2><p>{E(p['challenge'])}</p></article>
-        <article class="story-card reveal"><span class="story-num">02</span><h2>My approach</h2><p>{E(p['approach'])}</p></article>
-      </div>
-    </section>
-
-    <section class="case-section">
       <div class="case-wrap">
-        <div class="section-head reveal"><p class="eyebrow">Screens</p><h2 class="section-title">Website previews</h2>
+        <div class="section-head reveal"><p class="eyebrow">Screens</p><h2 class="section-title">More previews</h2>
           <p class="section-sub">Real screenshots from the live project. Click any screen to enlarge it.</p></div>
         <div class="gallery">{gal}
         </div>{full}
       </div>
     </section>
 
-    <section class="case-section alt">
+    <section class="case-section">
       <div class="case-wrap">
         <div class="section-head reveal"><p class="eyebrow">Features</p><h2 class="section-title">What it does</h2></div>
         <ul class="features">{feats}
@@ -862,7 +956,7 @@ def case_page(p, idx):
       </div>
     </section>
 
-    <section class="case-section" id="preview">
+    <section class="case-section alt" id="preview">
       <div class="case-wrap">
         <div class="section-head reveal">
           <p class="eyebrow">Live preview</p>
@@ -888,13 +982,6 @@ def case_page(p, idx):
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="case-section alt">
-      <div class="case-wrap case-grid">
-        <div class="reveal"><p class="eyebrow">Tech stack</p><h2 class="case-h2">Built with</h2></div>
-        <div class="reveal"><ul class="language tech-list">{tech}</ul></div>
       </div>
     </section>
 

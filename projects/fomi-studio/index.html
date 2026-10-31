@@ -64,11 +64,11 @@
         <nav class="breadcrumb reveal" aria-label="Breadcrumb">
           <a href="../../">Home</a><span>/</span><a href="../../projects/">Projects</a><span>/</span><span aria-current="page">Fomi Studio</span>
         </nav>
-        <p class="eyebrow reveal">Project 03 &middot; Web App</p>
+        <p class="eyebrow reveal">Project 03 &middot; Web App <span class="assess-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg> Hiring Assessment</span></p>
         <h1 class="case-title reveal">Fomi Studio: AI Image Workspace</h1>
         <p class="case-tagline reveal">A responsive AI image-generation workspace, turned from a design mockup into a real, working Next.js app.</p>
         <ul class="case-meta reveal">
-          <li><span>Client</span><strong>FOMI</strong></li>
+          <li><span>Context</span><strong>Hiring Assessment</strong></li>
           <li><span>Role</span><strong>Frontend Developer</strong></li>
           <li><span>Year</span><strong>2026</strong></li>
           <li><span>Type</span><strong>Web App</strong></li>
@@ -89,24 +89,47 @@
       </div>
     </section>
 
-    <section class="case-section">
-      <div class="case-wrap case-grid">
-        <div class="reveal"><p class="eyebrow">Overview</p><h2 class="case-h2">Project overview</h2></div>
-        <div class="case-text reveal"><p>I built this for FOMI's frontend assessment: their Image Generator mockup turned into a real, working Next.js app.</p><p>It includes a model picker, reference uploads, a prompt box with keyboard shortcuts, a mocked API that "generates" images and videos, loading placeholders in the right shape, a masonry gallery, a full-size viewer with keyboard navigation, and a guided tutorial that highlights the real controls.</p></div>
+    <section class="case-section case-study" aria-labelledby="cs-title">
+      <div class="case-wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Case study</p>
+          <h2 class="section-title" id="cs-title">From problem to result</h2>
+          <ol class="cs-path" aria-hidden="true"><li>Problem</li><li>What I Built</li><li>Result</li></ol>
+        </div>
+        <div class="cs-flow">
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">A</span><h3>Problem</h3></header>
+            <div class="cs-body"><p>As part of a frontend hiring assessment, I was given a static design mockup of an AI Image Generator.</p><p>A mockup does not show how a product behaves. The task was to make every part of it actually work (generating, waiting, browsing and viewing) on every screen size, without a real AI backend.</p></div>
+          </article>
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">B</span><h3>What I Built</h3></header>
+            <div class="cs-body">
+              <p>I rebuilt the interface in Next.js as reusable React components styled with CSS Modules: a model picker, reference uploads, a prompt box with keyboard shortcuts and a mocked API that &quot;generates&quot; images and videos with realistic waiting times.</p><p>Loading placeholders match the shape of the coming result, the gallery is a masonry grid and a full-size viewer supports keyboard navigation. A guided tutorial highlights the real controls. Phone, tablet and desktop each get their own layout (on phones the generator becomes a bottom sheet), and the app is deployed on Vercel.</p>
+              <p class="cs-label">Tech stack</p>
+              <ul class="language tech-list"><li>Next.js</li><li>React</li><li>CSS Modules</li><li>JavaScript</li><li>Vercel</li><li>GitHub</li></ul>
+              <figure class="cs-shot">
+                <button type="button" class="zoomable" data-lightbox="../../resources/fomi-studio.jpg" data-caption="Prompt panel, references and creations gallery" aria-label="Enlarge: Prompt panel, references and creations gallery"><div class="browser-frame ">
+            <div class="browser-bar"><span></span><span></span><span></span><em>fomi-studio-weld.vercel.app</em></div>
+            <div class="frame-shot"><img src="../../resources/fomi-studio.jpg" alt="Prompt panel, references and creations gallery" width="1088" height="896" loading="lazy" decoding="async"></div>
+          </div></button>
+                <figcaption>Prompt panel, references and creations gallery</figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">C</span><h3>Result</h3></header>
+            <div class="cs-body">
+              <p>Anyone can test the complete flow through a live link, on any device.</p><p>The project shows how I turn a static design into a working, responsive and accessible front end.</p>
+              <div class="stats cs-stats"><div class="stat"><strong>3</strong><span>layouts: phone, tablet, desktop</span></div><div class="stat"><strong>4-step</strong><span>guided tutorial</span></div><div class="stat"><strong>2026</strong><span>built &amp; deployed on Vercel</span></div></div>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="case-wrap stats"><div class="stat reveal"><strong>3</strong><span>layouts: phone, tablet, desktop</span></div><div class="stat reveal"><strong>4-step</strong><span>guided tutorial</span></div><div class="stat reveal"><strong>2026</strong><span>built &amp; deployed on Vercel</span></div></div>
     </section>
 
     <section class="case-section alt">
-      <div class="case-wrap two-cards">
-        <article class="story-card reveal"><span class="story-num">01</span><h2>The challenge</h2><p>A static design mockup does not show how a product behaves. The task was to make every part of it actually work: generating, waiting, browsing and viewing, on every screen size, without a real AI backend.</p></article>
-        <article class="story-card reveal"><span class="story-num">02</span><h2>My approach</h2><p>I rebuilt the interface as reusable React components, added a mocked API so generation feels real, and designed a separate layout for phone, tablet and desktop. On phones the generator becomes a bottom sheet so the gallery always stays in view.</p></article>
-      </div>
-    </section>
-
-    <section class="case-section">
       <div class="case-wrap">
-        <div class="section-head reveal"><p class="eyebrow">Screens</p><h2 class="section-title">Website previews</h2>
+        <div class="section-head reveal"><p class="eyebrow">Screens</p><h2 class="section-title">More previews</h2>
           <p class="section-sub">Real screenshots from the live project. Click any screen to enlarge it.</p></div>
         <div class="gallery">
           <figure class="gallery-item reveal">
@@ -118,20 +141,11 @@
             </button>
             <figcaption>Image Generator workspace with the guided tutorial</figcaption>
           </figure>
-          <figure class="gallery-item reveal">
-            <button type="button" class="zoomable" data-lightbox="../../resources/fomi-studio.jpg" data-caption="Prompt panel, references and creations gallery" aria-label="Enlarge: Prompt panel, references and creations gallery">
-              <div class="browser-frame ">
-            <div class="browser-bar"><span></span><span></span><span></span></div>
-            <div class="frame-shot"><img src="../../resources/fomi-studio.jpg" alt="Prompt panel, references and creations gallery" width="1088" height="896" loading="lazy" decoding="async"></div>
-          </div>
-            </button>
-            <figcaption>Prompt panel, references and creations gallery</figcaption>
-          </figure>
         </div>
       </div>
     </section>
 
-    <section class="case-section alt">
+    <section class="case-section">
       <div class="case-wrap">
         <div class="section-head reveal"><p class="eyebrow">Features</p><h2 class="section-title">What it does</h2></div>
         <ul class="features">
@@ -148,7 +162,7 @@
       </div>
     </section>
 
-    <section class="case-section" id="preview">
+    <section class="case-section alt" id="preview">
       <div class="case-wrap">
         <div class="section-head reveal">
           <p class="eyebrow">Live preview</p>
@@ -174,13 +188,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="case-section alt">
-      <div class="case-wrap case-grid">
-        <div class="reveal"><p class="eyebrow">Tech stack</p><h2 class="case-h2">Built with</h2></div>
-        <div class="reveal"><ul class="language tech-list"><li>Next.js</li><li>React</li><li>CSS Modules</li><li>JavaScript</li><li>Vercel</li><li>GitHub</li></ul></div>
       </div>
     </section>
 

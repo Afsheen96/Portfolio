@@ -89,24 +89,47 @@
       </div>
     </section>
 
-    <section class="case-section">
-      <div class="case-wrap case-grid">
-        <div class="reveal"><p class="eyebrow">Overview</p><h2 class="case-h2">Project overview</h2></div>
-        <div class="case-text reveal"><p>Learning AI Lecture Hub (published as "Learn Freelancing AI — Lecture Library") is an independent, student-made page that collects the links to Sir Hisham Sarwar's Learn Freelancing AI lectures, so learners can find any lecture in seconds.</p><p>Learners can search by lecture name, number or topic, filter by category (AI &amp; Automation, Freelancing, Web &amp; App Development, Digital Marketing) and open the original video with one click. The page clearly states that it is not an official website and that the videos stay on Facebook.</p></div>
+    <section class="case-section case-study" aria-labelledby="cs-title">
+      <div class="case-wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Case study</p>
+          <h2 class="section-title" id="cs-title">From problem to result</h2>
+          <ol class="cs-path" aria-hidden="true"><li>Problem</li><li>What I Built</li><li>Result</li></ol>
+        </div>
+        <div class="cs-flow">
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">A</span><h3>Problem</h3></header>
+            <div class="cs-body"><p>The Learn Freelancing AI lecture links were spread across many Facebook posts. Finding one specific lesson again, for example &quot;the SEO one&quot;, meant a lot of scrolling, especially on a phone.</p></div>
+          </article>
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">B</span><h3>What I Built</h3></header>
+            <div class="cs-body">
+              <p>I made one organised page. All lectures live in a single lectures.json file, and a small Node.js build script turns them into real HTML that search engines can read.</p><p>I added instant search by name, number or topic, category filters, numbered lecture cards with &quot;Watch Lecture&quot; buttons, an FAQ and a clear privacy section. GitHub Actions rebuilds and publishes the site on every update, and the page states that it is an independent student project, not an official website.</p>
+              <p class="cs-label">Tech stack</p>
+              <ul class="language tech-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>JSON</li><li>Node.js build script</li><li>GitHub Actions</li><li>GitHub Pages</li></ul>
+              <figure class="cs-shot">
+                <button type="button" class="zoomable" data-lightbox="../../resources/shots/lecture-hub-list.webp" data-caption="Numbered lecture list with categories and Watch Lecture buttons" aria-label="Enlarge: Numbered lecture list with categories and Watch Lecture buttons"><div class="browser-frame ">
+            <div class="browser-bar"><span></span><span></span><span></span><em>afsheen96.github.io/lecture-library</em></div>
+            <div class="frame-shot"><img src="../../resources/shots/lecture-hub-list.webp" alt="Numbered lecture list with categories and Watch Lecture buttons" width="1440" height="900" loading="lazy" decoding="async"></div>
+          </div></button>
+                <figcaption>Numbered lecture list with categories and Watch Lecture buttons</figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">C</span><h3>Result</h3></header>
+            <div class="cs-body">
+              <p>Learners can find any lecture in seconds and open the original video in one tap, on phone or desktop.</p><p>Adding a new lecture takes one line of data, and the site publishes itself automatically.</p>
+              <div class="stats cs-stats"><div class="stat"><strong>8</strong><span>lectures organised and searchable</span></div><div class="stat"><strong>4</strong><span>category filters</span></div><div class="stat"><strong>1 file</strong><span>to add new lectures</span></div></div>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="case-wrap stats"><div class="stat reveal"><strong>8</strong><span>lectures organised and searchable</span></div><div class="stat reveal"><strong>4</strong><span>category filters</span></div><div class="stat reveal"><strong>1 file</strong><span>to add new lectures</span></div></div>
     </section>
 
     <section class="case-section alt">
-      <div class="case-wrap two-cards">
-        <article class="story-card reveal"><span class="story-num">01</span><h2>The challenge</h2><p>Lecture links were scattered across posts, so finding a specific lesson again (for example &quot;the SEO one&quot;) took a lot of scrolling. Learners needed one simple, organised place.</p></article>
-        <article class="story-card reveal"><span class="story-num">02</span><h2>My approach</h2><p>I keep all lectures in a single lectures.json file. A small Node.js build script turns it into the page, so the lectures are real HTML that Google can read, and GitHub Actions rebuilds and publishes the site on every update. Adding a lecture is one line of data.</p></article>
-      </div>
-    </section>
-
-    <section class="case-section">
       <div class="case-wrap">
-        <div class="section-head reveal"><p class="eyebrow">Screens</p><h2 class="section-title">Website previews</h2>
+        <div class="section-head reveal"><p class="eyebrow">Screens</p><h2 class="section-title">More previews</h2>
           <p class="section-sub">Real screenshots from the live project. Click any screen to enlarge it.</p></div>
         <div class="gallery">
           <figure class="gallery-item reveal">
@@ -117,15 +140,6 @@
           </div>
             </button>
             <figcaption>Course cover and &quot;Find Your Next Lecture.&quot; search</figcaption>
-          </figure>
-          <figure class="gallery-item reveal">
-            <button type="button" class="zoomable" data-lightbox="../../resources/shots/lecture-hub-list.webp" data-caption="Numbered lecture list with categories and Watch Lecture buttons" aria-label="Enlarge: Numbered lecture list with categories and Watch Lecture buttons">
-              <div class="browser-frame ">
-            <div class="browser-bar"><span></span><span></span><span></span></div>
-            <div class="frame-shot"><img src="../../resources/shots/lecture-hub-list.webp" alt="Numbered lecture list with categories and Watch Lecture buttons" width="1440" height="900" loading="lazy" decoding="async"></div>
-          </div>
-            </button>
-            <figcaption>Numbered lecture list with categories and Watch Lecture buttons</figcaption>
           </figure>
           <figure class="gallery-item reveal">
             <button type="button" class="zoomable" data-lightbox="../../resources/shots/lecture-hub-search.webp" data-caption="Instant search: typing &quot;SEO&quot; finds the right lecture" aria-label="Enlarge: Instant search: typing &quot;SEO&quot; finds the right lecture">
@@ -158,7 +172,7 @@
       </div>
     </section>
 
-    <section class="case-section alt">
+    <section class="case-section">
       <div class="case-wrap">
         <div class="section-head reveal"><p class="eyebrow">Features</p><h2 class="section-title">What it does</h2></div>
         <ul class="features">
@@ -175,7 +189,7 @@
       </div>
     </section>
 
-    <section class="case-section" id="preview">
+    <section class="case-section alt" id="preview">
       <div class="case-wrap">
         <div class="section-head reveal">
           <p class="eyebrow">Live preview</p>
@@ -201,13 +215,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="case-section alt">
-      <div class="case-wrap case-grid">
-        <div class="reveal"><p class="eyebrow">Tech stack</p><h2 class="case-h2">Built with</h2></div>
-        <div class="reveal"><ul class="language tech-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>JSON</li><li>Node.js build script</li><li>GitHub Actions</li><li>GitHub Pages</li></ul></div>
       </div>
     </section>
 

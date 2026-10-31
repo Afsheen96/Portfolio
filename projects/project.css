@@ -768,3 +768,177 @@
     grid-column: 1 / -1;
   }
 }
+
+/* ---------- case study: problem -> what I built -> result ---------- */
+.cs-path {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cs-path li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--chip);
+  color: var(--primary-dark);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cs-path li + li::before {
+  content: "\2192";
+  margin-left: -4px;
+  color: var(--accent-light);
+}
+
+.cs-flow {
+  display: grid;
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.cs-step {
+  position: relative;
+  display: grid;
+  gap: 18px;
+  padding: 30px 24px;
+  border-radius: 20px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s, border-color 0.4s, opacity 0.9s var(--ease);
+}
+
+.cs-step:hover {
+  border-color: rgba(96, 112, 255, 0.4);
+  box-shadow: var(--shadow-md);
+}
+
+.cs-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 47px;
+  bottom: -29px;
+  width: 2px;
+  height: 28px;
+  background: linear-gradient(var(--primary), var(--accent-light));
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.6s var(--ease) 0.3s;
+}
+
+.cs-step.visible::after {
+  transform: scaleY(1);
+}
+
+.cs-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cs-letter {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--primary), var(--accent-light));
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(96, 112, 255, 0.3);
+  transition: transform 0.4s var(--ease);
+}
+
+.cs-step:hover .cs-letter {
+  transform: rotate(-8deg) scale(1.06);
+}
+
+.cs-head h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--heading);
+}
+
+.cs-body p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.cs-body p + p {
+  margin-top: 14px;
+}
+
+.cs-body .cs-label {
+  margin-top: 24px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.cs-body .tech-list {
+  margin-top: 10px;
+}
+
+.cs-shot {
+  margin: 28px 0 0;
+}
+
+.cs-shot .browser-frame {
+  box-shadow: var(--shadow-md);
+}
+
+.cs-shot figcaption {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--text);
+  text-align: center;
+}
+
+.cs-stats {
+  margin-top: 24px;
+}
+
+.cs-stats .stat {
+  background: var(--bg);
+}
+
+@media screen and (min-width: 600px) {
+  .cs-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cs-step {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 32px;
+    padding: 40px;
+  }
+
+  .cs-step:not(:last-child)::after {
+    left: 63px;
+  }
+
+  .cs-head {
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: start;
+  }
+
+  .cs-body p {
+    font-size: 17px;
+  }
+}

@@ -64,11 +64,11 @@
         <nav class="breadcrumb reveal" aria-label="Breadcrumb">
           <a href="../../">Home</a><span>/</span><a href="../../projects/">Projects</a><span>/</span><span aria-current="page">Fomi Flow</span>
         </nav>
-        <p class="eyebrow reveal">Project 04 &middot; Product Redesign</p>
+        <p class="eyebrow reveal">Project 04 &middot; Product Redesign <span class="assess-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg> Hiring Assessment</span></p>
         <h1 class="case-title reveal">Fomi Flow: Version-based Workspace</h1>
         <p class="case-tagline reveal">My redesign of an AI image workspace where every image is a version you can compare, branch and restore.</p>
         <ul class="case-meta reveal">
-          <li><span>Client</span><strong>FOMI</strong></li>
+          <li><span>Context</span><strong>Hiring Assessment</strong></li>
           <li><span>Role</span><strong>Product &amp; UI</strong></li>
           <li><span>Year</span><strong>2026</strong></li>
           <li><span>Type</span><strong>Product Redesign</strong></li>
@@ -89,24 +89,47 @@
       </div>
     </section>
 
-    <section class="case-section">
-      <div class="case-wrap case-grid">
-        <div class="reveal"><p class="eyebrow">Overview</p><h2 class="case-h2">Project overview</h2></div>
-        <div class="case-text reveal"><p>Most AI image tools show results as an endless feed, so good results get lost. In Fomi Flow every generation is a version inside a project.</p><p>A version strip shows the history (with branches like "from v2"), a compare slider puts two versions side by side, and a "What changed" panel lists the prompt words added or removed and any settings change.</p></div>
+    <section class="case-section case-study" aria-labelledby="cs-title">
+      <div class="case-wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Case study</p>
+          <h2 class="section-title" id="cs-title">From problem to result</h2>
+          <ol class="cs-path" aria-hidden="true"><li>Problem</li><li>What I Built</li><li>Result</li></ol>
+        </div>
+        <div class="cs-flow">
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">A</span><h3>Problem</h3></header>
+            <div class="cs-body"><p>While working on the same hiring assessment, I noticed a UX problem in most AI image tools: results appear in an endless feed.</p><p>Creators who refine one image many times lose track of which prompt made which result, and going back to an older idea means starting over.</p></div>
+          </article>
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">B</span><h3>What I Built</h3></header>
+            <div class="cs-body">
+              <p>I designed and built Fomi Flow as my own concept, where every generation is a numbered version inside a project. A version strip shows the history and branches (like &quot;v4 from v2&quot;), a compare slider puts two versions side by side, and a &quot;What changed&quot; panel lists the prompt words added or removed and any settings change.</p><p>The prompt bar starts filled with the selected version, and notes, copy-prompt and keyboard shortcuts make iterating faster. It is built with Next.js and works on phone, tablet and desktop.</p>
+              <p class="cs-label">Tech stack</p>
+              <ul class="language tech-list"><li>Next.js</li><li>React</li><li>UX Design</li><li>JavaScript</li><li>CSS Modules</li><li>Vercel</li></ul>
+              <figure class="cs-shot">
+                <button type="button" class="zoomable" data-lightbox="../../resources/fomi-flow.jpg" data-caption="Compare slider showing v2 against v4" aria-label="Enlarge: Compare slider showing v2 against v4"><div class="browser-frame ">
+            <div class="browser-bar"><span></span><span></span><span></span><em>fomi-studio-weld.vercel.app/flow</em></div>
+            <div class="frame-shot"><img src="../../resources/fomi-flow.jpg" alt="Compare slider showing v2 against v4" width="1088" height="896" loading="lazy" decoding="async"></div>
+          </div></button>
+                <figcaption>Compare slider showing v2 against v4</figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="cs-step reveal">
+            <header class="cs-head"><span class="cs-letter">C</span><h3>Result</h3></header>
+            <div class="cs-body">
+              <p>Creators can see how an image evolved, compare any two versions and continue from any point instead of starting over.</p><p>The project shows my UX thinking: spotting a real problem, then designing and building a clear solution.</p>
+              <div class="stats cs-stats"><div class="stat"><strong>1 click</strong><span>to compare any two versions</span></div><div class="stat"><strong>Auto</strong><span>"what changed" summaries</span></div><div class="stat"><strong>2026</strong><span>concept, design &amp; build</span></div></div>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="case-wrap stats"><div class="stat reveal"><strong>1 click</strong><span>to compare any two versions</span></div><div class="stat reveal"><strong>Auto</strong><span>"what changed" summaries</span></div><div class="stat reveal"><strong>2026</strong><span>concept, design &amp; build</span></div></div>
     </section>
 
     <section class="case-section alt">
-      <div class="case-wrap two-cards">
-        <article class="story-card reveal"><span class="story-num">01</span><h2>The challenge</h2><p>Professional creators iterate on one image many times. In a normal feed they lose track of which prompt made which result, and going back to an older idea means starting over.</p></article>
-        <article class="story-card reveal"><span class="story-num">02</span><h2>My approach</h2><p>I treated every image like a saved version in a design tool. The prompt bar starts filled with the selected version, so editing means changing a few words instead of rewriting everything, and each change is explained automatically.</p></article>
-      </div>
-    </section>
-
-    <section class="case-section">
       <div class="case-wrap">
-        <div class="section-head reveal"><p class="eyebrow">Screens</p><h2 class="section-title">Website previews</h2>
+        <div class="section-head reveal"><p class="eyebrow">Screens</p><h2 class="section-title">More previews</h2>
           <p class="section-sub">Real screenshots from the live project. Click any screen to enlarge it.</p></div>
         <div class="gallery">
           <figure class="gallery-item reveal">
@@ -118,20 +141,11 @@
             </button>
             <figcaption>Project sidebar, version history and &quot;What changed&quot; panel</figcaption>
           </figure>
-          <figure class="gallery-item reveal">
-            <button type="button" class="zoomable" data-lightbox="../../resources/fomi-flow.jpg" data-caption="Compare slider showing v2 against v4" aria-label="Enlarge: Compare slider showing v2 against v4">
-              <div class="browser-frame ">
-            <div class="browser-bar"><span></span><span></span><span></span></div>
-            <div class="frame-shot"><img src="../../resources/fomi-flow.jpg" alt="Compare slider showing v2 against v4" width="1088" height="896" loading="lazy" decoding="async"></div>
-          </div>
-            </button>
-            <figcaption>Compare slider showing v2 against v4</figcaption>
-          </figure>
         </div>
       </div>
     </section>
 
-    <section class="case-section alt">
+    <section class="case-section">
       <div class="case-wrap">
         <div class="section-head reveal"><p class="eyebrow">Features</p><h2 class="section-title">What it does</h2></div>
         <ul class="features">
@@ -148,7 +162,7 @@
       </div>
     </section>
 
-    <section class="case-section" id="preview">
+    <section class="case-section alt" id="preview">
       <div class="case-wrap">
         <div class="section-head reveal">
           <p class="eyebrow">Live preview</p>
@@ -174,13 +188,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="case-section alt">
-      <div class="case-wrap case-grid">
-        <div class="reveal"><p class="eyebrow">Tech stack</p><h2 class="case-h2">Built with</h2></div>
-        <div class="reveal"><ul class="language tech-list"><li>Next.js</li><li>React</li><li>UX Design</li><li>JavaScript</li><li>CSS Modules</li><li>Vercel</li></ul></div>
       </div>
     </section>
 

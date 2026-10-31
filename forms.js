@@ -112,4 +112,21 @@
       }
     });
   });
+
+  // "Get Started" on a pricing card: pick the matching project type in the
+  // Hire Me form and note the package, then the link scrolls to the form.
+  document.querySelectorAll('[data-package]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const form = document.getElementById('hireform');
+      if (!form) return;
+      const radio = form.querySelector(`input[name="project_type"][value="${link.dataset.package}"]`);
+      if (radio) {
+        radio.checked = true;
+        radio.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+      const pkg = form.querySelector('input[name="package"]');
+      const card = link.closest('.price-card');
+      if (pkg && card) pkg.value = `${card.querySelector('h3').textContent} (${card.querySelector('.price strong').textContent})`;
+    });
+  });
 })();
