@@ -1,8 +1,8 @@
 // Contact and Hire Me forms.
-// Messages are delivered by Formspree (the form service already used on this
-// site, set in each form's "action"). With JavaScript the form is sent in the
-// background and a message is shown on the page; without JavaScript the
-// browser posts the form to Formspree normally.
+// Messages are emailed to Afsheen's Gmail by FormSubmit (formsubmit.co, set in
+// each form's "action"). With JavaScript the form is sent in the background
+// and a message is shown on the page; without JavaScript the browser posts the
+// form to FormSubmit normally and comes back here with ?sent=1.
 (() => {
   const forms = document.querySelectorAll('form[data-ajax-form]');
 
@@ -26,6 +26,10 @@
   }
 
   forms.forEach((form) => {
+    // Came back from FormSubmit without JavaScript.
+    if (/[?&]sent=1/.test(window.location.search)) {
+      setStatus(form, 'success', 'Thank you! Your message has been sent.');
+    }
     const key = form.dataset.draftKey;
     const selector = 'input[name]:not([type="hidden"]):not(.hp-field), textarea[name], select[name]';
     const fields = Array.from(form.querySelectorAll(selector));
@@ -92,12 +96,15 @@
       setStatus(form, 'info', 'Sending your message...');
 
       try {
-        const response = await fetch(form.action, {
+        const response = await fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
           method: 'POST',
           body: new FormData(form),
           headers: { Accept: 'application/json' },
         });
-        if (!response.ok) throw new Error(`Status ${response.status}`);
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || String(result.success) !== 'true') {
+          throw new Error(result.message || `Status ${response.status}`);
+        }
         form.reset();
         try { localStorage.removeItem(key); } catch (e) { /* ignore */ }
         form.classList.add('is-sent');
@@ -105,6 +112,10 @@
           ? 'Thank you! Your project inquiry has been sent. I will reply by email soon.'
           : 'Thank you! Your message has been sent. I will get back to you soon.');
       } catch (err) {
+        if (/activat/i.test(err.message)) {
+          setStatus(form, 'error', 'This form is being set up. Please try again a little later, or reach me on LinkedIn.');
+          return;
+        }
         setStatus(form, 'error', 'Sorry, the message could not be sent right now. Please try again in a moment, or reach me on LinkedIn.');
       } finally {
         button.disabled = false;

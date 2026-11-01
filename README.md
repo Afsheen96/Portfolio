@@ -50,7 +50,7 @@
 - Responsive for different devices
 - Animated hero background: drifting particles that react to the mouse, soft moving light and parallax shapes (paused off-screen, off for "reduce motion")
 - Separate pages, each with its own URL: Home, About, Skills, Projects, Contact and Hire Me
-- Hire Me has a project inquiry form; Contact has a general message form (both delivered by Formspree)
+- Hire Me has a project inquiry form; Contact has a general message form (both emailed to the Gmail address in `FORM_EMAIL` in tools/build.py via FormSubmit; the first message sends a one-time "Activate Form" email)
 - A case-study page for every project with real screenshots, features, a live preview and links:
   - [HighTechZone](https://afsheen96.github.io/Portfolio/projects/hightechzone/)
   - [Learning AI Lecture Hub](https://afsheen96.github.io/Portfolio/projects/learning-ai-lecture-hub/)

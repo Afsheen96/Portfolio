@@ -16,7 +16,11 @@ import os
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = 'https://afsheen96.github.io/Portfolio/'
-FORM_ENDPOINT = 'https://formspree.io/f/xpzebdqb'
+# Both forms are delivered to this Gmail address by FormSubmit (formsubmit.co):
+# no account, no Formspree. The very first message sends an "Activate Form"
+# email to this address; click it once and every later message arrives.
+FORM_EMAIL = '18mit29260@gmail.com'
+FORM_ENDPOINT = 'https://formsubmit.co/' + FORM_EMAIL
 YEAR = '2026'
 E = html.escape
 
@@ -655,13 +659,16 @@ def contact():
           <form action="{FORM_ENDPOINT}" method="post" class="pro-form" id="contactform" data-ajax-form data-draft-key="contact-draft" novalidate>
             <input type="hidden" name="_subject" value="New message from your portfolio Contact page">
             <input type="hidden" name="form_type" value="General contact">
+            <input type="hidden" name="_next" value="{BASE}contact/?sent=1#contactform">
             <div class="field-row">
               <div class="field"><label for="c-name">Your name</label><input type="text" id="c-name" name="name" maxlength="60" autocomplete="name" required placeholder="Jane Smith"></div>
               <div class="field"><label for="c-email">Email</label><input type="email" id="c-email" name="email" autocomplete="email" required placeholder="jane@example.com"></div>
             </div>
             <div class="field"><label for="c-subject">Subject</label><input type="text" id="c-subject" name="subject" maxlength="100" required placeholder="What would you like to talk about?"></div>
             <div class="field"><label for="c-message">Message</label><textarea id="c-message" name="message" rows="6" maxlength="1000" required placeholder="Write your message here"></textarea></div>
-            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
             <p class="form-status" role="status" aria-live="polite"></p>
             <button class="btn btn-primary btn-shine form-submit" type="submit">Send message {ICON['send']}</button>
           </form>
@@ -803,6 +810,7 @@ def hire():
         <form action="{FORM_ENDPOINT}" method="post" class="pro-form inquiry-form" id="hireform" data-ajax-form data-draft-key="hire-draft" novalidate>
           <input type="hidden" name="_subject" value="New PROJECT INQUIRY from your portfolio Hire Me page">
           <input type="hidden" name="form_type" value="Project inquiry (Hire Me)">
+          <input type="hidden" name="_next" value="{BASE}hire-me/?sent=1#inquiry">
           <input type="hidden" name="package" value="No package selected">
           <div class="field-row">
             <div class="field"><label for="h-name">Your name</label><input type="text" id="h-name" name="name" maxlength="60" autocomplete="name" required placeholder="Jane Smith"></div>
@@ -826,7 +834,9 @@ def hire():
             <div class="field"><label for="h-time">Expected timeline <span class="optional">(optional)</span></label>
               <select id="h-time" name="timeline"><option value="">Select a timeline</option>{opts(['As soon as possible', 'Within 2 weeks', 'Within 1 month', '1 - 3 months', 'Flexible'])}</select></div>
           </div>
-          <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
           <p class="form-status" role="status" aria-live="polite"></p>
           <button class="form-button form-submit btn-shine" type="submit">Send project inquiry {ICON['send']}</button>
           <p class="form-note">Prefer a quick general question? Use the <a href="../contact/">Contact page</a>.</p>

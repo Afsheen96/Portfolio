@@ -90,16 +90,19 @@
 
         <div class="contact-form-card reveal">
           <h2 class="side-title">Send a message</h2>
-          <form action="https://formspree.io/f/xpzebdqb" method="post" class="pro-form" id="contactform" data-ajax-form data-draft-key="contact-draft" novalidate>
+          <form action="https://formsubmit.co/18mit29260@gmail.com" method="post" class="pro-form" id="contactform" data-ajax-form data-draft-key="contact-draft" novalidate>
             <input type="hidden" name="_subject" value="New message from your portfolio Contact page">
             <input type="hidden" name="form_type" value="General contact">
+            <input type="hidden" name="_next" value="https://afsheen96.github.io/Portfolio/contact/?sent=1#contactform">
             <div class="field-row">
               <div class="field"><label for="c-name">Your name</label><input type="text" id="c-name" name="name" maxlength="60" autocomplete="name" required placeholder="Jane Smith"></div>
               <div class="field"><label for="c-email">Email</label><input type="email" id="c-email" name="email" autocomplete="email" required placeholder="jane@example.com"></div>
             </div>
             <div class="field"><label for="c-subject">Subject</label><input type="text" id="c-subject" name="subject" maxlength="100" required placeholder="What would you like to talk about?"></div>
             <div class="field"><label for="c-message">Message</label><textarea id="c-message" name="message" rows="6" maxlength="1000" required placeholder="Write your message here"></textarea></div>
-            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
             <p class="form-status" role="status" aria-live="polite"></p>
             <button class="btn btn-primary btn-shine form-submit" type="submit">Send message <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg></button>
           </form>
