@@ -436,8 +436,9 @@ button:disabled {
 }
 
 .hero-heading {
-  font-size: clamp(2.4rem, 7vw, 4.2rem);
-  line-height: 1.12;
+  max-width: 15em;
+  font-size: clamp(1.85rem, 4.6vw, 3.5rem);
+  line-height: 1.16;
   letter-spacing: -0.02em;
   font-weight: 700;
 }
@@ -507,6 +508,13 @@ button:disabled {
   50% {
     opacity: 0;
   }
+}
+
+.headline-paragraph.hero-intro {
+  max-width: 34em;
+  margin-top: 18px;
+  font-size: clamp(16px, 1.6vw, 19px);
+  line-height: 1.6;
 }
 
 .headline-paragraph {

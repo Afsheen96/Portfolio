@@ -187,9 +187,25 @@ PROJECTS = [
                   ('Works everywhere', 'Designed for phone, tablet and desktop.')],
         highlights=[('1 click', 'to compare any two versions'), ('Auto', '"what changed" summaries'), ('2026', 'concept, design &amp; build')],
     ),
+    dict(
+        # BidNest has its own hand-made case study page (projects/bidnest/index.html).
+        # own_page=True: cards link to it, but the build never overwrites it.
+        slug='bidnest', name='BidNest', full='BidNest', own_page=True,
+        short='Real-estate bidding app UI/UX',
+        tagline='A mobile app redesign of my MSc house bidding website, designed in Figma, that makes the highest bid, time left and your bid status clear at a glance.',
+        card='A UI/UX case study designed in Figma: a real-estate bidding app with its own design system and a clickable prototype that makes the highest bid, time left and bid status clear at a glance.',
+        client='Personal', role='UI/UX Designer', year='2026', type='UI/UX Design',
+        category='design', frame_label='Figma \u00b7 BidNest UI/UX case study',
+        live='https://www.behance.net/gallery/257870063/BidNest-Real-Estate-Bidding-App-UIUX-Case-Study', live_label='View on Behance', card_live_label='Behance',
+        source='', source_label='',
+        tech=['Figma', 'UI/UX Design', 'Design System', 'Prototyping'],
+        desktop='bidnest-desktop.webp', mobile='bidnest-mobile.webp', og='bidnest.jpg',
+        overview=['A mobile app redesign of my MSc house bidding website, designed in Figma.',
+                  'I built a reusable design system (9 colour styles, 6 text styles, 12 components) and five screens, Home, Property Details, Live Bidding, an Outbid state and My Bids, linked into a clickable prototype.'],
+    ),
 ]
 
-CATEGORY_LABEL = {'website': 'Website', 'webapp': 'Web App'}
+CATEGORY_LABEL = {'website': 'Website', 'webapp': 'Web App', 'design': 'UI/UX Design'}
 
 
 def shot(p, key):
@@ -329,8 +345,9 @@ def phone(src, alt, cls=''):
 
 def project_card(p, i, root, big=False):
     num = f'{i + 1:02d}'
-    host = p['live'].replace('https://', '').rstrip('/')
+    host = p.get('frame_label') or p['live'].replace('https://', '').rstrip('/')
     cls = 'project-card reveal' + (' is-featured' if big else '')
+    view = 'View Case Study' if p.get('own_page') else 'View Project'
     badge = f'<span class="feature-badge">{ICON["star"]} Featured project</span>' if p.get('featured') else ''
     if p.get('assessment'):
         badge += f'<span class="assess-badge">{ICON["briefcase"]} Hiring Assessment</span>'
@@ -340,7 +357,7 @@ def project_card(p, i, root, big=False):
       <article class="{cls}" data-category="{p['category']}">
         <a class="pc-media" href="{root}projects/{p['slug']}/" aria-label="Open the {p['full']} case study" tabindex="-1">
           <span class="pc-glow" aria-hidden="true"></span>
-          {frame(root + shot(p, 'desktop'), 'Screenshot of the ' + html.unescape(p['full']) + ' website on desktop', host, cls='pc-desktop')}
+          {frame(root + shot(p, 'desktop'), ('The ' + p['full'] + ' screens designed in Figma') if p['category'] == 'design' else ('Screenshot of the ' + html.unescape(p['full']) + ' website on desktop'), host, cls='pc-desktop')}
           {phone(root + shot(p, 'mobile'), 'Screenshot of ' + html.unescape(p['full']) + ' on a phone', 'pc-phone')}
           <span class="pc-hint" aria-hidden="true">View case study {ICON['arrow']}</span>
         </a>
@@ -359,8 +376,8 @@ def project_card(p, i, root, big=False):
           <p class="pro">{E(p['card'])}</p>
           <ul class="language">{tags}</ul>
           <div class="work-actions">
-            <a class="btn btn-primary btn-shine magnetic" href="{root}projects/{p['slug']}/">View Project {ICON['arrow']}</a>
-            <a class="btn btn-ghost magnetic" href="{p['live']}" target="_blank" rel="noopener">Live Preview {ICON['ext']}</a>
+            <a class="btn btn-primary btn-shine magnetic" href="{root}projects/{p['slug']}/">{view} {ICON['arrow']}</a>
+            <a class="btn btn-ghost magnetic" href="{p['live']}" target="_blank" rel="noopener">{p.get('card_live_label', p.get('live_label', 'Live Preview'))} {ICON['ext']}</a>
             <button type="button" class="icon-link quick-view" data-project="{p['slug']}" aria-label="Quick view of {p['full']}" title="Quick view">{ICON['eye']}</button>
           </div>
         </div>
@@ -371,7 +388,8 @@ def projects_json(root):
     data = [dict(slug=p['slug'], name=html.unescape(p['full']), client=html.unescape(p['client']),
                  role=html.unescape(p['role']), year=p['year'], text=html.unescape(' '.join(p['overview'])),
                  tech=p['tech'], image=root + shot(p, 'desktop'), live=p['live'], source=p['source'],
-                 sourceLabel=p['source_label'], page=f"{root}projects/{p['slug']}/") for p in PROJECTS]
+                 sourceLabel=p['source_label'], liveLabel=p.get('live_label', 'Live Link'),
+                 page=f"{root}projects/{p['slug']}/") for p in PROJECTS]
     return '<script type="application/json" id="projects-data">' + json.dumps(data, ensure_ascii=False).replace('</', '<\\/') + '</script>'
 
 
@@ -418,7 +436,7 @@ def home():
           "jobTitle": "Front-End Web Developer & Web Designer", "url": BASE,
           "sameAs": ["https://www.linkedin.com/in/afsheenkiran/", "https://github.com/Afsheen96"]}
     return head(root, '', 'Afsheen Kiran | Front-End Web Developer &amp; Web Designer',
-                'Afsheen Kiran is a front-end web developer and web designer who turns ideas into visually appealing, responsive and user-friendly websites. See HighTechZone, Learning AI Lecture Hub, Fomi Studio and Fomi Flow.',
+                'Afsheen Kiran is a front-end web developer and web designer who turns ideas into visually appealing, responsive and user-friendly websites. See HighTechZone, Learning AI Lecture Hub, Fomi Studio, Fomi Flow and BidNest.',
                 ld=ld) + header(root, 'home') + f'''
   <main id="main">
     <section class="main-container hero" id="top">
@@ -434,19 +452,9 @@ def home():
       <section class="headline">
         <p class="availability hero-in d-0"><span class="pulse"></span>Available for freelance projects</p>
         <h1 class="heading hero-heading">
-          <span class="line"><span>I'm Afsheen.</span></span>
-          <span class="line"><span>Glad to see <span class="gradient-text">you!</span></span></span>
+          <span class="line"><span>Websites that make small businesses look <span class="gradient-text">professional</span> and win more customers.</span></span>
         </h1>
-        <p class="hero-roles hero-in d-3" aria-live="polite">
-          I design &amp; build <span class="typed" id="typed">modern websites</span><span class="caret" aria-hidden="true"></span>
-        </p>
-        <p class="headline-paragraph hero-in d-4">
-          I'm a Front-End Web Developer and Web Designer who turns ideas into
-          visually appealing, responsive, and user-friendly websites. I combine
-          creative design with modern web technologies to build engaging digital
-          experiences that help businesses and individuals establish a strong
-          online presence.
-        </p>
+        <p class="headline-paragraph hero-intro hero-in d-3">I design and build modern, responsive websites that help businesses grow.</p>
         <div class="hero-actions hero-in d-5">
           <a class="btn btn-primary btn-shine magnetic" href="projects/">View my work {ICON['arrow']}</a>
           <a class="btn btn-ghost magnetic" href="hire-me/">Hire me</a>
@@ -614,7 +622,7 @@ def projects_index():
     root = '../'
     cards = ''.join(project_card(p, i, root, big=(i == 0)) for i, p in enumerate(PROJECTS))
     return head(root, 'projects/', 'Projects | Afsheen Kiran Portfolio',
-                'Website and web app projects by Afsheen Kiran: HighTechZone, Learning AI Lecture Hub, Fomi Studio and Fomi Flow, each with a full case study and live link.') + header(root, 'projects') + f'''
+                'Website, web app and UI/UX design projects by Afsheen Kiran: HighTechZone, Learning AI Lecture Hub, Fomi Studio, Fomi Flow and BidNest, each with a full case study.') + header(root, 'projects') + f'''
   <main id="main">
 {page_hero('Portfolio', 'My <span class="gradient-text">Projects</span>', 'Websites and web apps I designed and built. Open any project for the full case study, real screenshots and a live preview.')}
     <section class="work-section projects-page">
@@ -622,6 +630,7 @@ def projects_index():
         <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All <span>{len(PROJECTS)}</span></button>
         <button type="button" class="filter-btn" data-filter="website" aria-pressed="false">Websites <span>{sum(p['category'] == 'website' for p in PROJECTS)}</span></button>
         <button type="button" class="filter-btn" data-filter="webapp" aria-pressed="false">Web Apps <span>{sum(p['category'] == 'webapp' for p in PROJECTS)}</span></button>
+        <button type="button" class="filter-btn" data-filter="design" aria-pressed="false">UI/UX Design <span>{sum(p['category'] == 'design' for p in PROJECTS)}</span></button>
       </div>
       <div class="project-list">{cards}
       </div>
@@ -1057,6 +1066,7 @@ if __name__ == '__main__':
     write('contact/index.html', contact())
     write('hire-me/index.html', hire())
     for i, proj in enumerate(PROJECTS):
-        write(f"projects/{proj['slug']}/index.html", case_page(proj, i))
+        if not proj.get('own_page'):
+            write(f"projects/{proj['slug']}/index.html", case_page(proj, i))
     write('404.html', not_found())
     write('sitemap.xml', sitemap())

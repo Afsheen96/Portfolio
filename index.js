@@ -54,8 +54,8 @@
             <ul class="language">${listItems(project.tech)}</ul>
             <div class="thin-line"></div>
             <div class="popup-actions">
-              <a href="${project.live}" class="btn btn-primary" target="_blank" rel="noopener">Live Link ${icons.external}</a>
-              <a href="${project.source}" class="btn btn-ghost" target="_blank" rel="noopener">${icons.code} ${escapeHtml(project.sourceLabel)}</a>
+              <a href="${project.live}" class="btn btn-primary" target="_blank" rel="noopener">${escapeHtml(project.liveLabel || 'Live Link')} ${icons.external}</a>
+              ${project.source ? `<a href="${project.source}" class="btn btn-ghost" target="_blank" rel="noopener">${icons.code} ${escapeHtml(project.sourceLabel)}</a>` : ''}
             </div>
             <a href="${project.page}" class="text-link">Read the full case study ${icons.arrow}</a>
           </div>
