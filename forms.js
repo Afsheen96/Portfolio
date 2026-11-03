@@ -109,8 +109,8 @@
         try { localStorage.removeItem(key); } catch (e) { /* ignore */ }
         form.classList.add('is-sent');
         setStatus(form, 'success', form.id === 'hireform'
-          ? 'Thank you! Your project inquiry has been sent. I will reply by email soon.'
-          : 'Thank you! Your message has been sent. I will get back to you soon.');
+          ? 'Thank you! Your project inquiry has been sent. I will reply by email within 24 hours.'
+          : 'Thank you! Your message has been sent. I will reply within 24 hours.');
       } catch (err) {
         if (/activat/i.test(err.message)) {
           setStatus(form, 'error', 'This form is being set up. Please try again a little later, or reach me on LinkedIn.');

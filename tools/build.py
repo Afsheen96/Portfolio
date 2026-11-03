@@ -510,7 +510,7 @@ def home():
         </div>
         <ul class="teaser-stats reveal" aria-label="What you can expect">
           <li><span class="ts-icon">{ICON['rocket']}</span><strong>7&ndash;14 Days</strong><span>Typical project delivery</span></li>
-          <li><span class="ts-icon">{ICON['chat']}</span><strong>Within 24 Hours</strong><span>Client response time</span></li>
+          <li><span class="ts-icon">{ICON['chat']}</span><strong>Within 24 hours</strong><span>Client response time</span></li>
           <li><span class="ts-icon">{ICON['refresh']}</span><strong>2 Rounds</strong><span>Included revisions</span></li>
           <li><span class="ts-icon">{ICON['phone']}</span><strong>100%</strong><span>Responsive focus: desktop, tablet &amp; mobile design</span></li>
         </ul>
@@ -668,7 +668,7 @@ def contact():
           </ul>
           <div class="info-note">
             <span class="service-icon">{ICON['clock']}</span>
-            <p><strong>Usually replies within 1&ndash;2 working days.</strong> Looking to start a website project? The <a href="../hire-me/">Hire Me page</a> has a project form made for that.</p>
+            <p><strong>Reply time: Within 24 hours.</strong> Looking to start a website project? The <a href="../hire-me/">Hire Me page</a> has a project form made for that.</p>
           </div>
         </div>
 
