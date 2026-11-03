@@ -201,12 +201,12 @@ NAV = [('home', 'Home', ''), ('about', 'About', 'about/'), ('skills', 'Skills', 
        ('projects', 'Projects', 'projects/'), ('contact', 'Contact', 'contact/')]
 
 
-def head(root, path, title, desc, image='resources/og-profile.jpg', og_type='website', css=(), ld=None):
+def head(root, path, title, desc, image='resources/og-hero.jpg', og_type='website', css=(), ld=None):
     url = BASE + path
-    # Size of the shared-link preview image (the default profile card is 1200x630)
+    # Size of the shared-link preview image (default: a 2x screenshot of the home hero)
     og_size = ('\n  <meta property="og:image:type" content="image/jpeg">'
-               '\n  <meta property="og:image:width" content="1200">'
-               '\n  <meta property="og:image:height" content="630">') if image == 'resources/og-profile.jpg' else ''
+               '\n  <meta property="og:image:width" content="2400">'
+               '\n  <meta property="og:image:height" content="1260">') if image == 'resources/og-hero.jpg' else ''
     extra = ''.join(f'\n  <link rel="stylesheet" href="{root}{c}">' for c in css)
     ld_tag = f'\n  <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>' if ld else ''
     return f'''<!DOCTYPE html>
