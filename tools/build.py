@@ -110,7 +110,7 @@ PROJECTS = [
         category='website',
         live='https://afsheen96.github.io/lecture-library/', source='https://github.com/Afsheen96/lecture-library', source_label='Source code',
         tech=['HTML5', 'CSS3', 'JavaScript', 'JSON', 'Node.js build script', 'GitHub Actions', 'GitHub Pages'],
-        desktop='lecture-hub-desktop.webp', mobile='lecture-hub-mobile.webp', og=None, full_page='lecture-hub-full.webp',
+        desktop='lecture-hub-desktop.webp', mobile='lecture-hub-mobile.webp', og='lecture-hub.jpg', full_page='lecture-hub-full.webp',
         gallery=[('lecture-hub-desktop.webp', 'Course cover and "Find Your Next Lecture." search'),
                  ('lecture-hub-list.webp', 'Numbered lecture list with categories and Watch Lecture buttons'),
                  ('lecture-hub-search.webp', 'Instant search: typing "SEO" finds the right lecture'),
@@ -201,8 +201,12 @@ NAV = [('home', 'Home', ''), ('about', 'About', 'about/'), ('skills', 'Skills', 
        ('projects', 'Projects', 'projects/'), ('contact', 'Contact', 'contact/')]
 
 
-def head(root, path, title, desc, image='resources/shots/hightechzone-desktop.webp', og_type='website', css=(), ld=None):
+def head(root, path, title, desc, image='resources/og-profile.jpg', og_type='website', css=(), ld=None):
     url = BASE + path
+    # Size of the shared-link preview image (the default profile card is 1200x630)
+    og_size = ('\n  <meta property="og:image:type" content="image/jpeg">'
+               '\n  <meta property="og:image:width" content="1200">'
+               '\n  <meta property="og:image:height" content="630">') if image == 'resources/og-profile.jpg' else ''
     extra = ''.join(f'\n  <link rel="stylesheet" href="{root}{c}">' for c in css)
     ld_tag = f'\n  <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>' if ld else ''
     return f'''<!DOCTYPE html>
@@ -221,8 +225,13 @@ def head(root, path, title, desc, image='resources/shots/hightechzone-desktop.we
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{E(desc, quote=True)}">
   <meta property="og:url" content="{url}">
+  <meta property="og:locale" content="en_US">
   <meta property="og:image" content="{BASE}{image}">
+  <meta property="og:image:alt" content="{E(html.unescape(title), quote=True)}">{og_size}
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title}">
+  <meta name="twitter:description" content="{E(desc, quote=True)}">
+  <meta name="twitter:image" content="{BASE}{image}">
   <link rel="icon" href="{root}favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
