@@ -27,10 +27,11 @@
 
   forms.forEach((form) => {
     // Came back from FormSubmit without JavaScript.
-    if (/[?&]sent=1/.test(window.location.search)) {
-      setStatus(form, 'success', 'Thank you! Your message has been sent.');
-    }
     const key = form.dataset.draftKey;
+    if (/[?&]sent=1/.test(window.location.search)) {
+      setStatus(form, 'success', 'Thank you! Your message has been sent. I will reply within 24 hours.');
+      try { if (key) localStorage.removeItem(key); } catch (e) { /* ignore */ }
+    }
     const selector = 'input[name]:not([type="hidden"]):not(.hp-field), textarea[name], select[name]';
     const fields = Array.from(form.querySelectorAll(selector));
 
@@ -112,11 +113,14 @@
           ? 'Thank you! Your project inquiry has been sent. I will reply by email within 24 hours.'
           : 'Thank you! Your message has been sent. I will reply within 24 hours.');
       } catch (err) {
-        if (/activat/i.test(err.message)) {
-          setStatus(form, 'error', 'This form is being set up. Please try again a little later, or reach me on LinkedIn.');
-          return;
-        }
-        setStatus(form, 'error', 'Sorry, the message could not be sent right now. Please try again in a moment, or reach me on LinkedIn.');
+        // Background sending failed (for example a brand-new address that
+        // FormSubmit has not activated yet, or a blocked request). Send the
+        // form the normal way instead: FormSubmit shows its own page and then
+        // returns the visitor here with ?sent=1.
+        console.warn('Form background send failed, using a normal submit:', err.message); // eslint-disable-line no-console
+        setStatus(form, 'info', 'Sending your message...');
+        HTMLFormElement.prototype.submit.call(form);
+        return;
       } finally {
         button.disabled = false;
         button.classList.remove('is-loading');

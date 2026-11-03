@@ -19,7 +19,9 @@ BASE = 'https://afsheen96.github.io/Portfolio/'
 # Both forms are delivered to this Gmail address by FormSubmit (formsubmit.co):
 # no account, no Formspree. The very first message sends an "Activate Form"
 # email to this address; click it once and every later message arrives.
-FORM_EMAIL = 'afsheenkiran.dev96@gmail.com'
+# Forms use the original address (already activated on FormSubmit). Gmail
+# renamed it to afsheenkiran.dev96@gmail.com, but both names reach the same inbox.
+FORM_EMAIL = '18mit29260@gmail.com'
 FORM_ENDPOINT = 'https://formsubmit.co/' + FORM_EMAIL
 YEAR = '2026'
 E = html.escape
