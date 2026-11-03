@@ -3615,6 +3615,12 @@ a.contact-card[href]:hover .cc-arrow {
   transform: translateY(2px);
 }
 
+.form-status a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* ---------- hiring assessment badge ---------- */
 .assess-badge {
   display: inline-flex;

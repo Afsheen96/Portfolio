@@ -13,6 +13,30 @@
     status.textContent = text;
   }
 
+  // Shown when the form service is down: a mailto link with the visitor's
+  // message already filled in, sent to the address in config.js.
+  function showEmailFallback(form) {
+    const status = form.querySelector('.form-status');
+    const to = ((window.SITE_CONFIG || {}).email || '').trim();
+    if (!status) return;
+    status.className = 'form-status error';
+    status.textContent = 'Sorry, the form could not be sent right now. ';
+    if (!to) {
+      status.append('Please try again in a moment.');
+      return;
+    }
+    const data = new FormData(form);
+    const lines = [];
+    data.forEach((value, name) => {
+      if (name.charAt(0) !== '_' && name !== 'form_type' && String(value).trim() && value !== 'No package selected') lines.push(`${name.replace(/_/g, ' ')}: ${value}`);
+    });
+    const subject = data.get('subject') || (form.id === 'hireform' ? 'Project inquiry' : 'Hello Afsheen');
+    const link = document.createElement('a');
+    link.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+    link.textContent = `Email me directly at ${to}`;
+    status.append(link, ' (your message is already filled in).');
+  }
+
   // Email must be lowercase (kept from the original site's validation).
   function validateEmail(form) {
     const email = form.querySelector('input[type="email"]');
@@ -113,14 +137,10 @@
           ? 'Thank you! Your project inquiry has been sent. I will reply by email within 24 hours.'
           : 'Thank you! Your message has been sent. I will reply within 24 hours.');
       } catch (err) {
-        // Background sending failed (for example a brand-new address that
-        // FormSubmit has not activated yet, or a blocked request). Send the
-        // form the normal way instead: FormSubmit shows its own page and then
-        // returns the visitor here with ?sent=1.
-        console.warn('Form background send failed, using a normal submit:', err.message); // eslint-disable-line no-console
-        setStatus(form, 'info', 'Sending your message...');
-        HTMLFormElement.prototype.submit.call(form);
-        return;
+        // The form service could not be reached or refused the message. Keep
+        // the draft and offer a ready-to-send email instead, so nothing is lost.
+        console.warn('Form could not be sent:', err.message); // eslint-disable-line no-console
+        showEmailFallback(form);
       } finally {
         button.disabled = false;
         button.classList.remove('is-loading');
